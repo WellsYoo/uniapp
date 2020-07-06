@@ -88,6 +88,7 @@
 		2F42309124AF32FF00BCAE45 /* NCWAppFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F42305F24AF32FF00BCAE45 /* NCWAppFunctionViewController.m */; };
 		2F42309224AF32FF00BCAE45 /* ESTabBarController+Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F42306224AF32FF00BCAE45 /* ESTabBarController+Autolayout.m */; };
 		2F42309324AF32FF00BCAE45 /* UIButton+ESTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F42306324AF32FF00BCAE45 /* UIButton+ESTabBar.m */; };
+		2F85EFD324B31F2A004FAA48 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED659D198A5782000A4449 /* Social.framework */; };
 		4F4C65372465606B006A13AA /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65192465606B006A13AA /* __uniappes6.js */; };
 		4F4C653A2465606B006A13AA /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C651C2465606B006A13AA /* uni-jsframework.js */; };
 		4F4C65452465606C006A13AA /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65282465606B006A13AA /* TZImagePickerController.bundle */; };
@@ -133,7 +134,6 @@
 		8EED6592198A5737000A4449 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6591198A5737000A4449 /* AddressBook.framework */; };
 		8EED6594198A5743000A4449 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6593198A5743000A4449 /* AVFoundation.framework */; };
 		8EED659C198A5773000A4449 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED659B198A5773000A4449 /* AddressBookUI.framework */; };
-		8EED659E198A5782000A4449 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED659D198A5782000A4449 /* Social.framework */; };
 		8EED65A0198A5789000A4449 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED659F198A5789000A4449 /* Accounts.framework */; };
 		8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED65A7198A6273000A4449 /* OpenGLES.framework */; };
 		F54AD1E0A7F9E042379C310B /* Pods_HBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3C14E0EEFCECB411D2D730 /* Pods_HBuilder.framework */; };
@@ -601,6 +601,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F85EFD324B31F2A004FAA48 /* Social.framework in Frameworks */,
 				2F422FF724AF2E1800BCAE45 /* CoreLocation.framework in Frameworks */,
 				67A9340023A8B922004A4DF4 /* libSDWebImage.a in Frameworks */,
 				2F422FF624AF2CF400BCAE45 /* liblibWeex.a in Frameworks */,
@@ -656,7 +657,6 @@
 				8E163D021A8D208500308A8B /* AssetsLibrary.framework in Frameworks */,
 				8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */,
 				8EED65A0198A5789000A4449 /* Accounts.framework in Frameworks */,
-				8EED659E198A5782000A4449 /* Social.framework in Frameworks */,
 				8EED659C198A5773000A4449 /* AddressBookUI.framework in Frameworks */,
 				8EED6592198A5737000A4449 /* AddressBook.framework in Frameworks */,
 				8EED6422198A2678000A4449 /* AudioToolbox.framework in Frameworks */,
