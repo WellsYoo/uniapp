@@ -91,6 +91,9 @@
 		2F85F07524B32E09004FAA48 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6595198A574C000A4449 /* CoreLocation.framework */; };
 		2F85F07724B340D9004FAA48 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
 		2F85F07824B340D9004FAA48 /* DCUniVideoPublic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FBAA8ED24EFDD4300FB5EAE /* liblibPayment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD81F1CB50C4000C0F062 /* liblibPayment.a */; };
+		2FBAA8EE24EFDD5100FB5EAE /* libwxpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD83F1CB50C4000C0F062 /* libwxpay.a */; };
+		2FBAA8EF24EFDD7500FB5EAE /* libWeChatSDK_pay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1967C621253B5F00B330A9 /* libWeChatSDK_pay.a */; };
 		2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDE1569215F468000588710 /* liblibWeex.a */; };
 		369E7C751C1EE041980AFD27 /* Pods_HBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BE4FBC2C576BA4A0794C61 /* Pods_HBuilder.framework */; };
 		4F4C65372465606B006A13AA /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65192465606B006A13AA /* __uniappes6.js */; };
@@ -600,8 +603,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F85F07524B32E09004FAA48 /* CoreLocation.framework in Frameworks */,
+				2FBAA8EE24EFDD5100FB5EAE /* libwxpay.a in Frameworks */,
 				2F85EFD224B31EDC004FAA48 /* QuickLook.framework in Frameworks */,
 				2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */,
+				2FBAA8ED24EFDD4300FB5EAE /* liblibPayment.a in Frameworks */,
+				2FBAA8EF24EFDD7500FB5EAE /* libWeChatSDK_pay.a in Frameworks */,
 				67A9340023A8B922004A4DF4 /* libSDWebImage.a in Frameworks */,
 				67229AD6230171AE0093F29A /* libDCUniGPUImage.a in Frameworks */,
 				24AFD84E1CB50C4000C0F062 /* liblibCache.a in Frameworks */,
@@ -1678,7 +1684,7 @@
 				CODE_SIGN_ENTITLEMENTS = "HBuilder/云商知本.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1054;
+				CURRENT_PROJECT_VERSION = 2020;
 				DEVELOPMENT_TEAM = F4SJKUVG5L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1700,7 +1706,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 2.0.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.yunshangzhiben;
 				PRODUCT_NAME = "云商知本";
@@ -1723,7 +1729,7 @@
 				CODE_SIGN_ENTITLEMENTS = "HBuilder/云商知本.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1054;
+				CURRENT_PROJECT_VERSION = 2020;
 				DEVELOPMENT_TEAM = F4SJKUVG5L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1745,7 +1751,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 2.0.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.yunshangzhiben;
 				PRODUCT_NAME = "云商知本";
