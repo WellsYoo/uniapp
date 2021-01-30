@@ -430,6 +430,8 @@ typedef NS_ENUM(NSInteger, WXErrorCode) {//error.code
 @property (nonatomic, assign, readonly) CGFloat dc_textFontSize;
 @property (nonatomic, strong) NSString *dc_docPath;
 @property(nonatomic, strong) NSString *dc_webviewId;
+@property(nonatomic, strong) NSString *dc_oldInstanceId;
+@property(nonatomic, weak) id dc_appframeContext; //关联的5+ coreappframe
 - (void)dc_setDefalutFontSize:(CGFloat)defaultFontSize;
 //-----------↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑---------------------------------------------------------
 /** 

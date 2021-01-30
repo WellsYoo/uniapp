@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>HelloH5</string>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -443,7 +443,7 @@
 					<key>class</key>
 					<string>TestModule</string>
 					<key>name</key>
-					<string>DC-TestModule</string>
+					<string>DCTestUniPlugin-TestModule</string>
 					<key>type</key>
 					<string>module</string>
 				</dict>

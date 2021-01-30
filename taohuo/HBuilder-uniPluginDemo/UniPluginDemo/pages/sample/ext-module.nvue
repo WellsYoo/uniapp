@@ -7,7 +7,7 @@
 
 <script>
 	// 首先需要通过 uni.requireNativePlugin("ModuleName") 获取 module 
-	var testModule = uni.requireNativePlugin("DC-TestModule")
+	var testModule = uni.requireNativePlugin("DCTestUniPlugin-TestModule")
 	export default {
 		methods: {
 			testAsyncFunc() {

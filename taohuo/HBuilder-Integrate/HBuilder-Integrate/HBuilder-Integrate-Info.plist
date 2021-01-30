@@ -156,7 +156,7 @@
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>Pandora/apps/HelloH5/www/sa.png</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>www.dcloud.io</string>
+			<string>www.test.com</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>关 于</string>
 			<key>UIApplicationShortcutItemType</key>

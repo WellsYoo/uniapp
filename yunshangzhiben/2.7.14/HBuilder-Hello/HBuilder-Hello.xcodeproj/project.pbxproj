@@ -90,7 +90,6 @@
 		2F85F07324B328C4004FAA48 /* liblibVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA411215B814000F67004 /* liblibVideo.a */; };
 		2F85F07524B32E09004FAA48 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6595198A574C000A4449 /* CoreLocation.framework */; };
 		2F85F07724B340D9004FAA48 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
-		2F85F07824B340D9004FAA48 /* DCUniVideoPublic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FBAA8ED24EFDD4300FB5EAE /* liblibPayment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD81F1CB50C4000C0F062 /* liblibPayment.a */; };
 		2FBAA8EE24EFDD5100FB5EAE /* libwxpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD83F1CB50C4000C0F062 /* libwxpay.a */; };
 		2FBAA8EF24EFDD7500FB5EAE /* libWeChatSDK_pay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1967C621253B5F00B330A9 /* libWeChatSDK_pay.a */; };
@@ -146,7 +145,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F85F07824B340D9004FAA48 /* DCUniVideoPublic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;

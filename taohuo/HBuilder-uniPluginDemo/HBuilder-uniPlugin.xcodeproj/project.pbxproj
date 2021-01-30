@@ -78,7 +78,6 @@
 		2F0BA499215B955300F67004 /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA46E215B955300F67004 /* PandoraApi.bundle */; };
 		2F0BA49B215B955300F67004 /* qucsdkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA470215B955300F67004 /* qucsdkResources.bundle */; };
 		2F0BA49C215B955300F67004 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA471215B955300F67004 /* SVProgressHUD.bundle */; };
-		2F0BA49D215B955300F67004 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA472215B955300F67004 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		2F0BA49E215B955300F67004 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA473215B955300F67004 /* TZImagePickerController.bundle */; };
 		2F0BA49F215B955300F67004 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA474215B955300F67004 /* WeiboSDK.bundle */; };
 		2F0BA4DC215BA12300F67004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */; };
@@ -318,7 +317,6 @@
 		2F0BA46E215B955300F67004 /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
 		2F0BA470215B955300F67004 /* qucsdkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = qucsdkResources.bundle; sourceTree = "<group>"; };
 		2F0BA471215B955300F67004 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		2F0BA472215B955300F67004 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		2F0BA473215B955300F67004 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
 		2F0BA474215B955300F67004 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -536,7 +534,7 @@
 		7ACF69AC19FF89B1007C64F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8E163D011A8D208500308A8B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8E6E37AB1B0E1B580036EB48 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		8EED6298198A1D13000A4449 /* HBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EED6298198A1D13000A4449 /* UniPluginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPluginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EED629B198A1D13000A4449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EED629D198A1D13000A4449 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8EED629F198A1D13000A4449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -747,7 +745,6 @@
 				2F0BA46E215B955300F67004 /* PandoraApi.bundle */,
 				2F0BA470215B955300F67004 /* qucsdkResources.bundle */,
 				2F0BA471215B955300F67004 /* SVProgressHUD.bundle */,
-				2F0BA472215B955300F67004 /* TencentOpenApi_IOS_Bundle.bundle */,
 				2F0BA473215B955300F67004 /* TZImagePickerController.bundle */,
 				2F0BA474215B955300F67004 /* WeiboSDK.bundle */,
 			);
@@ -948,7 +945,7 @@
 		8EED6299198A1D13000A4449 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EED6298198A1D13000A4449 /* HBuilder.app */,
+				8EED6298198A1D13000A4449 /* UniPluginDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1184,7 +1181,7 @@
 			);
 			name = HBuilder;
 			productName = "HBuilder-Hello";
-			productReference = 8EED6298198A1D13000A4449 /* HBuilder.app */;
+			productReference = 8EED6298198A1D13000A4449 /* UniPluginDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1197,8 +1194,7 @@
 				ORGANIZATIONNAME = DCloud;
 				TargetAttributes = {
 					8EED6297198A1D13000A4449 = {
-						DevelopmentTeam = G56NU654TV;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1292,7 +1288,6 @@
 				67B7CAA221DCE8180083E96A /* control.xml in Resources */,
 				67065F422243868400DC71CA /* Default-Landscape-1366h@2x~ipad.png in Resources */,
 				67065F522243868400DC71CA /* Default-Portrait7~ipad.png in Resources */,
-				2F0BA49D215B955300F67004 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				67065F462243868400DC71CA /* Default-568h@2x.png in Resources */,
 				8EED6590198A3DF7000A4449 /* Pandora in Resources */,
 				67065F542243868400DC71CA /* Default-Landscape-896h@2x.png in Resources */,
@@ -1427,9 +1422,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 花雨 熊 (Q59ZY3K5J2)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = G56NU654TV;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1457,9 +1452,9 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dcloud.HBuilder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UniPluginDemo;
 				PROVISIONING_PROFILE = "a7e03077-46db-4b91-b0c4-20fd613c1e14";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard. Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 				WRAPPER_EXTENSION = app;
@@ -1472,10 +1467,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = G56NU654TV;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1503,9 +1498,9 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dcloud.HBuilder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UniPluginDemo;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "DCloud-Wildcard";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 				WRAPPER_EXTENSION = app;
