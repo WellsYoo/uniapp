@@ -42,9 +42,6 @@
 		2F0BA416215B8B1400F67004 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA415215B8B1300F67004 /* VideoToolbox.framework */; };
 		2F0BA418215B8B5C00F67004 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */; };
 		2F0BA4DC215BA12300F67004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */; };
-		2F699B002518B6CB00B4D86A /* libWXOauth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD83E1CB50C4000C0F062 /* libWXOauth.a */; };
-		2F699B012518B6E200B4D86A /* liblibOauth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD81D1CB50C4000C0F062 /* liblibOauth.a */; };
-		2F699B022518B74E00B4D86A /* libWeChatSDK_pay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1967C621253B5F00B330A9 /* libWeChatSDK_pay.a */; };
 		2FBCD9EE2518BB4000C56903 /* NYAlertViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCD9832518BB4000C56903 /* NYAlertViewControllerConfiguration.m */; };
 		2FBCD9EF2518BB4000C56903 /* NYAlertActionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCD9852518BB4000C56903 /* NYAlertActionConfiguration.m */; };
 		2FBCD9F02518BB4000C56903 /* NYAlertTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCD9872518BB4000C56903 /* NYAlertTextView.m */; };
@@ -227,6 +224,7 @@
 		2F0BA415215B8B1300F67004 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F1962D125C57C49007889F2 /* libWeChatSDK_pay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK_pay.a; path = ../../letao/SDK/Libs/libWeChatSDK_pay.a; sourceTree = "<group>"; };
 		2FBCD9812518BB4000C56903 /* NYAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertAction.h; sourceTree = "<group>"; };
 		2FBCD9822518BB4000C56903 /* NYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewController.h; sourceTree = "<group>"; };
 		2FBCD9832518BB4000C56903 /* NYAlertViewControllerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewControllerConfiguration.m; sourceTree = "<group>"; };
@@ -612,14 +610,11 @@
 			files = (
 				2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */,
 				67A9340023A8B922004A4DF4 /* libSDWebImage.a in Frameworks */,
-				2F699B012518B6E200B4D86A /* liblibOauth.a in Frameworks */,
 				67229AD6230171AE0093F29A /* libDCUniGPUImage.a in Frameworks */,
 				24AFD84C1CB50C4000C0F062 /* liblibAccelerometer.a in Frameworks */,
 				672DEB2C23056152003F27CC /* libDCUniBarcode.a in Frameworks */,
-				2F699B002518B6CB00B4D86A /* libWXOauth.a in Frameworks */,
 				24AFD84D1CB50C4000C0F062 /* liblibBarcode.a in Frameworks */,
 				672CE2B522DC916C005A0D88 /* libDCUniZXing.a in Frameworks */,
-				2F699B022518B74E00B4D86A /* libWeChatSDK_pay.a in Frameworks */,
 				24AFD84E1CB50C4000C0F062 /* liblibCache.a in Frameworks */,
 				24AFD84F1CB50C4000C0F062 /* liblibCamera.a in Frameworks */,
 				24AFD8521CB50C4000C0F062 /* liblibIO.a in Frameworks */,
@@ -1239,6 +1234,7 @@
 		8EED629A198A1D13000A4449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F1962D125C57C49007889F2 /* libWeChatSDK_pay.a */,
 				6731F397232F4D8E007838BC /* Photos.framework */,
 				6731F395232F4D05007838BC /* UserNotifications.framework */,
 				6731F393232F4CE2007838BC /* libresolv.tbd */,
