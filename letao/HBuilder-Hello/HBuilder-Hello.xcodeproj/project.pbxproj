@@ -41,7 +41,6 @@
 		2F1962CE25C57B44007889F2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6591198A5737000A4449 /* AddressBook.framework */; };
 		2F1962CF25C57B65007889F2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED641F198A2668000A4449 /* MediaPlayer.framework */; };
 		2F1962D325C57DC1007889F2 /* libuchardet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE36665254FE3D100DCD173 /* libuchardet.a */; };
-		2F1962D525C57E1C007889F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6595198A574C000A4449 /* CoreLocation.framework */; };
 		2F1962D625C57E67007889F2 /* libDCUniZXing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B422DC916C005A0D88 /* libDCUniZXing.a */; };
 		2F1962D925C57F3C007889F2 /* liblibMedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD8181CB50C4000C0F062 /* liblibMedia.a */; };
 		2F1963EC25C58531007889F2 /* NYAlertViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638125C58531007889F2 /* NYAlertViewControllerConfiguration.m */; };
@@ -89,6 +88,7 @@
 		2F19641625C58531007889F2 /* NCWAppFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E425C58531007889F2 /* NCWAppFunctionViewController.m */; };
 		2F19641725C58531007889F2 /* ESTabBarController+Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E725C58531007889F2 /* ESTabBarController+Autolayout.m */; };
 		2F19641825C58531007889F2 /* UIButton+ESTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E825C58531007889F2 /* UIButton+ESTabBar.m */; };
+		2F62E97E25C81D9E000B7C66 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6595198A574C000A4449 /* CoreLocation.framework */; };
 		2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDE1569215F468000588710 /* liblibWeex.a */; };
 		4F4C65372465606B006A13AA /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65192465606B006A13AA /* __uniappes6.js */; };
 		4F4C653A2465606B006A13AA /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C651C2465606B006A13AA /* uni-jsframework.js */; };
@@ -458,21 +458,6 @@
 		4F4C65352465606B006A13AA /* weexUniJs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = weexUniJs.js; sourceTree = "<group>"; };
 		4F4DDAFD25AC46390008AE37 /* DCTZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DCTZImagePickerController.bundle; sourceTree = "<group>"; };
 		4F4DDAFE25AC46610008AE37 /* DCSVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DCSVProgressHUD.bundle; sourceTree = "<group>"; };
-		4F4DDB4125AC4EC50008AE37 /* DCTZPhotoPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZPhotoPickerController.h; sourceTree = "<group>"; };
-		4F4DDB4225AC4EC50008AE37 /* DCTZImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZImageManager.h; sourceTree = "<group>"; };
-		4F4DDB4325AC4EC50008AE37 /* DCTZAssetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZAssetCell.h; sourceTree = "<group>"; };
-		4F4DDB4425AC4EC50008AE37 /* DCTZAssetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZAssetModel.h; sourceTree = "<group>"; };
-		4F4DDB4525AC4EC50008AE37 /* DCTZGifPhotoPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZGifPhotoPreviewController.h; sourceTree = "<group>"; };
-		4F4DDB4625AC4EC50008AE37 /* DCTZLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZLocationManager.h; sourceTree = "<group>"; };
-		4F4DDB4725AC4EC50008AE37 /* UIView+DCLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DCLayout.h"; sourceTree = "<group>"; };
-		4F4DDB4825AC4EC50008AE37 /* DCTZImageCropManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZImageCropManager.h; sourceTree = "<group>"; };
-		4F4DDB4925AC4EC50008AE37 /* DCTZImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZImagePickerController.h; sourceTree = "<group>"; };
-		4F4DDB4A25AC4EC50008AE37 /* NSBundle+DCTZImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DCTZImagePicker.h"; sourceTree = "<group>"; };
-		4F4DDB4B25AC4EC50008AE37 /* DCTZVideoPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZVideoPlayerController.h; sourceTree = "<group>"; };
-		4F4DDB4C25AC4EC50008AE37 /* DCUIViewControllerHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUIViewControllerHUD.h; sourceTree = "<group>"; };
-		4F4DDB4D25AC4EC50008AE37 /* DCTZPhotoPreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZPhotoPreviewCell.h; sourceTree = "<group>"; };
-		4F4DDB4E25AC4EC50008AE37 /* DCTZPhotoPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZPhotoPreviewController.h; sourceTree = "<group>"; };
-		4F4DDB4F25AC4EC50008AE37 /* DCTZProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTZProgressView.h; sourceTree = "<group>"; };
 		4F4DDB5125AC4EC50008AE37 /* DCSRWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSRWebSocket.h; sourceTree = "<group>"; };
 		4F4DDB5325AC4EC50008AE37 /* DCSVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		4F4DDB5425AC4EC50008AE37 /* DCSVProgressAnimatedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -542,7 +527,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F1962D525C57E1C007889F2 /* CoreLocation.framework in Frameworks */,
+				2F62E97E25C81D9E000B7C66 /* CoreLocation.framework in Frameworks */,
 				4F8546B12518D8BF00858D80 /* storage.framework in Frameworks */,
 				2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */,
 				67A9340023A8B922004A4DF4 /* libSDWebImage.a in Frameworks */,
@@ -849,7 +834,6 @@
 				4F4C646B2465600B006A13AA /* PDRCoreAppFrame.h */,
 				4F4DDB5025AC4EC50008AE37 /* DCSocketRocket */,
 				4F4DDB5225AC4EC50008AE37 /* DCSVProgressHUD */,
-				4F4DDB4025AC4EC50008AE37 /* DCTZImagePickerController */,
 				4F4C646C2465600B006A13AA /* Masonry */,
 				4F4C64812465600B006A13AA /* PGMethod.h */,
 				4F4C64822465600B006A13AA /* PDRCore.h */,
@@ -1076,28 +1060,6 @@
 			);
 			name = Bundles;
 			path = ../../SDK/Bundles;
-			sourceTree = "<group>";
-		};
-		4F4DDB4025AC4EC50008AE37 /* DCTZImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				4F4DDB4125AC4EC50008AE37 /* DCTZPhotoPickerController.h */,
-				4F4DDB4225AC4EC50008AE37 /* DCTZImageManager.h */,
-				4F4DDB4325AC4EC50008AE37 /* DCTZAssetCell.h */,
-				4F4DDB4425AC4EC50008AE37 /* DCTZAssetModel.h */,
-				4F4DDB4525AC4EC50008AE37 /* DCTZGifPhotoPreviewController.h */,
-				4F4DDB4625AC4EC50008AE37 /* DCTZLocationManager.h */,
-				4F4DDB4725AC4EC50008AE37 /* UIView+DCLayout.h */,
-				4F4DDB4825AC4EC50008AE37 /* DCTZImageCropManager.h */,
-				4F4DDB4925AC4EC50008AE37 /* DCTZImagePickerController.h */,
-				4F4DDB4A25AC4EC50008AE37 /* NSBundle+DCTZImagePicker.h */,
-				4F4DDB4B25AC4EC50008AE37 /* DCTZVideoPlayerController.h */,
-				4F4DDB4C25AC4EC50008AE37 /* DCUIViewControllerHUD.h */,
-				4F4DDB4D25AC4EC50008AE37 /* DCTZPhotoPreviewCell.h */,
-				4F4DDB4E25AC4EC50008AE37 /* DCTZPhotoPreviewController.h */,
-				4F4DDB4F25AC4EC50008AE37 /* DCTZProgressView.h */,
-			);
-			path = DCTZImagePickerController;
 			sourceTree = "<group>";
 		};
 		4F4DDB5025AC4EC50008AE37 /* DCSocketRocket */ = {
@@ -1571,11 +1533,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10000;
+				CURRENT_PROJECT_VERSION = 10300;
 				DEVELOPMENT_TEAM = 22CP63H8NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1602,7 +1563,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chyuthink.letao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1622,11 +1583,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10000;
+				CURRENT_PROJECT_VERSION = 10300;
 				DEVELOPMENT_TEAM = 22CP63H8NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1653,7 +1613,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chyuthink.letao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
