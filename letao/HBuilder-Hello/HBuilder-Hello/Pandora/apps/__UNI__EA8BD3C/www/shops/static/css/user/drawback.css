@@ -1,0 +1,65 @@
+.item-info {
+	padding: 10px;
+	padding-bottom: 6px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+
+.wrap-goods-info {
+	padding: 0 6px;
+	font-size: 14px;
+}
+
+.goods-info {
+	padding: 2px 4px;
+	background: #f4f4f4;
+	border-radius: 2px;
+	color: #ccc;
+	font-size: 12px;
+	color: #666666;
+}
+
+.wrap-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
+	background: url() center no-repeat;
+	background-size: contain;
+	flex-shrink: 0;
+}
+.wrap-tip {
+	padding: 0 10px;
+	height: 60px;
+	background: #fff;
+	border-bottom: 1px solid #f4f4f4;
+}
+.contain,page {
+	background: #f4f4f4;
+}
+.tip-title {
+	font-size: 12px;
+	font-weight: bold;
+}
+.tip-text {
+	font-size: 10px;
+	color: #ccc;
+	margin-top: 4px;
+}
+.wrap-form {
+	padding: 0px 0 10px 0;
+	background: #fff;
+}
+.del-img {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+.wrap-pingzhneg .wrap-logo {
+	position: relative;
+	overflow: unset;
+	width: 100px;
+	height: 100px;
+}
+.wrap-pingzhneg .add-image {
+	background-size: cover;
+}

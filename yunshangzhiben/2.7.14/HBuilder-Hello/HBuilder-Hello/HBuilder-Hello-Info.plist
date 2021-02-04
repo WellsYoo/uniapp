@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UniversalLinks</key>
-	<string>https://www.lseipo.cn/openApp/</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
@@ -27,32 +25,6 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>CFBundleURLName</key>
-			<string>tencentopenapi</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>tencent1101318457</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.tencent</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wb801494298</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>alixpay</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>alixpayhbilderhello</string>
-			</array>
-		</dict>
-		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
@@ -60,16 +32,6 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>wx8a45519befe132ec</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.weibo</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wb3721101999</string>
 			</array>
 		</dict>
 	</array>
@@ -303,6 +265,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UniversalLinks</key>
+	<string>https://www.lseipo.cn/openApp/</string>
 	<key>dcloud_uninview_background</key>
 	<true/>
 	<key>dcloud_uniplugins</key>

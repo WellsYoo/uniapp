@@ -327,21 +327,6 @@
 		4F4C64582465600B006A13AA /* H5WEEngineExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WEEngineExport.h; sourceTree = "<group>"; };
 		4F4C64592465600B006A13AA /* PDRCoreAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCoreAppInfo.h; sourceTree = "<group>"; };
 		4F4C645A2465600B006A13AA /* PDRToolSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRToolSystem.h; sourceTree = "<group>"; };
-		4F4C645C2465600B006A13AA /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
-		4F4C645D2465600B006A13AA /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
-		4F4C645E2465600B006A13AA /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
-		4F4C645F2465600B006A13AA /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
-		4F4C64602465600B006A13AA /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
-		4F4C64612465600B006A13AA /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
-		4F4C64622465600B006A13AA /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
-		4F4C64632465600B006A13AA /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
-		4F4C64642465600B006A13AA /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
-		4F4C64652465600B006A13AA /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
-		4F4C64662465600B006A13AA /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
-		4F4C64672465600B006A13AA /* DCUIViewControllerHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUIViewControllerHUD.h; sourceTree = "<group>"; };
-		4F4C64682465600B006A13AA /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
-		4F4C64692465600B006A13AA /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		4F4C646A2465600B006A13AA /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		4F4C646B2465600B006A13AA /* PDRCoreAppFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCoreAppFrame.h; sourceTree = "<group>"; };
 		4F4C646D2465600B006A13AA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		4F4C646E2465600B006A13AA /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -912,7 +897,6 @@
 				4F4C64582465600B006A13AA /* H5WEEngineExport.h */,
 				4F4C64592465600B006A13AA /* PDRCoreAppInfo.h */,
 				4F4C645A2465600B006A13AA /* PDRToolSystem.h */,
-				4F4C645B2465600B006A13AA /* TZImagePickerController */,
 				4F4C646B2465600B006A13AA /* PDRCoreAppFrame.h */,
 				4F4C646C2465600B006A13AA /* Masonry */,
 				4F4C647C2465600B006A13AA /* SVProgressHUD */,
@@ -933,28 +917,6 @@
 			);
 			name = inc;
 			path = ../../SDK/inc;
-			sourceTree = "<group>";
-		};
-		4F4C645B2465600B006A13AA /* TZImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				4F4C645C2465600B006A13AA /* TZPhotoPreviewCell.h */,
-				4F4C645D2465600B006A13AA /* TZPhotoPickerController.h */,
-				4F4C645E2465600B006A13AA /* TZImageManager.h */,
-				4F4C645F2465600B006A13AA /* TZLocationManager.h */,
-				4F4C64602465600B006A13AA /* TZImagePickerController.h */,
-				4F4C64612465600B006A13AA /* TZGifPhotoPreviewController.h */,
-				4F4C64622465600B006A13AA /* TZAssetCell.h */,
-				4F4C64632465600B006A13AA /* TZImageCropManager.h */,
-				4F4C64642465600B006A13AA /* NSBundle+TZImagePicker.h */,
-				4F4C64652465600B006A13AA /* TZAssetModel.h */,
-				4F4C64662465600B006A13AA /* TZVideoPlayerController.h */,
-				4F4C64672465600B006A13AA /* DCUIViewControllerHUD.h */,
-				4F4C64682465600B006A13AA /* TZPhotoPreviewController.h */,
-				4F4C64692465600B006A13AA /* UIView+Layout.h */,
-				4F4C646A2465600B006A13AA /* TZProgressView.h */,
-			);
-			path = TZImagePickerController;
 			sourceTree = "<group>";
 		};
 		4F4C646C2465600B006A13AA /* Masonry */ = {
@@ -1408,8 +1370,8 @@
 				ORGANIZATIONNAME = DCloud;
 				TargetAttributes = {
 					8EED6297198A1D13000A4449 = {
-						DevelopmentTeam = F4SJKUVG5L;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 22CP63H8NK;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -1680,10 +1642,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "HBuilder/云商知本.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2020;
-				DEVELOPMENT_TEAM = F4SJKUVG5L;
+				DEVELOPMENT_TEAM = 22CP63H8NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1708,8 +1670,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.yunshangzhiben;
 				PRODUCT_NAME = "云商知本";
-				PROVISIONING_PROFILE = "a7e03077-46db-4b91-b0c4-20fd613c1e14";
-				PROVISIONING_PROFILE_SPECIFIER = yunshang_dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 				WRAPPER_EXTENSION = app;
@@ -1725,10 +1686,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "HBuilder/云商知本.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2020;
-				DEVELOPMENT_TEAM = F4SJKUVG5L;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1754,7 +1715,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.yunshangzhiben;
 				PRODUCT_NAME = "云商知本";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = yunshang_dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 				WRAPPER_EXTENSION = app;

@@ -1,0 +1,180 @@
+.wrap-header {
+	height: 40px;
+}
+
+.wrap-header.ios {
+	height: 60px;
+}
+
+.van-nav-bar.ios {
+	height: 60px;
+	padding-top: 20px;
+}
+
+.van-hairline--bottom::after {
+	border-bottom-width: 0px;
+}
+
+.van-nav-bar {
+	/* #ifdef MP-WEIXIN */
+	background: url(https://qiniu.syh32.com/syh/xcx/tuangou-header.png) center no-repeat;
+	/* #endif */
+	/* #ifndef MP-WEIXIN */
+	background: url(../../../appimages/images/tuangou-header.png) center no-repeat;
+	/* #endif */
+	background-size: 100% 100%;
+	box-shadow: -5px 0px 13px 3px rgba(148, 148, 148, 0.13);
+	line-height: 40px;
+	height: 40px;
+}
+
+.van-nav-bar__text,
+.van-nav-bar .van-icon {
+	color: #fff;
+}
+
+.van-nav-bar__title {
+	font-weight: bold;
+	color: #fff;
+
+}
+
+.wrap-header {
+	z-index: 1;
+}
+
+.wrap-item {
+	margin: 10px 10px 0;
+	background: #fff;
+	border-radius: #fff;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.item-img {
+	width: 110px;
+	height: 110px;
+	background: url() center no-repeat;
+	background-size: cover;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.goods-title {
+	color: #282526;
+	font-size: 12px;
+}
+.type {
+	font-size: 10px;
+	padding: 1px 8px;
+	color: #fff;
+	background: linear-gradient(90deg,rgba(216,42,68,1) 0%,rgba(222,112,96,1) 100%);
+	border-radius: 40px;
+	margin: 6px 8px 0 0;
+}
+.price {
+	color: #A0271E;
+	font-size: 18px;
+	font-weight: bold;
+}
+.price text {
+	position: relative;
+	top: 4px;
+}
+.del-price text {
+	position: relative;
+	top: 2px;
+}
+.price em,.del-price {
+	font-size: 13px;
+	color: #AAAAAA;
+	text-decoration: line-through;
+}
+.miaosha-type {
+	background: #FE137C;
+}
+.miaosha-btn {
+	width: 84px;
+	color: #FE137C;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px solid #FE137C;
+	border-radius: 20px;
+}
+/deep/ .van-progress {
+	height: 8px;
+	border-radius: 4px;
+	margin-top: 6px;
+	background-color: rgba(254,19,124,0.1);
+}
+.manjian-type {
+	background:linear-gradient(166deg,rgba(251,63,63,1),rgba(233,3,3,1));
+}
+.manjian-btn {
+	width: 68px;
+	height: 25px;
+	background:linear-gradient(166deg,rgba(251,63,63,1),rgba(233,3,3,1));
+	border-radius:25px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+}
+.van-nav-bar__left {
+	left: 0;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+.wrap-miaosha-time {
+	    /* background: url(../../../appimages/images/miaosha-header.png) center no-repeat; */
+    background-size: 100% 100%;
+    height: 60px;
+}
+.wrap-miaosha-time>div {
+	width: 80px;
+	opacity: 0.6;
+}
+.wrap-miaosha-time>div.on {
+	opacity: 1;
+}
+.changci-tip {
+	font-size: 12px;
+}
+.changci {
+	font-size: 20px;
+}
+.van-swipe {
+	padding: 10px 0;
+	/* overflow: auto; */
+	height: 140px;
+	margin: auto;
+	background: #fff;
+}
+
+.swipe-bg {
+	background: url() center no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin: 0 20px;
+	border-radius: 6px;
+}
+.wrap-tab {
+	position: fixed;
+	top: 44px;
+	left: 0;
+	right: 0;
+	overflow-x: scroll;
+	height: 40px;
+	z-index: 11;
+	background: url() center no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -5px 0px 13px 3px rgba(148, 148, 148, 0.13);
+    line-height: 40px;
+}
+.wrap-tab span {
+	padding: 0 10px;
+	min-width: 70px;
+	opacity: 0.8;
+}
+.wrap-tab span.on {
+	opacity: 1;
+	font-weight: bold;
+}
