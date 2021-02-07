@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
-	<string>乐淘</string>
+	<string>项少龙</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -36,11 +36,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>乐淘需要您的允许才能正常使用相机，用于拍摄图片进行头像上传，产品图上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像。</string>
+	<string>项少龙需要您的允许才能正常使用相机，用于拍摄图片进行头像上传，产品图上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像。</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>乐淘需要您的允许才能正常使用麦克风，用于录制产品视频。若不允许，相机将无法正常使用，无法录制视频上传。</string>
+	<string>项少龙需要您的允许才能正常使用麦克风，用于录制产品视频。若不允许，相机将无法正常使用，无法录制视频上传。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>乐淘需要您的允许才能正常使用相册，用于选择图片进行头像上传，产品图上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像</string>
+	<string>项少龙需要您的允许才能正常使用相册，用于选择图片进行头像上传，产品图上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像</string>
 	<key>StatusBarBackground</key>
 	<string>#FFFFFF</string>
 	<key>UIApplicationShortcutItems</key>
