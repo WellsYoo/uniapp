@@ -1437,8 +1437,8 @@
 				ORGANIZATIONNAME = DCloud;
 				TargetAttributes = {
 					8EED6297198A1D13000A4449 = {
-						DevelopmentTeam = K9KMYC6AY8;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = QWDQBH43YB;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -1711,11 +1711,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 30500;
-				DEVELOPMENT_TEAM = K9KMYC6AY8;
+				DEVELOPMENT_TEAM = QWDQBH43YB;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1747,10 +1747,9 @@
 					"-llibOauth",
 					"-lWXOauth",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.taohuo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengyu.taohuoxxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a7e03077-46db-4b91-b0c4-20fd613c1e14";
-				PROVISIONING_PROFILE_SPECIFIER = dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 				WRAPPER_EXTENSION = app;
