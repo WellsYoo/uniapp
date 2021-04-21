@@ -8,7 +8,7 @@
 
 #import "NCWWidgetInfoManager.h"
 #import <AddressBook/AddressBook.h>
-#import "NCWDialog.h"
+#import "FSDialog.h"
 //#import "MEAddressBookManager.h"
 //#import "BehaviorStat.h"
 
@@ -195,7 +195,7 @@ DEF_SINGLETON(MEWidgetInfoManager)
                 case MEPersonContactTypePhone:
                 case MEPersonContactTypeMSG:
                 {
-                    NCWWidgetPerson * person = [[NCWWidgetPerson alloc] initWithData:item];
+                    SFWWidgetPerson * person = [[SFWWidgetPerson alloc] initWithData:item];
                     if (person) {
                         [_personList addObject:person];
                     }
@@ -204,7 +204,7 @@ DEF_SINGLETON(MEWidgetInfoManager)
                 }
                 case NCWApplication:
                 {
-                    NCWApplicationItem *appItem = [[NCWApplicationItem alloc] initWithDictionary:item];
+                    YXpplicationItem *appItem = [[YXpplicationItem alloc] initWithDictionary:item];
                     if (appItem) {
                         [_personList addObject:appItem];
                     }
@@ -222,12 +222,12 @@ DEF_SINGLETON(MEWidgetInfoManager)
 {
     NSMutableArray * infoList = [[NSMutableArray alloc] init];
     for (id item in self.personList) {
-        if ([item isKindOfClass:[NCWWidgetPerson class]]) {
-            NCWWidgetPerson *person = (NCWWidgetPerson *)item;
+        if ([item isKindOfClass:[SFWWidgetPerson class]]) {
+            SFWWidgetPerson *person = (SFWWidgetPerson *)item;
             NSDictionary * personInfo = [person personInfoForWidget];
             [infoList addObject:personInfo];
         }else {
-            NCWApplicationItem *appItem = (NCWApplicationItem *)item;
+            YXpplicationItem *appItem = (YXpplicationItem *)item;
             NSDictionary *appInfo = [appItem applicationInfoForWidget];
             [infoList addObject:appInfo];
         }
@@ -258,8 +258,8 @@ DEF_SINGLETON(MEWidgetInfoManager)
         //添加联系人对象到列表
         [self.personList addObject:ncwItem];
     }
-    if (contain && [ncwItem isKindOfClass:[NCWWidgetPerson class]] ) {
-        [NCWDialog toast:@"您已添加过此号码！"];
+    if (contain && [ncwItem isKindOfClass:[SFWWidgetPerson class]] ) {
+        [FSDialog toast:@"您已添加过此号码！"];
     }
     if (save) {
        succeed = [self saveToWidget];
@@ -274,15 +274,15 @@ DEF_SINGLETON(MEWidgetInfoManager)
     BOOL succeed;
     __block NSInteger index = -1;
     [self.personList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[NCWWidgetPerson class]]&&[ncwItem isKindOfClass:[NCWWidgetPerson class]]) {
+        if ([obj isKindOfClass:[SFWWidgetPerson class]]&&[ncwItem isKindOfClass:[SFWWidgetPerson class]]) {
             
-            NCWWidgetPerson * tmpPerson = (NCWWidgetPerson *)obj;
-            if ( [tmpPerson isEqualToPerson:(NCWWidgetPerson *)ncwItem]) {
+            SFWWidgetPerson * tmpPerson = (SFWWidgetPerson *)obj;
+            if ( [tmpPerson isEqualToPerson:(SFWWidgetPerson *)ncwItem]) {
                 index = idx;
                 *stop = YES;
             }
 
-        }else if([obj isKindOfClass:[NCWApplicationItem class]]&&[ncwItem isKindOfClass:[NCWApplicationItem class]]){
+        }else if([obj isKindOfClass:[YXpplicationItem class]]&&[ncwItem isKindOfClass:[YXpplicationItem class]]){
             if ([obj isEqual:ncwItem]) {
                 index = idx;
                 *stop = YES;
@@ -352,15 +352,15 @@ DEF_SINGLETON(MEWidgetInfoManager)
 {
     __block BOOL contain = NO;
     [self.personList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[NCWWidgetPerson class]]&&[ncwItem isKindOfClass:[NCWWidgetPerson class]]) {
-            NCWWidgetPerson * tmpPerson = (NCWWidgetPerson *)obj;
-            if ([tmpPerson isEqualToPerson:(NCWWidgetPerson *)ncwItem]) {
+        if ([obj isKindOfClass:[SFWWidgetPerson class]]&&[ncwItem isKindOfClass:[SFWWidgetPerson class]]) {
+            SFWWidgetPerson * tmpPerson = (SFWWidgetPerson *)obj;
+            if ([tmpPerson isEqualToPerson:(SFWWidgetPerson *)ncwItem]) {
                 contain = YES;
                 *stop = YES;
             }
-        }else if([obj isKindOfClass:[NCWApplicationItem class]]&&[ncwItem isKindOfClass:[NCWApplicationItem class]])
+        }else if([obj isKindOfClass:[YXpplicationItem class]]&&[ncwItem isKindOfClass:[YXpplicationItem class]])
         {
-            NCWApplicationItem * tmpApp = (NCWApplicationItem *)obj;
+            YXpplicationItem * tmpApp = (YXpplicationItem *)obj;
             if ([tmpApp isEqual:ncwItem]) {
                 contain = YES;
                 *stop = YES;
@@ -448,7 +448,7 @@ DEF_SINGLETON(MEWidgetInfoManager)
 
 NSString *const ApplicationRequestQueueAppItem = @"ApplicationRequestQueueAppItem";
 NSString *const ApplicationRequestQueueBlock = @"ApplicationRequestQueueBlock";
-- (void)requestApplicationInfo:(NCWApplicationItem *)appItem complete:(NCWApplicationInfoResponse)applicationInfo
+- (void)requestApplicationInfo:(YXpplicationItem *)appItem complete:(NCWApplicationInfoResponse)applicationInfo
 {
     NSDictionary *queue = @{ApplicationRequestQueueAppItem:appItem,
                             ApplicationRequestQueueBlock:applicationInfo};
@@ -463,7 +463,7 @@ NSString *const ApplicationRequestQueueBlock = @"ApplicationRequestQueueBlock";
 
 - (void)startRequest:(NSDictionary *)requestInfo
 {
-    NCWApplicationItem *appItem = [requestInfo objectForKey:ApplicationRequestQueueAppItem];
+    YXpplicationItem *appItem = [requestInfo objectForKey:ApplicationRequestQueueAppItem];
     NCWApplicationInfoResponse responseBlock = (NCWApplicationInfoResponse)[requestInfo objectForKey:ApplicationRequestQueueBlock];
     if ([appItem.appId integerValue] && !appItem.isLoaded) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

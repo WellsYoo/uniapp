@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NCWBaseViewController.h"
+#import "FSFViewController.h"
 
-@interface NCWHomeViewController : NCWBaseViewController
+@interface NCWHomeViewController : FSFViewController
 
 
 @end

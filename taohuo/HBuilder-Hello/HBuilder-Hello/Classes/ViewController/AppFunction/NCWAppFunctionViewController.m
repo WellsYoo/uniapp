@@ -8,13 +8,13 @@
 
 #import "NCWAppFunctionViewController.h"
 #import "NCWApplicationViewController.h"
-#import "NCWSystemtViewController.h"
+#import "SFSstemtViewController.h"
 
-#import "NCWBaseNavigationController.h"
+#import "FSaseNavigationController.h"
 #import "NCWWidgetInfoManager.h"
-#import "NCWReallyManager.h"
+#import "DFReallyManager.h"
 
-#import "NCWDialog.h"
+#import "FSDialog.h"
 
 @interface NCWAppFunctionViewController () <NCWBaseAppViewControllerDelegate,
 //                                            UISearchBarDelegate,
@@ -42,7 +42,7 @@
 {
     self = [super init];
     if (self) {
-        BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+        BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
         if (shouldBeReally) {
             _listHeadTitles = @[@"已安装应用", @"系统应用"];
         }else {
@@ -63,21 +63,21 @@
     _selectedApps = [NSMutableArray array];
     _removeApps = [NSMutableArray array];
     for (id item in [[NCWWidgetInfoManager sharedInstance] personListAtWidget]) {
-        if ([item isKindOfClass:[NCWApplicationItem class]]) {
+        if ([item isKindOfClass:[YXpplicationItem class]]) {
             [_selectedApps addObject:item];
         }
     }
     
     //NavigationController
-    NCWBaseNavigationController *navigationController = (NCWBaseNavigationController *)self.navigationController;
+    FSaseNavigationController *navigationController = (FSaseNavigationController *)self.navigationController;
     [navigationController addPartingLine];
     
     //是否变身
-    BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         self.title = @"选择APP和功能";
         
-        _listHeadView = [[NCWListHeadView alloc] initWithFrame:CGRectMake(12, 0, CGRectGetWidth(self.view.frame) - 2 * 12, kListHeadHeight)];
+        _listHeadView = [[YOListHeadView alloc] initWithFrame:CGRectMake(12, 0, CGRectGetWidth(self.view.frame) - 2 * 12, kListHeadHeight)];
         _listHeadView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
         _listHeadView.clipsToBounds = YES;
         _listHeadView.listDelegate = self;
@@ -85,11 +85,11 @@
         _listHeadView.defaultIndex = 0;
         [self.view addSubview:_listHeadView];
         
-        _listBodyView = [[NCWListBodyView alloc] initWithFrame:CGRectMake(0, kListHeadHeight, CGRectGetWidth(self.view.frame),
+        _listBodyView = [[YOListBodyView alloc] initWithFrame:CGRectMake(0, kListHeadHeight, CGRectGetWidth(self.view.frame),
                                                                           CGRectGetHeight(self.view.frame) - kListHeadHeight)];
     }else {
         self.title = @"选择功能";
-        _listBodyView = [[NCWListBodyView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame),
+        _listBodyView = [[YOListBodyView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame),
                                                                           CGRectGetHeight(self.view.frame))];
     }
     
@@ -201,12 +201,12 @@
     return [_listHeadTitles count];
 }
 
-- (NSInteger)listHeadView:(NCWListHeadView *)listHeadView forWidth:(NSInteger)index
+- (NSInteger)listHeadView:(YOListHeadView *)listHeadView forWidth:(NSInteger)index
 {
     return 100;
 }
 
-- (void)listHeadView:(NCWListHeadView *)listHeadView press:(UIButton *)sender
+- (void)listHeadView:(YOListHeadView *)listHeadView press:(UIButton *)sender
 {
     [_listBodyView scrollToIndex:sender.tag];
 }
@@ -223,18 +223,18 @@
     }
 }
 
-- (id)forListBodyView:(NCWListBodyView *)view index:(NSInteger)index
+- (id)forListBodyView:(YOListBodyView *)view index:(NSInteger)index
 {
     //是否变身
-    BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         NCWBaseAppViewController *viewController = nil;
         switch (index) {
             case 0:
-                viewController = [[NCWApplicationViewController alloc] init];
+                viewController = [[NCWAppFunctionViewController alloc] init];
                 break;
             case 1:
-                viewController = [[NCWSystemtViewController alloc] init];
+                viewController = [[NCWBaseAppViewController alloc] init];
                 break;
         }
         viewController.delegate = self;
@@ -242,7 +242,7 @@
         [_listBodyViewControllers addObject:viewController];
         return viewController;
     }else {
-        NCWBaseAppViewController *viewController = viewController = [[NCWSystemtViewController alloc] init];
+        NCWBaseAppViewController *viewController = viewController = [[NCWBaseAppViewController alloc] init];
         viewController.delegate = self;
         viewController.superNavigationController = self.navigationController;
         [_listBodyViewControllers addObject:viewController];
@@ -269,7 +269,7 @@
 - (NSArray *)applicationController:(NCWBaseAppViewController *)appController selecedAppsWhichIsSystem:(BOOL)isSystem
 {
     NSMutableArray *selectedApps = [NSMutableArray array];
-    for (NCWApplicationItem *appItem in _selectedApps) {
+    for (YXpplicationItem *appItem in _selectedApps) {
         if (isSystem) {
             if (appItem.isSystemApp) {
                 [selectedApps addObject:appItem];
@@ -283,7 +283,7 @@
     return selectedApps;
 }
 
-- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(NCWApplicationItem *)appItem
+- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(YXpplicationItem *)appItem
 {
     if (appItem.isChecked) {
         if (![_selectedApps containsObject:appItem]) {
@@ -299,13 +299,13 @@
 {
     NSInteger numOfItem = 0;
     for (id item in [[NCWWidgetInfoManager sharedInstance] personListAtWidget]) {
-        if (![item isKindOfClass:[NCWApplicationItem class]]) {
+        if (![item isKindOfClass:[YXpplicationItem class]]) {
             numOfItem++;
         }
     }
     numOfItem += _selectedApps.count;
     if (numOfItem >= kNotificationItemMaxNum) {
-        [NCWDialog toast:@"当前数量已达到上限"];
+        [FSDialog toast:@"当前数量已达到上限"];
         return NO;
     }else {
         return YES;
@@ -331,10 +331,10 @@
 
 - (void)doneButtonPressHandler:(id)sender
 {
-    for (NCWApplicationItem *appItem in _selectedApps) {
+    for (YXpplicationItem *appItem in _selectedApps) {
         [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
     }
-    for (NCWApplicationItem *appItem in _removeApps) {
+    for (YXpplicationItem *appItem in _removeApps) {
         [[NCWWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
     }
     [[NCWWidgetInfoManager sharedInstance] saveToWidget];

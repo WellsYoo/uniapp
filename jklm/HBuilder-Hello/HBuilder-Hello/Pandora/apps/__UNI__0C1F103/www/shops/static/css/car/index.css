@@ -1,0 +1,181 @@
+.contain {
+}
+.car-footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	height: 50px;
+	background: #fff;
+	padding-left: 10px;
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+	z-index: 1111;
+	box-sizing: content-box;
+}
+.delcar-btn {
+	font-size: 16px;
+	padding-left: 18px;
+	padding-right: 10px;
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/shops-del.png) left center no-repeat;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/shops-del.png) left center no-repeat;
+	 /* #endif */
+	background-size: 15px auto;
+	width: 20px;
+	height: 44px;
+	line-height: 44px;
+	color: #000;
+	z-index: 9999;
+}
+.tongcheng-tip {
+	font-size: 10px;
+	color: #fff;
+	background: #111111;
+	padding: 2px 6px;
+	border-radius: 2px;
+	margin-right: 4px;
+	position: relative;
+	top: -1px;
+}
+.pay-btn {
+	width: 150px;
+	height: 50px;
+	color: #EEEEEE;
+	font-weight: 500; 
+	border-radius:35px 0px 0px 0px;
+}
+.choose-all {
+	color: #888888;
+	font-weight: 500;
+	margin-right: 10px;
+}
+.choose-all i {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 1px solid #BFBFBF;
+}
+.choose-all i.on {
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/choose-on.png) center no-repeat;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/choose-on.png) center no-repeat;
+	 /* #endif */
+	background-size: 15px;
+	border: none;
+}
+.car-nodata {
+	height: 200px;
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/car-nodata.png) center no-repeat;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/car-nodata.png) center no-repeat;
+	 /* #endif */
+	background-size: 160px;
+	color: #999999;
+	font-size: 12px;
+	padding-top: 180px;
+	margin-top: 30px;
+	text-align: center;
+}
+.shops-name {
+	height: 40px;
+	padding-left: 10px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.wrap-slide {
+	width: 140px;
+	height: 100%;
+}
+.wrap-slide div {
+	background: #333333;
+	color: #fff;
+	font-size: 12px;
+}
+.wrap-slide div:last-child {
+	background-color: #A0271E;
+}
+.wrap-goods {
+	padding: 10px 10px 10px 0px;
+	margin: 0 0px 0 10px;
+	border-bottom: 1upx solid #f4f4f4;
+}
+.goods-img {
+	width: 80px;
+	height: 80px;
+	background: url() center no-repeat;
+	background-size: cover;
+	margin-right: 6px;
+	border-radius: 6px;
+}
+.wrap-goods-num .btn {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: #ccc;
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/buy-reduce.png) no-repeat center ;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/buy-reduce.png) no-repeat center ;
+	 /* #endif */
+	background-size: contain;
+}
+.wrap-goods-num .btn:last-child {
+	/* #ifdef MP-WEIXIN */
+	 background-image: url(https://qiniu.syh32.com/syh/xcx/buy-add.png);
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background-image: url(../../../appimages/images/buy-add.png);
+	 /* #endif */
+	color: #fff;
+}
+
+	.buy-reduce {
+		/* #ifdef MP-WEIXIN */
+		 background: url(https://qiniu.syh32.com/syh/xcx/buy-reduce.png) no-repeat center ;
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background: url(../../../appimages/images/buy-reduce.png) no-repeat center ;
+		 /* #endif */
+		background-size: contain;
+	}
+	.buy-add {
+		/* #ifdef MP-WEIXIN */
+		 background: url(https://qiniu.syh32.com/syh/xcx/buy-add.png) no-repeat center ;
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background: url(../../../appimages/images/buy-add.png) no-repeat center ;
+		 /* #endif */
+		background-size: contain;
+	}
+.goods-guige {
+	    padding: 2px 4px;
+    background: #f4f4f4;
+    border-radius: 2px;
+    color: #ccc;
+	font-size: 12px;
+	margin-right: 4px;
+}
+.goods-price {
+	color: #A0271E;
+	font-size: 16px;
+}
+.shops-item {
+	margin: 15px;
+	border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+	box-shadow:0px 4px 10px 0px rgba(236,236,236,1);
+}
+.shops-item:last-child {
+	border: none;
+	margin-bottom: 0px;
+}

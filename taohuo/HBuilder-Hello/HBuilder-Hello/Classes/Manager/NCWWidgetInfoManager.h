@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NCWWidgetPerson.h"
+#import "SFWWidgetPerson.h"
 #import <AddressBook/AddressBook.h>
-#import "NCWApplicationItem.h"
+#import "YXpplicationItem.h"
 
 typedef void(^NCWApplicationInfoResponse)(NSDictionary *applicationInfor);
 extern NSString *const ApplicationInfoKeyBundleId;
@@ -164,7 +164,7 @@ AS_SINGLETON(MEWidgetInfoManager)
 /**
  *图标地址获取
  */
-- (void)requestApplicationInfo:(NCWApplicationItem *)appItem complete:(NCWApplicationInfoResponse)applicationInfo;
+- (void)requestApplicationInfo:(YXpplicationItem *)appItem complete:(NCWApplicationInfoResponse)applicationInfo;
 - (void)clearRequestQueue;
 
 

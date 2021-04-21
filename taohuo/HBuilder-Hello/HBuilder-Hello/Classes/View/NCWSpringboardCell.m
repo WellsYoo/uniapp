@@ -8,22 +8,22 @@
 
 #import "NCWSpringboardCell.h"
 #import "NCWWidgetInfoManager.h"
-#import "NCWDrawTextView.h"
-#import "NCWApplicationItem.h"
-#import "NCWIconImageView.h"
+#import "FSXtView.h"
+#import "YXpplicationItem.h"
+#import "YOIconImageView.h"
 
 //#define kIconResourceUrl @"http://exp.pgzs.com/support.ashx?act=710&ids="
 
 @interface NCWSpringboardCell()<UIAlertViewDelegate>
 
 
-@property(nonatomic, strong)NCWIconImageView *portraitView;
+@property(nonatomic, strong)YOIconImageView *portraitView;
 @property(nonatomic, strong)UIButton    *deleteButton;
 @property(nonatomic, strong)UIImageView *deleteButtonImage;
 @property(nonatomic, strong)UILabel     *personNameLabel;
 @property(nonatomic, strong)UIImageView *cornerMarkView;
-@property(nonatomic, strong)NCWWidgetPerson *mPerson;
-@property(nonatomic, strong)NCWApplicationItem *ncwAppItem;
+@property(nonatomic, strong)SFWWidgetPerson *mPerson;
+@property(nonatomic, strong)YXpplicationItem *ncwAppItem;
 
 @end
 
@@ -39,7 +39,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        _portraitView = [[NCWIconImageView alloc] init];
+        _portraitView = [[YOIconImageView alloc] init];
         _portraitView.backgroundColor = [UIColor clearColor];
         _portraitView.layer.cornerRadius = 6.0;
         _portraitView.clipsToBounds = YES;
@@ -80,7 +80,7 @@
 
 - (void)bindPerson:(id )item
 {
-    if ([item isKindOfClass:[NCWWidgetPerson class]]) {
+    if ([item isKindOfClass:[SFWWidgetPerson class]]) {
         _mPerson = item;
         _ncwAppItem = nil;
          _cornerMarkView.hidden = NO;
@@ -94,7 +94,7 @@
             [_cornerMarkView setImage:kNCWBundleImage(@"corner_messageicon.png")];
         }
        
-    }else if([item isKindOfClass:[NCWApplicationItem class]]){
+    }else if([item isKindOfClass:[YXpplicationItem class]]){
         _ncwAppItem = item;
         _mPerson = nil;
         _cornerMarkView.hidden = YES;

@@ -30,7 +30,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-@protocol NCWMBProgressHUDDelegate;
+@protocol FFMBProgressHUDDelegate;
 
 
 typedef enum {
@@ -293,7 +293,7 @@ typedef void (^NCWMBProgressHUDCompletionBlock)();
  *
  * @see MBProgressHUDDelegate
  */
-@property (atomic, MB_WEAK) id<NCWMBProgressHUDDelegate> delegate;
+@property (atomic, MB_WEAK) id<FFMBProgressHUDDelegate> delegate;
 
 /** 
  * An optional short message to be displayed below the activity indicator. The HUD is automatically resized to fit
@@ -403,7 +403,7 @@ typedef void (^NCWMBProgressHUDCompletionBlock)();
 @end
 
 
-@protocol NCWMBProgressHUDDelegate <NSObject>
+@protocol FFMBProgressHUDDelegate <NSObject>
 
 @optional
 

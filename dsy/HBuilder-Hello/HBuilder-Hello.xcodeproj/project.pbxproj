@@ -94,6 +94,8 @@
 		2F3B972725C9523700221170 /* libWeChatSDK_pay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3B972625C9523700221170 /* libWeChatSDK_pay.a */; };
 		2F3B972925C9524200221170 /* libwxpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3B972825C9524200221170 /* libwxpay.a */; };
 		2F62E97E25C81D9E000B7C66 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6595198A574C000A4449 /* CoreLocation.framework */; };
+		2F8D37D025DE6144005D1668 /* DCTZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D37CF25DE6144005D1668 /* DCTZImagePickerController.bundle */; };
+		2F8D37D125DE6174005D1668 /* liblibZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD82C1CB50C4000C0F062 /* liblibZip.a */; };
 		2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDE1569215F468000588710 /* liblibWeex.a */; };
 		4F4C65372465606B006A13AA /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65192465606B006A13AA /* __uniappes6.js */; };
 		4F4C653A2465606B006A13AA /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C651C2465606B006A13AA /* uni-jsframework.js */; };
@@ -288,6 +290,7 @@
 		2F3B972425C9522C00221170 /* liblibPayment.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPayment.a; path = ../SDK/Libs/liblibPayment.a; sourceTree = "<group>"; };
 		2F3B972625C9523700221170 /* libWeChatSDK_pay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK_pay.a; path = ../SDK/Libs/libWeChatSDK_pay.a; sourceTree = "<group>"; };
 		2F3B972825C9524200221170 /* libwxpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwxpay.a; path = ../SDK/Libs/libwxpay.a; sourceTree = "<group>"; };
+		2F8D37CF25DE6144005D1668 /* DCTZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DCTZImagePickerController.bundle; sourceTree = "<group>"; };
 		2FD11BBA215C79C5000A23AD /* liblibAdSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibAdSupport.a; path = ../SDK/Libs/liblibAdSupport.a; sourceTree = "<group>"; };
 		2FDE1569215F468000588710 /* liblibWeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibWeex.a; path = ../SDK/Libs/liblibWeex.a; sourceTree = "<group>"; };
 		4F4C64532465600B006A13AA /* PDRCoreAppWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCoreAppWindow.h; sourceTree = "<group>"; };
@@ -558,6 +561,7 @@
 				24AFD8641CB50C4000C0F062 /* liblibStorage.a in Frameworks */,
 				2F3B972925C9524200221170 /* libwxpay.a in Frameworks */,
 				24AFD8681CB50C4000C0F062 /* liblibXHR.a in Frameworks */,
+				2F8D37D125DE6174005D1668 /* liblibZip.a in Frameworks */,
 				7A1967C3212536EC00B330A9 /* libmp3lame.a in Frameworks */,
 				24AFD86B1CB50C4000C0F062 /* libopencore-amrnb.a in Frameworks */,
 				24AFD8761CB50C4000C0F062 /* libTouchJSON.a in Frameworks */,
@@ -1097,6 +1101,7 @@
 		8EED628F198A1D13000A4449 = {
 			isa = PBXGroup;
 			children = (
+				2F8D37CF25DE6144005D1668 /* DCTZImagePickerController.bundle */,
 				6731F399232F4F03007838BC /* HBuilder.entitlements */,
 				8EED62A1198A1D13000A4449 /* HBuilder-Hello */,
 				8EED629A198A1D13000A4449 /* Frameworks */,
@@ -1328,6 +1333,7 @@
 				67B7CAA221DCE8180083E96A /* control.xml in Resources */,
 				4F4C65522465606C006A13AA /* weexUniJs.js in Resources */,
 				4F4C65472465606C006A13AA /* unincomponents.ttf in Resources */,
+				2F8D37D025DE6144005D1668 /* DCTZImagePickerController.bundle in Resources */,
 				8EED6590198A3DF7000A4449 /* Pandora in Resources */,
 				4F4C653A2465606B006A13AA /* uni-jsframework.js in Resources */,
 			);
@@ -1499,7 +1505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1534,7 +1540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1552,7 +1558,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.1.0;
 				DEVELOPMENT_TEAM = 22CP63H8NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1579,7 +1585,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chyuthink.dsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1601,7 +1607,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.1.0;
 				DEVELOPMENT_TEAM = 22CP63H8NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1628,7 +1634,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chyuthink.dsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

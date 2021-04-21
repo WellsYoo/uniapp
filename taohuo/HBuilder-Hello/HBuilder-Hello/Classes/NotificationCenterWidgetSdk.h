@@ -61,12 +61,13 @@ blue:((float)(0x##rgbValue & 0xFF)) / 255.0 alpha:alphaValue]
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import "UIColor+NCWTool.h"
-#import "NCWListHeadView.h"
-#import "NCWSoftwareIconButton.h"
-#import "NCWIconImageView.h"
+#import "YOListHeadView.h"
+#import "YCtwareIconButton.h"
+#import "YOIconImageView.h"
 #import "AMTagView.h"
 #import "ESTabBarController.h"
 #import "Masonry.h"
+
 #endif
 
 

@@ -1,0 +1,60 @@
+PODS:
+  - DCAnimationKit (0.0.6)
+  - FrameAccessor (2.0)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - JGProgressHUD (2.0.4)
+  - JTCalendar (2.2.6)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.17)
+  - Reachability (3.2)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - DCAnimationKit
+  - FrameAccessor (~> 2.0)
+  - IGListKit (~> 3.4.0)
+  - JGProgressHUD (~> 2.0.3)
+  - JTCalendar (~> 2.0)
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.12)
+  - Reachability
+  - SDWebImage (~> 4.0)
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - DCAnimationKit
+    - FrameAccessor
+    - IGListKit
+    - JGProgressHUD
+    - JTCalendar
+    - Masonry
+    - MJRefresh
+    - Reachability
+    - SDWebImage
+    - YYKit
+
+SPEC CHECKSUMS:
+  DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  JTCalendar: 1b326e0d59dd1855b52c5f3feb059d2ff953805d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: baaffcc62ecdc881d387fec38405aa42685294ca
+
+COCOAPODS: 1.10.1

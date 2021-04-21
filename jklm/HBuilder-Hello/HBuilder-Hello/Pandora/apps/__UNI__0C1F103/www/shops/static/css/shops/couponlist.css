@@ -1,0 +1,111 @@
+.wrap-info {
+	position: fixed;
+	top: 80px;
+	bottom: 70px;
+	left: 14px;
+	right: 14px;
+	box-shadow:-2px 0px 10px 1px rgba(186,186,186,0.3);
+	border-radius:10px;
+	background-color: #fff;
+	padding: 10px;
+	overflow-y: scroll;
+}
+.wrap-info1 {
+	box-shadow:-2px 0px 10px 1px rgba(186,186,186,0.3);
+	border-radius:10px;
+	background-color: #fff;
+	padding: 0 10px;
+	margin: 10px 14px; 
+}
+
+
+.desc img {
+		width: 100%;
+	}
+	.wrap-shops-couppon {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		background: #fff;
+		padding: 10px;
+	}
+	.coupon-title {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.coupon-item,.coupon-item.on {
+		height: 100px;
+		/* #ifdef MP-WEIXIN */
+		 background: url(https://qiniu.syh32.com/syh/xcx/detail-coupon-on.png) center no-repeat;
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background: url(../../../appimages/images/detail-coupon-on.png) center no-repeat;
+		 /* #endif */
+		background-size: 100% auto;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.coupon-item {
+		/* #ifdef MP-WEIXIN */
+		 background-image: url(https://qiniu.syh32.com/syh/xcx/detail-coupon.png);
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background-image: url(../../../appimages/images/detail-coupon.png);
+		 /* #endif */
+	}
+	.coupon-info {
+		width: 66%;
+		padding: 10px;
+	}
+	.coupon-info h4 {
+		font-size: 16px;
+		line-height: 1.1;
+	}
+	.coupon-info p {
+		font-size: 12px;
+		margin-top: 4px;
+	}
+	.coupon-done {
+		color: #EEEEEE;
+		font-size: 500;
+		font-size: 15px;
+		height: 36px;
+		background:linear-gradient(-90deg,rgba(255,1,43,1),rgba(255,133,2,1));
+		border-radius: 20px;
+		margin-top: 20px;
+	}
+	.back {
+		position: fixed;
+		top: 20px;
+		padding-left: 10px;
+		padding-right: 30px;
+	}
+	
+	@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+		.back {
+			top:  44px;
+		}
+		.wrap-info {
+			top: 100px;
+		}
+	}
+	
+	@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+		.back {
+			top:  44px;
+		}
+		.wrap-info {
+			top: 100px;
+		}
+	
+	}
+	
+	@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+		.back {
+			top:  44px;
+		}
+		.wrap-info {
+			top: 100px;
+		}
+	
+	}

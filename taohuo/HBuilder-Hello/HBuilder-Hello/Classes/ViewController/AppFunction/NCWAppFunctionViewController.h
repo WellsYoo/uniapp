@@ -6,16 +6,16 @@
 //  Copyright © 2015年 YWH. All rights reserved.
 //
 
-#import "NCWBaseViewController.h"
-#import "NCWListHeadView.h"
-#import "NCWListBodyView.h"
+#import "FSFViewController.h"
+#import "YOListHeadView.h"
+#import "YOListBodyView.h"
 
 #define kHeadViewHeight (45 * (SCREEN_WIDTH / 320))
 
-@interface NCWAppFunctionViewController : NCWBaseViewController <NCWListHeadViewDelegate, NCWListBodyViewDelegate>
+@interface NCWAppFunctionViewController : FSFViewController <NCWListHeadViewDelegate, NCWListBodyViewDelegate>
 {
-    NCWListHeadView *_listHeadView;
-    NCWListBodyView *_listBodyView;
+    YOListHeadView *_listHeadView;
+    YOListBodyView *_listBodyView;
     
     NSArray        *_listHeadTitles;
     NSMutableArray *_listBodyViewControllers;

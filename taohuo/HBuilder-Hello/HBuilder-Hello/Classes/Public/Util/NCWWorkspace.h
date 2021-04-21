@@ -1,7 +1,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NCWAppWorkspace : NSObject {
+@interface WFAppWorkspace : NSObject {
     
 }
 

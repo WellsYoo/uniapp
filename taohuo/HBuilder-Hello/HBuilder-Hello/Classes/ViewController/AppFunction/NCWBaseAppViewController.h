@@ -6,11 +6,11 @@
 //  Copyright © 2015年 YWH. All rights reserved.
 //
 
-#import "NCWBaseViewController.h"
+#import "FSFViewController.h"
 #import "pinyin.h"
 
-#import "NCWApplicationItem.h"
-#import "NCWSoftwareTableViewCell.h"
+#import "YXpplicationItem.h"
+#import "YOTableViewCell.h"
 
 #define kGroupSectionTitle @"GroupSectionTitle"
 #define kGroupItems        @"GroupItems"
@@ -26,7 +26,7 @@
 
 @optional
 
-- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(NCWApplicationItem *)appItem;
+- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(YXpplicationItem *)appItem;
 
 - (BOOL)applicationControllerBeginSearch;
 - (NSString *)applicationControllerSearchKeyWord;
@@ -34,7 +34,7 @@
 
 @end
 
-@interface NCWBaseAppViewController : NCWBaseViewController <UITableViewDataSource, UITableViewDelegate,
+@interface NCWBaseAppViewController : FSFViewController <UITableViewDataSource, UITableViewDelegate,
                                                           NCWSoftwareTableViewCellDelegate>
 {
     UITableView               *_tableView;

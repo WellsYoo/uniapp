@@ -1,0 +1,8 @@
+<template name="f269f98a">
+  <view class="_view data-v-0362930a">
+    <button bindtap="handleProxy" data-eventid="{{'7Tg-0'}}" data-comkey="{{$k}}" class="_button data-v-0362930a">PluginTestFunction</button>
+    <button bindtap="handleProxy" data-eventid="{{'ZYI-1'}}" data-comkey="{{$k}}" class="_button data-v-0362930a">PluginTestFunctionArrayArgu</button>
+    <button bindtap="handleProxy" data-eventid="{{'3n0-2'}}" data-comkey="{{$k}}" class="_button data-v-0362930a">PluginTestFunctionSync</button>
+    <button bindtap="handleProxy" data-eventid="{{'DSZ-3'}}" data-comkey="{{$k}}" class="_button data-v-0362930a">PluginTestFunctionSyncArrayArgu</button>
+  </view>
+</template>

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NCWWidgetPerson.h"
+#import "SFWWidgetPerson.h"
 
 @protocol GSSpringboardCellDelegate;
 
@@ -16,7 +16,7 @@
 @property (nonatomic,assign) BOOL sbEditing;
 @property (nonatomic,weak) id<GSSpringboardCellDelegate> delegate;
 
-- (void)bindPerson:(NCWWidgetPerson *)person;
+- (void)bindPerson:(SFWWidgetPerson *)person;
 @end
 
 @protocol GSSpringboardCellDelegate <NSObject>

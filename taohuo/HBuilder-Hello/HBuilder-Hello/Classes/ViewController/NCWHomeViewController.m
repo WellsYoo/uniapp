@@ -8,19 +8,18 @@
 
 #import "NCWHomeViewController.h"
 #import "NCWSpringboardCell.h"
-#import "NCWSpringboardLayout.h"
+#import "FSpringboardLayout.h"
 #import "NCWWidgetInfoManager.h"
 #import "NCWCollectionHeadView.h"
-#import "NCWBaseNavigationController.h"
+#import "FSaseNavigationController.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "NCWAppFunctionViewController.h"
-#import "NCWDialog.h"
-#import "NCWReallyManager.h"
-#import "NCWAdImageView.h"
-#import "NYAlertViewController.h"
-#import "GCDAsyncSocket.h"
-#import "UIScrollView+EmptyDataSet.h"
+#import "FSDialog.h"
+#import "DFReallyManager.h"
+
+#import "YOAlertViewController.h"
+
 
 #define NCWCollectionViewCellIdentifier     @"NCWCollectionViewCellIdentifier"
 #define NCWCollectionViewHeadIdentifier    @"NCWCollectionViewHeadIdentifier"
@@ -49,11 +48,11 @@ typedef NS_ENUM(NSInteger, ContactState)
 @property(nonatomic, strong)UIView           *bottomView;
 @property(nonatomic, strong)UIButton         *bottomButton;
 @property(nonatomic, strong)UIView           *bottomSeparateLine;
-@property(nonatomic, strong)NCWWidgetPerson   *meWidgetPerson;
+@property(nonatomic, strong)SFWWidgetPerson   *meWidgetPerson;
 @property(nonatomic, strong)NSMutableArray   *phoneNumberArray;
 @property(nonatomic, strong)NSMutableArray   *phoneNumberTypeArray;
 @property (nonatomic,assign) NCWType         contactType; //号码用途
-@property (nonatomic, strong) NCWAdImageView *adView;
+@property (nonatomic, strong) UIImageView *adView;
 
 @end
 
@@ -83,7 +82,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     
     CGRect f1 = bounds;
     f1.size.height =f1.size.height  - kHomeBottomViewHeight;
-    if (![NCWReallyManager sharedInstance].shouleBeReally) {
+    if (![DFReallyManager sharedInstance].shouleBeReally) {
         f1.size.height = f1.size.height - 50*kScreenWidth/320;
     }
     _collectionView.frame = f1;
@@ -136,10 +135,10 @@ typedef NS_ENUM(NSInteger, ContactState)
 #pragma mark -Private Method
 
 -(void)__buildView{
-    [((NCWBaseNavigationController *)self.navigationController) addPartingLine];
+    [((FSaseNavigationController *)self.navigationController) addPartingLine];
     
     
-    NCWSpringboardLayout * layout = [[NCWSpringboardLayout alloc] initWithType:GS_SBLayoutTypeScroll];
+    FSpringboardLayout * layout = [[FSpringboardLayout alloc] initWithType:GS_SBLayoutTypeScroll];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.backgroundColor = colorWithRGB(efeff4);
     self.collectionView.dataSource = self;
@@ -177,8 +176,8 @@ typedef NS_ENUM(NSInteger, ContactState)
     [_bottomButton addTarget:self action:@selector(editStateChange:) forControlEvents:UIControlEventTouchUpInside];
     [_bottomView addSubview:_bottomButton];
 
-    if (![NCWReallyManager sharedInstance].shouleBeReally){
-        _adView = [[NCWAdImageView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kHomeBottomViewHeight, kScreenWidth, 50*kScreenWidth/320)];
+    if (![DFReallyManager sharedInstance].shouleBeReally){
+        _adView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kHomeBottomViewHeight, kScreenWidth, 50*kScreenWidth/320)];
         [self.view insertSubview:_adView aboveSubview:_collectionView];
     }
     
@@ -394,7 +393,7 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController*)peoplePicker didSelectPerson:(ABRecordRef)person{
     
-    _meWidgetPerson = [NCWWidgetPerson emptyPerson];
+    _meWidgetPerson = [SFWWidgetPerson emptyPerson];
     _meWidgetPerson = [_meWidgetPerson initWithABRecordRef:person];
     
     
@@ -402,7 +401,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     ABMultiValueRef phones = ABRecordCopyValue(person, kABPersonPhoneProperty);
     NSInteger phoneCount = ABMultiValueGetCount(phones);
     if (phoneCount == 0) {
-        [NCWDialog toast:@"此联系人号码为空"];
+        [FSDialog toast:@"此联系人号码为空"];
     }
     if (phoneCount == 1) {
         NSString * phoneNumber = CFBridgingRelease(ABMultiValueCopyValueAtIndex(phones, 0));

@@ -337,9 +337,9 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 - (void)done {
 	isFinished = YES;
 	self.alpha = 0.0f;
-	if ([delegate respondsToSelector:@selector(hudWasHidden:)]) {
-		[delegate performSelector:@selector(hudWasHidden:) withObject:self];
-	}
+//	if ([delegate respondsToSelector:@selector(hudWasHidden:)]) {
+//		[delegate performSelector:@selector(hudWasHidden:) withObject:self];
+//	}
 #if NS_BLOCKS_AVAILABLE
 	if (self.completionBlock) {
 		self.completionBlock();
