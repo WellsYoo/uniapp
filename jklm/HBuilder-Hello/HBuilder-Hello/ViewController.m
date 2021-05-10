@@ -14,8 +14,7 @@
 
 @implementation ViewController
 
-- (void)loadView
-{
+- (void)loadView {
     PDRCore *h5Engine = [PDRCore Instance];
     [super loadView];
     [self setStatusBarStyle:h5Engine.settings.statusBarStyle];

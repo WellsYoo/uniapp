@@ -1,60 +1,75 @@
 PODS:
-  - DCAnimationKit (0.0.6)
+  - FlatUIKit (1.6.2)
   - FrameAccessor (2.0)
-  - IGListKit (3.4.0):
-    - IGListKit/Default (= 3.4.0)
-  - IGListKit/Default (3.4.0):
-    - IGListKit/Diffing
-  - IGListKit/Diffing (3.4.0)
+  - IQKeyboardManager (6.5.6)
   - JGProgressHUD (2.0.4)
   - JTCalendar (2.2.6)
   - Masonry (1.1.0)
   - MJRefresh (3.1.17)
   - Reachability (3.2)
+  - Realm (10.7.2):
+    - Realm/Headers (= 10.7.2)
+  - Realm/Headers (10.7.2)
+  - RKDropdownAlert (0.3.0)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
+  - ZipArchive (1.4.0)
 
 DEPENDENCIES:
-  - DCAnimationKit
+  - FlatUIKit
   - FrameAccessor (~> 2.0)
-  - IGListKit (~> 3.4.0)
+  - IQKeyboardManager
   - JGProgressHUD (~> 2.0.3)
   - JTCalendar (~> 2.0)
   - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.1.12)
   - Reachability
-  - SDWebImage (~> 4.0)
+  - Realm
+  - RKDropdownAlert
+  - SDCycleScrollView
+  - SDWebImage
   - YYKit
+  - ZipArchive
 
 SPEC REPOS:
   trunk:
-    - DCAnimationKit
+    - FlatUIKit
     - FrameAccessor
-    - IGListKit
+    - IQKeyboardManager
     - JGProgressHUD
     - JTCalendar
     - Masonry
     - MJRefresh
     - Reachability
+    - Realm
+    - RKDropdownAlert
+    - SDCycleScrollView
     - SDWebImage
     - YYKit
+    - ZipArchive
 
 SPEC CHECKSUMS:
-  DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
   JTCalendar: 1b326e0d59dd1855b52c5f3feb059d2ff953805d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: baaffcc62ecdc881d387fec38405aa42685294ca
+PODFILE CHECKSUM: dd4c0e163fc41bbe06b15e05a9846612d615f85c
 
 COCOAPODS: 1.10.1

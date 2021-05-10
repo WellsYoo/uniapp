@@ -1,4 +1,13 @@
 /* pages/shops/index.wxss */
+page {
+	background: #fff;
+}
+/* #ifdef H5 */
+.contain {
+	min-height: 100vh;
+	background: #fff;
+}
+/* #endif */
 .contain {
 	padding-bottom: 50px;
 }
@@ -15,7 +24,6 @@
 }
 .swiper {
 	height: 230upx;
-	padding: 30upx 30upx 0;
 }
 .shadow {
 	height: 15px;
@@ -33,7 +41,7 @@
 	border-radius: 5px;
 }
 .dot-item.on {
-	background-color: #2C2C2C;
+	background-color: #DA2A1C;
 }
 .dot-item1 {
 	position: absolute;
@@ -126,7 +134,7 @@
 .swiper {
 	/* overflow: auto; */
 	width: 100%;
-	height: 140px;
+	height: 220px;
 	margin: auto;
 	background: #fff;
     box-sizing: border-box;
@@ -137,8 +145,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
-	margin: 0 6px;
-	border-radius: 6px;
 }
 .wrap-swiper-nav swiper {
     height: 162px;
@@ -515,7 +521,7 @@
 
 .tuangou-price {
 	font-size: 13px;
-	color: #2C2C2C;
+	color: #DA2A1C;
 	font-weight: bold;
 }
 .tuangou-price text {
@@ -607,7 +613,7 @@
 	content: '';
 	width: 5px;
 	height: 5px;
-	background-color: #2C2C2C;
+	background-color: #DA2A1C;
 	border-radius: 50%;
 	margin-right: 6px;
 }
@@ -621,4 +627,26 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+.index-goods {
+	padding: 10px 10px 0 10px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.index-goods-img {
+	height: 300upx;
+	border: 2px solid #DA2A1C;
+}
+.wrap-index-goods-price {
+	border-bottom: 2px solid #f2f2f2;
+}
+.index-goods-price-del {
+	text-decoration: line-through;
+}
+.index-goods-price-cale {
+	transform: scale(0.6);
+	transform-origin: left top;
+}
+.index-goods-btn {
+	padding: 2px 10px;
+	border: 1px solid #DA2A1C;
 }
