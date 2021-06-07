@@ -1,0 +1,624 @@
+/* pages/shops/index.wxss */
+.contain {
+	padding-bottom: 50px;
+}
+.login-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.swipe-img {
+	height: 230upx;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.swiper {
+	height: 230upx;
+	padding: 30upx 30upx 0;
+}
+.shadow {
+	height: 15px;
+	background:linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+}
+.wrap-dot {
+	position: relative;
+	border-radius: 5px;
+	background-color: #F0F0F0;
+	overflow: hidden;
+}
+.dot-item {
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+}
+.dot-item.on {
+	background-color: #DA2A1C;
+}
+.dot-item1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	transform: translateX(-100%);
+	transition-duration: 0.2s;
+}
+.shops-contain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: url(https://qiniu.miaotu2018.com/xcxcenter-bg.png) center top no-repeat;
+    background-size: 100% auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.wrap-index-header {
+  position: relative;
+	padding: 6px 10px;
+	box-sizing: content-box;
+	z-index: 1;
+}
+.wrap-index-header .search-btn {
+	background: #5F5F5F;
+  height: 28px;
+    width: 100px;
+    border-radius: 40px;
+    margin: 0 0px 0 0px;
+}
+
+.search-btn span {
+	color: #999999;
+	font-weight: 500;
+	padding-left: 24px;
+	background: url(https://qiniu.miaotu2018.com/xcxshops-search.png) left center no-repeat;
+	background-size: 14px;
+}
+
+.wrap-qr {
+  width: 22px;
+	color: #000;
+	font-size: 9px;
+	padding-top: 20px;
+	background: url(https://qiniu.miaotu2018.com/xcxshops-qr1.png) center top no-repeat;
+	background-size: 20px;
+}
+
+.wrap-chat {
+	position: relative;
+  width: 21px;
+	background-image: url(https://qiniu.miaotu2018.com/xcxchat1.png);
+}
+.wrap-chat em {
+	display: inline-block;
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	color: #fff;
+	font-size: 12px;
+	padding: 2px;
+	min-width: 18px;
+	min-height: 18px;
+	background: #A0271E;
+	border-radius: 30px;
+	text-align: center;
+	transform: scale(0.7);
+}
+
+/* .wrap-chat.on:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	right: -1px;
+	width: 6px;
+	height: 6px;
+	background: #A0271E;
+	border-radius: 50%;
+} */
+
+.swiper {
+	/* overflow: auto; */
+	width: 100%;
+	height: 140px;
+	margin: auto;
+	background: #fff;
+    box-sizing: border-box;
+}
+
+.swipe-bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin: 0 6px;
+	border-radius: 6px;
+}
+.wrap-swiper-nav swiper {
+    height: 90px;
+}
+
+.van-swipe-item {}
+
+.title {
+  height: 48px;
+    background: #fff;
+    padding: 0 10px 0 0;
+    margin: 0px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+    margin-top: 10px;
+}
+.title>view::before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	background-color: #F5A623;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.title image {
+	width: 110px;
+}
+
+.title span {
+	font-size: 12px;
+	color: #282526;
+	padding-right: 24px;
+	background: url(../../../appimages/images/shops-more.png) right center no-repeat;
+	background-size: 16px;
+}
+
+.wrap-shops-item {
+	background: #fff;
+	border-radius: 4px;
+	padding: 10px ;
+}
+
+.shops-info {
+	margin-left: 10px;
+}
+
+.shops-info h3 {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.shops-info p {
+	color: #999999;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.shops-btn {
+	position: relative;
+	right: -10px;
+	width: 36px;
+	height: 18px;
+	border-radius: 10px 0 0 10px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.wrap-shops-info {
+	margin-top: 6px;
+}
+
+.wrap-shops-info view {
+	position: relative;
+	width: 32%;
+	padding: 16% 0;
+	
+		background-position: center;
+		background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrap-shops-info view:nth-child(2) {
+	margin: 0 2%;
+}
+
+.wrap-shops-info view view {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	background: rgba(0, 0, 0, .3);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 4px;
+	color: #fff;
+}
+
+.wrap-swiper-nav {
+	margin-top: 4px;
+}
+
+.wrap-swiper-nav /deep/ .van-swipe__indicator {
+	width: 10px;
+	border-radius: 1px;
+	height: 2px;
+	background-color: #ccc;
+}
+
+.wrap-swiper-nav /deep/ .van-swipe__indicator--active {
+	background-color: #FF7A00;
+}
+
+/deep/ .van-swipe__indicators {
+	bottom: 4px;
+}
+
+.van-notice-bar {
+	font-size: 12px;
+	padding-left: 0;
+	color: #ccc;
+}
+
+.wrap-content {
+	padding: 0 0px 10px;
+	flex-wrap: wrap;
+	background: #fff;
+}
+
+.content {
+	width: 20%;
+	height: 70px;
+	flex-shrink: 0;
+	margin-top: 10px;
+}
+
+.content-bg {
+	width: 100%;
+	height: 50px;
+	/* background: url('') center no-repeat; */
+	background-size: contain;
+}
+
+.content span {
+	font-size: 12px;
+}
+
+
+.wrap-team {
+}
+
+.hot-item-img {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	flex-shrink: 0;
+	margin-right: 6px;
+}
+
+.btn-ljqg {
+	border-radius: 20px;
+	color: #A0271E;
+	font-size: 12px;
+	height: 18px;
+	line-height: 18px;
+	padding: 0px 10px;
+	border: 1px solid #A0271E;
+}
+
+.wrap-goods {
+	padding: 10px 2px;
+	flex-wrap: wrap;
+	padding-top: 0;
+		box-shadow:0px 4px 10px 0px rgba(236,236,236,1);
+		border-radius:5px;
+}
+
+.wrap-goods-item {
+	width: 50%;
+	padding: 2px;
+}
+
+.goods {
+	width: 100%;
+	background: #fff;
+}
+
+.goods {
+	width: 100%;
+	background: #fff;
+}
+
+
+.goods-img {
+	position: relative;
+	padding: 50% 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.goods-img image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.goods-title {
+	padding: 10px 8px 0px 8px;
+	font-size: 12px;
+    min-height: 38px;
+}
+
+.wrap-price {
+	padding: 6px 8px;
+}
+
+.wrap-price view {
+	color: #A0271E;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.wrap-price view text {
+	/* color: #ccc; */
+	font-size: 10px;
+	text-decoration: line-through;
+}
+
+.wrap-price .btn-buy {
+	color: #fff;
+	padding: 4px 6px;
+	border-radius: 4px;
+	background: #FF7A00;
+}
+
+.hot-item {
+	padding: 0 10px 0 0;
+
+	background-color: #fff;
+	margin: 4px 4px;
+	box-shadow: #000;
+}
+
+.hot-item:first-child {
+	margin-top: 0;
+}
+
+.hot-item-info {
+	margin-left: 16rpx;
+	overflow: hidden;
+}
+
+.hot-item-info-title {
+	font-weight: bold;
+	margin-top: 6px;
+
+}
+
+.hot-price {
+	color: #A0271E;
+	margin-top: 6rpx;
+	font-weight: bold;
+	font-size: 28rpx;
+}
+
+.hot-price p {
+	font-size: 20rpx;
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.wrap-activity {
+	padding: 10px;
+}
+
+.wrap-xianshi {
+	padding: 10px 0;
+}
+.wrap-xianshi-bg {
+	/* background: url(../../../appimages/images/tuangou-bg.png) center no-repeat; */
+	background-size: 100% 100%;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 0 10px 12px 10px;
+}
+.wrap-xianshi-bg-bottom {
+	padding: 4px 10px 30px;
+	background: url(../../../appimages/images/xianshi-bottom-bg.png) center bottom no-repeat;
+	background-size: 100% auto;
+	border-radius: 0 0 5px 5px;
+}
+.xianshi-text {
+	font-size: 15px;
+	color: #282526;
+	font-weight: bold;
+	margin-left: 6px;
+}
+
+.xianshi-more {
+	font-size: 12px;
+	color: #282526;
+	margin-right: 5px;
+}
+
+.xianshi-list {
+	padding: 10px 6px 0;
+	width: 50%;
+}
+
+.xianshi-img {
+	padding: 50% 50%;
+	background: url() center no-repeat;
+	background-size: contain;
+}
+
+.xianshi-price {
+	color:#B32679;
+	font-size: 14px;
+	margin-top: 6px;
+}
+.xianshi-price text {
+	position: relative;
+	top: -2px;
+}
+
+.xianshi-price-yuanjia {
+	color: #999999;
+	font-size: 12px;
+	margin-top: 2px;
+	text-decoration: line-through;
+}
+
+.xianshi-time span {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 10px;
+	background:linear-gradient(270deg,rgba(218,78,177,1) 0%,rgba(179,38,121,1) 100%);
+	font-family: San-Francisco-Text-Medium;
+}
+
+.xianshi-time {
+	color: #FC0274;
+	margin-left: 10px;
+}
+
+.wrap-tuangou-item {
+	position: relative;
+	z-index: 1;
+	width: 32%;
+	border-radius: 2px;
+	margin-top: 10px;
+	padding: 4px;
+}
+
+.tuangou-img {
+	padding: 50% 50%;
+	background: url() center no-repeat;
+	background-size: cover;
+}
+
+.tuangou-title {
+	color: #282526;
+	font-size: 10px;
+	margin: 5px 0;
+}
+
+.tuangou-price {
+	font-size: 13px;
+	color: #DA2A1C;
+	font-weight: bold;
+}
+.tuangou-price text {
+	position: relative;
+	top: 1px;
+}
+.tuangou-info {
+	/* background: url(https://qiniu.miaotu2018.com/xcxtuan.png) right center no-repeat;
+	background-size: 28px; */
+}
+.wrap-tuangou-item {
+	background: url(../../../appimages/images/tuan1.png) right bottom no-repeat;
+	background-size: 28px;
+}
+.wrap-tuangou-item:nth-child(2) {
+	background: url(../../../appimages/images/tuan2.png) right bottom no-repeat;
+	background-size: 28px;
+}
+.wrap-tuangou-item:nth-child(3) {
+	background: url(../../../appimages/images/tuan3.png) right bottom no-repeat;
+	background-size: 28px;
+}
+.tuan-num {
+	font-size: 10px;
+	color: #fff;
+	background:linear-gradient(90deg,rgba(216,42,68,1) 0%,rgba(222,112,96,1) 100%);
+	border-radius: 20px;
+	padding: 0 6px;
+	margin-bottom: 4px;
+}
+
+.wrap-manjian-item {
+	width: 32%;
+	padding: 6px 0px 10px 0px;
+	background: url(../../../appimages/images/manjian-bg.png) center bottom no-repeat;
+	background-size: 100% auto;
+	margin-top: 10px;
+}
+.wrap-manjian-item:nth-child(2) {
+	margin: 10px 2% 0;
+}
+
+.manjian-text {
+	color: #A0271E;
+	font-size: 12px;
+	margin: 10px 0 20px;
+}
+
+.manjian-btn {
+	height: 15px;
+	background: url(https://qiniu.miaotu2018.com/xcxmanjian-btn.png) center no-repeat;
+	background-size: 40px 15px;
+	margin-top: 10px;
+}
+
+.shops-logo {
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	background: url() center no-repeat;
+	background-size: cover;
+}
+.wrap-content-p {
+	padding-bottom: 85px;
+}
+
+.goods-img {
+	position: relative;
+	padding: 50% 0;
+	background: url() center no-repeat;
+	background-size: cover;
+}
+
+.goods-img image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	border-radius: 4px;
+}
+.wrap-shops-contain {
+	margin: 10px;
+	box-shadow:0px 4px 10px 0px rgba(236,236,236,1);
+	border-radius:5px;
+}
+.xianshi-text::before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	background-color: #DA2A1C;
+	border-radius: 50%;
+	margin-right: 6px;
+}
+.user-img {
+	width: 26px;
+	height: 26px;
+} 
+.tuangou-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

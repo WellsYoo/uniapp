@@ -1,0 +1,44 @@
+.contain {
+	background: #fff;
+}
+.title {
+	color: #000;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;	
+	border-bottom: 1px solid #F0F0F0;
+}
+.title::before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 16px;
+	background: #FF6000;
+	margin-right: 6px;
+	position: relative;
+	top: 2px;
+}
+
+.wrap-list{
+	padding: 14px 10px;
+	border-bottom: 1px solid #F0F0F0;
+}
+.name {
+	color:#888888 ;
+	font-size: 13px;
+	font-weight: 500;
+}
+.time {
+	width: 140px;
+	font-size: 12px;
+	font-weight: 500;
+}
+.num {
+	width: 60px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #FF460D;
+}
+.num.reduce {
+	color: #02AA02;
+}
