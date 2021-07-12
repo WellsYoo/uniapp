@@ -1,0 +1,79 @@
+PODS:
+  - FlatUIKit (1.6.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FrameAccessor (2.0)
+  - IQKeyboardManager (6.5.6)
+  - JGProgressHUD (2.0.4)
+  - JTCalendar (2.2.6)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.17)
+  - Reachability (3.2)
+  - RKDropdownAlert (0.3.0)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - TTTAttributedLabel (2.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - FlatUIKit
+  - FMDB
+  - FrameAccessor (~> 2.0)
+  - IQKeyboardManager
+  - JGProgressHUD (~> 2.0.3)
+  - JTCalendar (~> 2.0)
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.12)
+  - Reachability
+  - RKDropdownAlert
+  - SDCycleScrollView
+  - SDWebImage
+  - TTTAttributedLabel
+  - YYKit
+  - ZipArchive
+
+SPEC REPOS:
+  trunk:
+    - FlatUIKit
+    - FMDB
+    - FrameAccessor
+    - IQKeyboardManager
+    - JGProgressHUD
+    - JTCalendar
+    - Masonry
+    - MJRefresh
+    - Reachability
+    - RKDropdownAlert
+    - SDCycleScrollView
+    - SDWebImage
+    - TTTAttributedLabel
+    - YYKit
+    - ZipArchive
+
+SPEC CHECKSUMS:
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  JTCalendar: 1b326e0d59dd1855b52c5f3feb059d2ff953805d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: 6712bdb9fb546459ec96ab626fea2f9cebdd1928
+
+COCOAPODS: 1.10.1
