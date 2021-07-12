@@ -1,19 +1,4 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
   - FlatUIKit (1.6.2)
   - FrameAccessor (2.0)
   - IQKeyboardManager (6.5.6)
@@ -36,7 +21,6 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - AFNetworking
   - FlatUIKit
   - FrameAccessor (~> 2.0)
   - IQKeyboardManager
@@ -55,7 +39,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
     - FlatUIKit
     - FrameAccessor
     - IQKeyboardManager
@@ -73,7 +56,6 @@ SPEC REPOS:
     - YYKit
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
@@ -90,6 +72,6 @@ SPEC CHECKSUMS:
   WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9f7834fd53204b69eb46e3dfabc31e3105c64ed2
+PODFILE CHECKSUM: d7d57500a9a21c39fbab5d496d125aeb57921956
 
 COCOAPODS: 1.10.1

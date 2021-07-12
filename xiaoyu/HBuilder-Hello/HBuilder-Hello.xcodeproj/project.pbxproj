@@ -92,7 +92,6 @@
 		2F3D0723269C61D0007CBAA8 /* UIScrollView+MTKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D06DB269C61D0007CBAA8 /* UIScrollView+MTKeyboardAvoidingAdditions.m */; };
 		2F3D0724269C61D0007CBAA8 /* MTACKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D06DE269C61D0007CBAA8 /* MTACKeychain.m */; };
 		2F3D0725269C61D0007CBAA8 /* MTACKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D06DF269C61D0007CBAA8 /* MTACKeychainQuery.m */; };
-		2F3D0726269C61D0007CBAA8 /* MTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D06E2269C61D0007CBAA8 /* MTAttributedLabel.m */; };
 		2F3D0728269C6731007CBAA8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D0727269C6731007CBAA8 /* IJKMediaFramework.framework */; };
 		2F3D072A269C6754007CBAA8 /* liblibVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D0729269C6753007CBAA8 /* liblibVideo.a */; };
 		2F3D072B269C6761007CBAA8 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
@@ -309,8 +308,6 @@
 		2F3D06DE269C61D0007CBAA8 /* MTACKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTACKeychain.m; sourceTree = "<group>"; };
 		2F3D06DF269C61D0007CBAA8 /* MTACKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTACKeychainQuery.m; sourceTree = "<group>"; };
 		2F3D06E0269C61D0007CBAA8 /* MTACKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTACKeychain.h; sourceTree = "<group>"; };
-		2F3D06E2269C61D0007CBAA8 /* MTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAttributedLabel.m; sourceTree = "<group>"; };
-		2F3D06E3269C61D0007CBAA8 /* MTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAttributedLabel.h; sourceTree = "<group>"; };
 		2F3D06E4269C61D0007CBAA8 /* NotificationCenterWidgetSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenterWidgetSdk.h; sourceTree = "<group>"; };
 		2F3D0727269C6731007CBAA8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../SDK/Libs/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		2F3D0729269C6753007CBAA8 /* liblibVideo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibVideo.a; path = ../SDK/Libs/liblibVideo.a; sourceTree = "<group>"; };
@@ -942,7 +939,6 @@
 				2F3D06D0269C61D0007CBAA8 /* Transition */,
 				2F3D06D3269C61D0007CBAA8 /* MTKeyboardAvoiding */,
 				2F3D06DC269C61D0007CBAA8 /* Keychain */,
-				2F3D06E1269C61D0007CBAA8 /* MTAttributedLabel */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -980,15 +976,6 @@
 				2F3D06E0269C61D0007CBAA8 /* MTACKeychain.h */,
 			);
 			path = Keychain;
-			sourceTree = "<group>";
-		};
-		2F3D06E1269C61D0007CBAA8 /* MTAttributedLabel */ = {
-			isa = PBXGroup;
-			children = (
-				2F3D06E2269C61D0007CBAA8 /* MTAttributedLabel.m */,
-				2F3D06E3269C61D0007CBAA8 /* MTAttributedLabel.h */,
-			);
-			path = MTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		2F3D06E5269C61D0007CBAA8 /* MTUIKit */ = {
@@ -1645,7 +1632,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HBuilder/Pods-HBuilder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FlatUIKit/FlatUIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FrameAccessor/FrameAccessor.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
@@ -1664,7 +1650,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlatUIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameAccessor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
@@ -1741,7 +1726,6 @@
 				2F3D06FA269C61D0007CBAA8 /* FSAlertViewButton.m in Sources */,
 				2F3D0713269C61D0007CBAA8 /* YOListBodyView.m in Sources */,
 				2F3D0719269C61D0007CBAA8 /* SFSstemtViewController.m in Sources */,
-				2F3D0726269C61D0007CBAA8 /* MTAttributedLabel.m in Sources */,
 				2F3D0718269C61D0007CBAA8 /* NCWBaseAppViewController.m in Sources */,
 				2F3D06F3269C61D0007CBAA8 /* FSpringboardLayout.m in Sources */,
 				2F3D0709269C61D0007CBAA8 /* NCWSpringboardCell.m in Sources */,
@@ -1863,7 +1847,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = 22CP63H8NK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1919,7 +1903,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = 5J6XCA42SS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
