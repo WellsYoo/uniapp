@@ -1,0 +1,326 @@
+
+	.btn-pj {
+		border: 1px solid #FE560A;
+		border-radius: 40px;
+		padding: 2px 10px;
+		color: #FE560A;
+		font-size: 12px;
+
+	}
+
+	.contain {
+		background: #f4f4f4;
+	}
+
+	.wrap-order {
+		background: #fff;
+	}
+
+	.wrap-order p {
+		color: #282526;
+		font-size: 14px;
+		padding: 6px 10px;
+	}
+	.wrap-order p span {
+	}
+	.border-b {
+		border-bottom: 1px solid #f4f4f4;
+	}
+
+	p.order-title {
+		font-weight: bold;
+		margin-bottom: 6px;
+		color: #000000;
+	}
+
+	p.order-title::before {
+		content: '';
+		display: inline-block;
+		width: 4px;
+		height: 14px;
+		background: #FE560A;
+		margin-right: 6px;
+		position: relative;
+		top: 2px;
+	}
+
+	.price {
+		color: #f44;
+		font-weight: bold;
+	}
+	.price text.f-12 {
+		position: relative;
+		top: 2px;
+	}
+
+	.price em {
+		font-size: 10px;
+		color: #ccc;
+		margin-left: 4px;
+		font-weight: normal;
+	}
+
+	/deep/ .van-cell {
+		padding-left: 0;
+	}
+
+	/deep/ .van-icon-location {
+		padding: 8px;
+		border-radius: 50%;
+		background-image: -webkit-linear-gradient(left, #FF7A00, #FE560A);
+		background-image: linear-gradient(to right, #FF7A00, #FE560A);
+	}
+
+
+	.wrap-address {
+		margin: 8px 0;
+		background: #fff;
+	}
+
+	.address-name {
+	}
+
+	.address-name span {
+		color: #ccc;
+		font-size: 12px;
+		margin-left: 6px;
+	}
+
+	.address {
+		font-size: 12px;
+		margin-top: 4px;
+	}
+
+	.address-info {
+		padding: 8px 6px 8px 30px;
+	}
+
+	.wrap-item {
+		background-color: #fff;
+		margin: 6px 0;
+	}
+
+	.wrap-img {
+		width: 100px;
+		height: 100px;
+		border-radius: 4px;
+		flex-shrink: 0;
+		background: url() center no-repeat;
+		background-size: contain;
+	}
+
+	.wrap-goods-info {
+		padding: 0 6px;
+		font-size: 12px;
+	}
+
+	.goods-info {
+		padding: 2px 4px;
+		background: #f4f4f4;
+		border-radius: 2px;
+		color: #ccc;
+	}
+
+	.item-total {
+		font-weight: bold;
+		font-size: 12px;
+		padding: 6px 10px;
+	}
+
+	.item-total em {
+		font-size: 12px;
+		color: #ccc;
+		margin-right: 4px;
+	}
+	
+	.header-tip {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		color: #fff;
+	}
+	.header-tip i {
+		margin-right: 6px;
+	}
+	.wrap-goods-btn span {
+		padding: 2px 10px;
+		font-size: 10px;
+		border: 1px solid #A0A0A0;
+		border-radius: 20px;
+	}
+	
+	.shops-title {
+		height: 37px;
+		padding: 0 10px;
+		border-bottom: 1px solid #f4f4f4;
+	}
+	.shops-title i {
+		margin-right: 6px;
+	}
+	.call-kefu {
+		height: 40px;
+		font-weight: 500;
+		
+	}
+	.call-kefu span {
+		padding-left: 26px;
+		/* #ifdef MP-WEIXIN */
+		 background: url(https://qiniu.syh32.com/syh/xcx/kefu.png) left center no-repeat;
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background: url(../../../appimages/images/kefu.png) left center no-repeat;
+		 /* #endif */
+		background-size: 18px;
+	}
+	.address-tip {
+		height: 40px;
+		font-weight: bold;
+		padding: 0 10px;
+		padding-left: 30px;
+		/* #ifdef MP-WEIXIN */
+		 background: url(https://qiniu.syh32.com/syh/xcx/wuliu.png) left 10px center no-repeat;
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background: url(../../../appimages/images/wuliu.png) left 10px center no-repeat;
+		 /* #endif */
+		background-size: 14px 13px;
+		border-bottom: 1px solid #f4f4f4;
+	}
+	.address-name {
+		padding: 0px 0 0px;
+		padding-left: 30px;
+		/* #ifdef MP-WEIXIN */
+		 background: url(https://qiniu.syh32.com/syh/xcx/order-detaill-address.png) left 10px center no-repeat;
+		 /* #endif */
+		 /* #ifndef MP-WEIXIN */
+		 background: url(../../../appimages/images/order-detaill-address.png) left 10px center no-repeat;
+		 /* #endif */
+		background-size: 11px 12px;
+		margin-top: 8px;
+	}
+	.wrap-all-info {
+		background: #fff;
+		padding: 10px;
+	}
+	.wrap-all-info view {
+		padding: 5px 0;
+	}
+	.wrap-all-info view view{
+		color: #A0271E;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.wrap-footer>span {
+		display: inline-block;
+		/* background:linear-gradient(-90deg,rgba(255,1,43,1),rgba(255,133,2,1)); */
+		padding: 8px 24px;
+		color: #EEEEEE;
+		font-weight: 500;
+		font-size: 15px;
+		border-bottom-left-radius: 20px;
+		border-top-left-radius: 20px;
+	}
+	
+	.wrap-footer {
+		position: fixed;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		height: 50px;
+		padding-left: 10px;
+		border-top: 1px solid #F4F4F4;
+		background: #fff;
+		box-sizing: content-box;
+	}
+	
+	.wrap-footer p {
+		padding-right: 10px;
+		color: #000;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	.wrap-footer p em {
+		color: #FF7A00;
+	}
+	
+	.wrap-footer p span {
+		color: #ccc;
+		font-size: 12px;
+		margin-left: 10px;
+	}
+	.wrap-sure {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,.5);
+		z-index: 111;
+	}
+	.sure {
+		width: 240px;
+		height: 120px;
+		background: #fff;
+		border-radius: 6px;
+		padding: 14px 0;
+	}
+	.sure-btn{
+		margin-top: 20px;
+	}
+	.sure-btn span {
+		width: 80px;
+		height: 30px;
+		border: 1px solid #FE1438;
+		border-radius: 20px;
+		color: #FE1438;
+		font-weight: 500;
+		margin: 0 10px;
+	}
+	.sure-btn span:last-child {
+		color: #fff;
+		background:linear-gradient(-90deg,rgba(255,1,43,1),rgba(255,133,2,1));
+	}
+	.wuliu {
+			font-size: 12px;
+			padding: 4px 10px;
+		}
+	.wrap-tuangou-list {
+		padding: 0 10px;
+		background: #fff;
+	}
+	.tuangou-title {
+		font-size: 16px;
+		color: #282526;
+		font-weight: 500;
+		padding: 8px 0;
+		border-bottom: 1px solid #f4f4f4;
+	}
+	.tuangou-item {
+		padding: 8px 0;
+	}
+	.tuangou-user-img {
+		width: 36px;
+		height: 36px;
+		background: url() center no-repeat;
+		background-size: cover;
+		margin-right: 4px;
+		background-color: red;
+		border-radius: 50%;
+	}
+	.tuan-jion-btn {
+		height: 30px;
+		width: 60px;
+		border-radius: 4px;
+		background:linear-gradient(-90deg,rgba(255,1,43,1),rgba(255,133,2,1));
+		font-size: 12px;
+		color: #fff;
+		font-weight: 500;
+		margin-left: 4px;
+	}
+	.tuan-info {
+		font-size: 12px;
+		color: #282526;
+		font-weight: 500;
+	}

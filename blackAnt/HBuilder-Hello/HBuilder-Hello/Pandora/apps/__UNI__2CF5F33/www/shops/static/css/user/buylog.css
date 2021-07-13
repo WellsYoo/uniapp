@@ -1,0 +1,107 @@
+.contain {
+	background: #fff;
+}
+.wrap-goods {
+	background: #fff;
+	border-radius: 5px;
+	padding-bottom: 15px;
+	margin: 15px 15px 0;
+}
+.time {
+	height: 42px;
+	font-size: 13px;
+	color: #999999;
+	padding: 5px 15px 0;
+	position: relative;
+}
+.time::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #E3E3E3;
+	transform: scaleY(0.5);
+}
+.goods-info {
+	padding: 10px;
+}
+.goods-img {
+	width: 75px;
+	background: url() center top no-repeat;
+	background-size: contain;
+	margin-right: 15px;
+}
+.goods-name {
+	color: #333333;
+	font-size: 16px;
+	font-weight:bold;
+	min-height: 42px;
+}
+.goods-tip {
+	color: #999999;
+	font-size: 13px;
+	font-weight:500;
+	margin-top: 10px;
+}
+.price {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF533B;
+	padding-right: 10px;
+}
+.get-btn {
+	width: 94px;
+	height: 26px;
+	border-radius: 3px;
+	background: #FF533B;
+	color: #FFFFFF;
+	font-weight: 500;
+	letter-spacing: 2px;
+	margin-right: 10px;
+}
+.pay-item {
+	position: relative;
+	padding: 20px 15px;
+}
+.pay-item::after {
+	content:  '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #E3E3E3;
+	transform: scaleY(0.5);
+}
+.pay-name {
+	color: #181818;
+	font-size: 16px;
+	font-weight: bold;
+}
+.pay-type {
+	color: #999999;
+	font-size: 13px;
+	font-weight: 500;
+	padding-left: 20px;
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/wx-icon.png) left center no-repeat;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/wx-icon.png) left center no-repeat;
+	 /* #endif */
+	background-size: 16px;
+	margin-top: 8px;
+}
+.alipay {
+	/* #ifdef MP-WEIXIN */
+	 background-image: url(https://qiniu.syh32.com/syh/xcx/zfb-icon.png);
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background-image: url(../../../appimages/images/zfb-icon.png);
+	 /* #endif */
+}
+.paylog-price {
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+}
