@@ -1,0 +1,74 @@
+PODS:
+  - FlatUIKit (1.6.2)
+  - FrameAccessor (2.0)
+  - GKPageScrollView (1.4.1)
+  - IQKeyboardManager (6.5.6)
+  - JGProgressHUD (2.0.4)
+  - JTCalendar (2.2.6)
+  - JXPagingView/Pager (2.1.0)
+  - KVOController (1.2.0)
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.17)
+  - RKDropdownAlert (0.3.0)
+  - TYCyclePagerView (1.2.0)
+  - WZLBadge (1.2.6)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - FlatUIKit
+  - FrameAccessor (~> 2.0)
+  - GKPageScrollView
+  - IQKeyboardManager
+  - JGProgressHUD (~> 2.0.3)
+  - JTCalendar (~> 2.0)
+  - JXPagingView/Pager
+  - KVOController
+  - lottie-ios
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.12)
+  - RKDropdownAlert
+  - TYCyclePagerView
+  - WZLBadge
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - FlatUIKit
+    - FrameAccessor
+    - GKPageScrollView
+    - IQKeyboardManager
+    - JGProgressHUD
+    - JTCalendar
+    - JXPagingView
+    - KVOController
+    - lottie-ios
+    - Masonry
+    - MJRefresh
+    - RKDropdownAlert
+    - TYCyclePagerView
+    - WZLBadge
+    - YYKit
+
+SPEC CHECKSUMS:
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+  GKPageScrollView: 99daceceb35bfd1b0a2aa9c7a7e1cddba4e11a7b
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  JTCalendar: 1b326e0d59dd1855b52c5f3feb059d2ff953805d
+  JXPagingView: ef48a5a2392252c68db7999de38f4761a2707e2a
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 203d58a08e006e54ef2cf741881e58d7cdb0f8ec
+
+COCOAPODS: 1.10.1
