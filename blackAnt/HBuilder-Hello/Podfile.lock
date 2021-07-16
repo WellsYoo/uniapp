@@ -1,7 +1,9 @@
 PODS:
+  - DZNEmptyDataSet (1.8.1)
   - FlatUIKit (1.6.2)
   - FrameAccessor (2.0)
   - GKPageScrollView (1.4.1)
+  - IQKeyboardManager (6.5.6)
   - JGProgressHUD (2.0.4)
   - JTCalendar (2.2.6)
   - JXPagingView/Pager (2.1.0)
@@ -23,9 +25,11 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - DZNEmptyDataSet (~> 1.8.1)
   - FlatUIKit
   - FrameAccessor (~> 2.0)
   - GKPageScrollView
+  - IQKeyboardManager
   - JGProgressHUD (~> 2.0.3)
   - JTCalendar (~> 2.0)
   - JXPagingView/Pager
@@ -43,9 +47,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - DZNEmptyDataSet
     - FlatUIKit
     - FrameAccessor
     - GKPageScrollView
+    - IQKeyboardManager
     - JGProgressHUD
     - JTCalendar
     - JXPagingView
@@ -62,9 +68,11 @@ SPEC REPOS:
     - YYKit
 
 SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
   GKPageScrollView: 99daceceb35bfd1b0a2aa9c7a7e1cddba4e11a7b
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
   JTCalendar: 1b326e0d59dd1855b52c5f3feb059d2ff953805d
   JXPagingView: ef48a5a2392252c68db7999de38f4761a2707e2a
@@ -80,6 +88,6 @@ SPEC CHECKSUMS:
   WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 161874d9a537f1bb15be2f221ccba0755b3a08f8
+PODFILE CHECKSUM: 22816cbd60d3c5e87ebf7994b80f52642dc9c6b8
 
 COCOAPODS: 1.10.1
