@@ -19,8 +19,9 @@ target 'HBuilder' do
      pod 'SDWebImage'
      
 #     pod 'IGListKit', '~> 3.4.0'
-     pod 'JTCalendar', '~> 2.0'
+#     pod 'JTCalendar', '~> 2.0'
 #     pod 'iOS-Echarts'
+     pod 'GKNavigationBar'
      pod 'SDCycleScrollView'
      pod 'IQKeyboardManager'
 #     pod 'ZipArchive'
