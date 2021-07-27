@@ -7,7 +7,7 @@
 //
 
 #import "SFWWidgetPerson.h"
-#import "NCWWidgetInfoManager.h"
+#import "ZBWWidgetInfoManager.h"
 
 @implementation SFWWidgetPerson
 @synthesize fullName = _fullName;

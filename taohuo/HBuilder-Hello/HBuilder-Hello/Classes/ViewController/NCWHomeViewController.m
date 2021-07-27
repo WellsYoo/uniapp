@@ -7,10 +7,10 @@
 //
 
 #import "NCWHomeViewController.h"
-#import "NCWSpringboardCell.h"
+#import "ZBWSpringboardCell.h"
 #import "FSpringboardLayout.h"
-#import "NCWWidgetInfoManager.h"
-#import "NCWCollectionHeadView.h"
+#import "ZBWWidgetInfoManager.h"
+#import "ZBWCollectionHeadView.h"
 #import "FSaseNavigationController.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
@@ -143,8 +143,8 @@ typedef NS_ENUM(NSInteger, ContactState)
     self.collectionView.backgroundColor = colorWithRGB(efeff4);
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    [self.collectionView registerClass:[NCWSpringboardCell class] forCellWithReuseIdentifier:NCWCollectionViewCellIdentifier];
-    [self.collectionView registerClass:[NCWCollectionHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NCWCollectionViewHeadIdentifier];
+    [self.collectionView registerClass:[ZBWSpringboardCell class] forCellWithReuseIdentifier:NCWCollectionViewCellIdentifier];
+    [self.collectionView registerClass:[ZBWCollectionHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NCWCollectionViewHeadIdentifier];
     [self.view addSubview:self.collectionView];
     
     _addContactButton = [[UIButton alloc] init];
@@ -204,9 +204,9 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 - (void)__reloadPersonList
 {
-    [[NCWWidgetInfoManager sharedInstance] clearRequestQueue];
+    [[ZBWWidgetInfoManager sharedInstance] clearRequestQueue];
     [self.starPersonList removeAllObjects];
-    [self.starPersonList addObjectsFromArray:[[NCWWidgetInfoManager sharedInstance] personListAtWidget]];
+    [self.starPersonList addObjectsFromArray:[[ZBWWidgetInfoManager sharedInstance] personListAtWidget]];
     [self.collectionView reloadData];
     _contactState = ContactStateEditing;
     [self editStateChange:nil];
@@ -281,7 +281,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     if (kind == UICollectionElementKindSectionHeader) {
         
             if (indexPath.section == 0) {
-                NCWCollectionHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NCWCollectionViewHeadIdentifier forIndexPath:indexPath];
+                ZBWCollectionHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NCWCollectionViewHeadIdentifier forIndexPath:indexPath];
                 reusableview = headView;
                 
             }
@@ -294,7 +294,7 @@ typedef NS_ENUM(NSInteger, ContactState)
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NCWSpringboardCell * cell = (NCWSpringboardCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NCWCollectionViewCellIdentifier forIndexPath:indexPath];
+    ZBWSpringboardCell * cell = (ZBWSpringboardCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NCWCollectionViewCellIdentifier forIndexPath:indexPath];
     
     id item = [self.starPersonList objectAtIndex:indexPath.row];
     
@@ -331,7 +331,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     id person = [self.starPersonList objectAtIndex:fromIndexPath.row];
     [self.starPersonList removeObjectAtIndex:fromIndexPath.row];
     [self.starPersonList insertObject:person atIndex:toIndexPath.row];
-    [[NCWWidgetInfoManager sharedInstance] sortNCWListWithNewList:self.starPersonList];
+    [[ZBWWidgetInfoManager sharedInstance] sortNCWListWithNewList:self.starPersonList];
 }
 
 
@@ -373,12 +373,12 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 #pragma mark - GSSpringboardCellDelegate
 
-- (void)gs_sbCellDidDeleted:(NCWSpringboardCell *)cell
+- (void)gs_sbCellDidDeleted:(ZBWSpringboardCell *)cell
 {
     NSIndexPath * indexPath = [self.collectionView indexPathForCell:cell];
     id deleteItem = [self.starPersonList objectAtIndex:indexPath.row];
     [self.starPersonList removeObject:deleteItem];
-    [[NCWWidgetInfoManager sharedInstance] deleteFromWidget:deleteItem saveWidget:YES];
+    [[ZBWWidgetInfoManager sharedInstance] deleteFromWidget:deleteItem saveWidget:YES];
     [self.collectionView gs_deleteItemAtIndexPath:indexPath];
     [self refreshAddButtonFrame];
 }
@@ -409,7 +409,7 @@ typedef NS_ENUM(NSInteger, ContactState)
         _meWidgetPerson.phoneNumber = phoneNumber;
         _meWidgetPerson.phoneNumberType = label;
         _meWidgetPerson.contactType = _contactType;
-        [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
+        [[ZBWWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
         
     }
     else if(phoneCount > 1)
@@ -472,7 +472,7 @@ typedef NS_ENUM(NSInteger, ContactState)
             _meWidgetPerson.phoneNumber = _phoneNumberArray[index];
             _meWidgetPerson.contactType = _contactType;
             _meWidgetPerson.phoneNumberType = _phoneNumberTypeArray[index];
-            [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
+            [[ZBWWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
             [self __reloadPersonList];
         }
     }

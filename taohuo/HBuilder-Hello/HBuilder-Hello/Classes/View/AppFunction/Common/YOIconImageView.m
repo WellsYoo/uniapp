@@ -7,7 +7,7 @@
 //
 
 #import "YOIconImageView.h"
-#import "NCWWidgetInfoManager.h"
+#import "ZBWWidgetInfoManager.h"
 #import "FSXtView.h"
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
@@ -49,13 +49,13 @@
                          NSData *imageData = UIImageJPEGRepresentation(image, 0.8f);
                          _appItem.imageData = imageData;
                          if (_needSave) {
-                             [[NCWWidgetInfoManager sharedInstance] saveToWidget];
+                             [[ZBWWidgetInfoManager sharedInstance] saveToWidget];
                          }
                      });
                  }];
             }
         }else {
-            [[NCWWidgetInfoManager sharedInstance] requestApplicationInfo:_appItem complete:^(NSDictionary *appInfo){
+            [[ZBWWidgetInfoManager sharedInstance] requestApplicationInfo:_appItem complete:^(NSDictionary *appInfo){
                 if (appInfo) {
                     if ([_appItem.bundleId isEqualToString:[appInfo objectForKey:ApplicationInfoKeyBundleId]]) {
                         [_appItem setIconUrl:[appInfo objectForKey:ApplicationInfoKeyIconUrl]];
@@ -73,7 +73,7 @@
                                 NSData *imageData = UIImageJPEGRepresentation(image, 0.8f);
                                 _appItem.imageData = imageData;
                                 if (_needSave) {
-                                    [[NCWWidgetInfoManager sharedInstance] saveToWidget];
+                                    [[ZBWWidgetInfoManager sharedInstance] saveToWidget];
                                 }
                             });
                         }];
@@ -112,25 +112,25 @@
         
         self.image = [image circleImageWithBorder:0 borderColor: [UIColor clearColor]];;
         
-    }else if([[NCWWidgetInfoManager sharedInstance] onlyContainChineseCharacter:fullName]&&fullName.length > 0){
+    }else if([[ZBWWidgetInfoManager sharedInstance] onlyContainChineseCharacter:fullName]&&fullName.length > 0){
         NSString *showName = [fullName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSString *lastCharacter = [showName substringFromIndex:showName.length-1];
         FSXtView *drawTextView = [[FSXtView alloc] initWithFrame:CGRectMake(0, 0, 42, 42) Text:lastCharacter Letter:false];
-        UIImage *image = [[NCWWidgetInfoManager sharedInstance] convertViewToImage:drawTextView];
+        UIImage *image = [[ZBWWidgetInfoManager sharedInstance] convertViewToImage:drawTextView];
         if (image) {
             self.image = image;
         }
-    }else if ([[NCWWidgetInfoManager sharedInstance] onlyContainLetter:fullName]&&fullName.length > 0){
+    }else if ([[ZBWWidgetInfoManager sharedInstance] onlyContainLetter:fullName]&&fullName.length > 0){
         NSString *showName = [fullName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSString *firstLetter = [[showName substringToIndex:1] uppercaseString];
         FSXtView *drawTextView = [[FSXtView alloc] initWithFrame:CGRectMake(0, 0, 42, 42) Text:firstLetter Letter:YES];
-        UIImage *image = [[NCWWidgetInfoManager sharedInstance] convertViewToImage:drawTextView];
+        UIImage *image = [[ZBWWidgetInfoManager sharedInstance] convertViewToImage:drawTextView];
         if (image) {
             self.image = image;
         }
         
     }else{
-        self.image = [[NCWWidgetInfoManager sharedInstance] defaultPortrait];
+        self.image = [[ZBWWidgetInfoManager sharedInstance] defaultPortrait];
     }
 }
 

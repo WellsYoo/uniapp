@@ -9,7 +9,7 @@
 #import "NCWBaseAppViewController.h"
 #import "FSDialog.h"
 
-#import "NCWWidgetInfoManager.h"
+#import "ZBWWidgetInfoManager.h"
 
 #define kSoftwareCellHeaderHeight   20.0f
 #define kUndefineTitleIndex         @"#"
@@ -130,7 +130,7 @@
 
 - (void)dealloc
 {
-    [[NCWWidgetInfoManager sharedInstance] clearRequestQueue];
+    [[ZBWWidgetInfoManager sharedInstance] clearRequestQueue];
 }
 
 - (void)initAppItems

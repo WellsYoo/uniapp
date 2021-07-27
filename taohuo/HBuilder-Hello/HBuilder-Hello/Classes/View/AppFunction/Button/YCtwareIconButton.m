@@ -8,7 +8,7 @@
 
 #import "YCtwareIconButton.h"
 #import "YOIconImageView.h"
-#import "NCWWidgetInfoManager.h"
+#import "ZBWWidgetInfoManager.h"
 
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"

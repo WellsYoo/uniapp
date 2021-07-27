@@ -11,7 +11,7 @@
 #import "SFSstemtViewController.h"
 
 #import "FSaseNavigationController.h"
-#import "NCWWidgetInfoManager.h"
+#import "ZBWWidgetInfoManager.h"
 #import "DFReallyManager.h"
 
 #import "FSDialog.h"
@@ -62,7 +62,7 @@
     //已选中application
     _selectedApps = [NSMutableArray array];
     _removeApps = [NSMutableArray array];
-    for (id item in [[NCWWidgetInfoManager sharedInstance] personListAtWidget]) {
+    for (id item in [[ZBWWidgetInfoManager sharedInstance] personListAtWidget]) {
         if ([item isKindOfClass:[YXpplicationItem class]]) {
             [_selectedApps addObject:item];
         }
@@ -298,7 +298,7 @@
 - (BOOL)applicationControllerShouldCheck
 {
     NSInteger numOfItem = 0;
-    for (id item in [[NCWWidgetInfoManager sharedInstance] personListAtWidget]) {
+    for (id item in [[ZBWWidgetInfoManager sharedInstance] personListAtWidget]) {
         if (![item isKindOfClass:[YXpplicationItem class]]) {
             numOfItem++;
         }
@@ -332,12 +332,12 @@
 - (void)doneButtonPressHandler:(id)sender
 {
     for (YXpplicationItem *appItem in _selectedApps) {
-        [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
+        [[ZBWWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
     }
     for (YXpplicationItem *appItem in _removeApps) {
-        [[NCWWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
+        [[ZBWWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
     }
-    [[NCWWidgetInfoManager sharedInstance] saveToWidget];
+    [[ZBWWidgetInfoManager sharedInstance] saveToWidget];
     if (self.navigationController.viewControllers.count > 1) {
         [self.navigationController popViewControllerAnimated:YES];
     }else {
