@@ -15,17 +15,17 @@ target 'HBuilder' do
      #< UIView frame 便捷访问扩展
      pod 'FrameAccessor', '~> 2.0'
      pod 'MJRefresh', '~> 3.1.12'
-#     pod 'SDWebImage'
+     pod 'SDWebImage'
      
 #     pod 'IGListKit', '~> 3.4.0'
      pod 'JTCalendar', '~> 2.0'
-#     pod 'iOS-Echarts'
+
      pod 'SDCycleScrollView'
      pod 'IQKeyboardManager'
      pod 'ZipArchive'
 #     pod 'Realm'
     pod 'GKPageScrollView'
-    pod 'JXPagingView/Pager'
+#    pod 'JXPagingView/Pager'
     pod 'TYCyclePagerView'
 
 
@@ -36,6 +36,6 @@ target 'HBuilder' do
      pod 'FlatUIKit'
      pod 'WZLBadge'
      pod 'KVOController'
-     pod 'pop'
+#     pod 'pop'
 
 end

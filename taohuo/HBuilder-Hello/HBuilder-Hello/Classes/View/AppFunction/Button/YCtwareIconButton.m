@@ -7,8 +7,8 @@
 //
 
 #import "YCtwareIconButton.h"
-#import "YOIconImageView.h"
-#import "ZBWWidgetInfoManager.h"
+#import "XYIconImageView.h"
+#import "XYWidgetInfoManager.h"
 
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
@@ -18,7 +18,7 @@
 //    UIImageView *_iconView;
     UIImageView *_checkView;
     UILabel     *_title;
-    YOIconImageView *_iconView;
+    XYIconImageView *_iconView;
     
     YXpplicationItem *_appItem;
 }
@@ -36,7 +36,7 @@
         
         self.clipsToBounds = YES;
         
-        _iconView = [[YOIconImageView alloc] initWithFrame:CGRectMake(7.5, 8,
+        _iconView = [[XYIconImageView alloc] initWithFrame:CGRectMake(7.5, 8,
                                                                        CGRectGetWidth(frame) - 15,
                                                                        CGRectGetWidth(frame) - 15)];
         _iconView.contentMode = UIViewContentModeScaleAspectFit;

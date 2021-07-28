@@ -6,12 +6,10 @@ PODS:
   - IQKeyboardManager (6.5.6)
   - JGProgressHUD (2.0.4)
   - JTCalendar (2.2.6)
-  - JXPagingView/Pager (2.1.0)
   - KVOController (1.2.0)
   - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - MJRefresh (3.1.17)
-  - pop (1.0.12)
   - Reachability (3.2)
   - RKDropdownAlert (0.3.0)
   - SDCycleScrollView (1.82):
@@ -34,15 +32,14 @@ DEPENDENCIES:
   - IQKeyboardManager
   - JGProgressHUD (~> 2.0.3)
   - JTCalendar (~> 2.0)
-  - JXPagingView/Pager
   - KVOController
   - lottie-ios
   - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.1.12)
-  - pop
   - Reachability
   - RKDropdownAlert
   - SDCycleScrollView
+  - SDWebImage
   - TYCyclePagerView
   - WZLBadge
   - YYKit
@@ -57,12 +54,10 @@ SPEC REPOS:
     - IQKeyboardManager
     - JGProgressHUD
     - JTCalendar
-    - JXPagingView
     - KVOController
     - lottie-ios
     - Masonry
     - MJRefresh
-    - pop
     - Reachability
     - RKDropdownAlert
     - SDCycleScrollView
@@ -80,12 +75,10 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
   JTCalendar: 1b326e0d59dd1855b52c5f3feb059d2ff953805d
-  JXPagingView: ef48a5a2392252c68db7999de38f4761a2707e2a
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
-  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
   SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
@@ -95,6 +88,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 0b4be55f92fca3f38a005b5f42858cc028281a96
+PODFILE CHECKSUM: 094e03ab46a8fd7768fda4489d5dfa9a6cfd32c3
 
 COCOAPODS: 1.10.1

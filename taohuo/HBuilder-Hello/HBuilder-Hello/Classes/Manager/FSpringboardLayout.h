@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZBWSpringboardCell.h"
+#import "XYSpringboardCell.h"
 
 typedef NS_ENUM(NSInteger, GS_SBLayoutType)
 {
