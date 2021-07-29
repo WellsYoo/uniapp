@@ -1,5 +1,6 @@
 // const API = 'http://192.168.1.109:9091/';
-const API = 'https://userapi.syh32.com/';
+// const API = 'https://userapi.syh32.com/';
+const API = 'https://modelportalapi.chengyuxin.net/';
 
 /**
  * 获取token
@@ -15,10 +16,11 @@ function getToken() {
 					uni.request({
 						url: API + "common/xcx/auth",
 						data: {
-							code: res.code
+							code: res.code,
+							brandId: wx.getStorageSync("style") ? wx.getStorageSync("style").brandId : '',
 						},
 						header: {
-							'Content-Type': 'application/x-www-form-urlencoded'
+							'Content-Type': 'application/x-www-form-urlencoded',
 						},
 						method: 'POST',
 						success: res => {
@@ -46,10 +48,10 @@ function ajax(options) {
 			mask: true
 		})
 	}
-	let token = uni.getStorageSync('token');
-	if(token) {
-		options.data.token = token;
-	}
+	// let token = uni.getStorageSync('token');
+	// if(token) {
+	// 	options.data.token = token;
+	// }
 	// #ifdef MP-WEIXIN
 	options.data.applicationType = 'xcx';
 	// #endif
@@ -59,8 +61,9 @@ function ajax(options) {
 	// #ifdef H5
 	options.data.applicationType = 'gzh';
 	// #endif
+	// options.data.applicationType = 'xcx';
 	//options.data.applicationType = 'xcx';//value = "fiveXcx:五代小程序,xcx:七代小程序,gzh：公众号,app:APP"
-	//options.data.brandId = options.data.brandId ? options.data.brandId : uni.getStorageSync("style") ? uni.getStorageSync("style").brandId : '';
+	options.data.brandId = options.data.brandId ? options.data.brandId : uni.getStorageSync("style") ? uni.getStorageSync("style").brandId : '';
 	uni.request({
 		url: options.api ? options.url : API + options.url,
 		data: options.data,
@@ -77,7 +80,7 @@ function ajax(options) {
 					icon: 'none',
 					duration: 2000
 				})
-			} else if (response.data.code == 401) {
+			} else if (response.data.code == 401 && options.isLogin) {
 				uni.removeStorageSync('openid');
 				setTimeout(()=>{
 					// #ifdef MP-WEIXIN
@@ -91,16 +94,16 @@ function ajax(options) {
 					// #endif
 				},500)
 			} else if (response.data.code == 300) {
-				uni.showToast({
-					title: '请进行绑定手机',
-					icon: 'none',
-					duration: 2000
-				});
-				setTimeout(() => {
-					uni.navigateTo({
-						url: '/pages/wxAuth/bindphone'
-					})
-				},1000);
+				// uni.showToast({
+				// 	title: '请进行绑定手机',
+				// 	icon: 'none',
+				// 	duration: 2000
+				// });
+				// setTimeout(() => {
+				// 	uni.navigateTo({
+				// 		url: '/pages/wxAuth/bindphone'
+				// 	})
+				// },1000);
 			} else if (response.data.code == 200) {
 				if (options.success) {
 					options.success(response.data);
