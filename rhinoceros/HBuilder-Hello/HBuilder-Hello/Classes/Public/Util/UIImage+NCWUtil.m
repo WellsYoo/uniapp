@@ -10,7 +10,7 @@
 
 static NSBundle *s_customedBundle = nil;
 
-@implementation UIImage (NCWUtil)
+@implementation UIImage (DBJUtil)
 
 // 生成指定大小的纯色图片
 + (UIImage *)imageWithColor:(UIColor *)color

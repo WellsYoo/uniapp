@@ -6,27 +6,27 @@
 //  Copyright © 2015年 91. All rights reserved.
 //
 
-#import "NCWIconImageView.h"
+#import "DBJIconImageView.h"
 #import "NCWWidgetInfoManager.h"
-#import "NCWDrawTextView.h"
+#import "DBJDrawTextView.h"
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
 #import "UIImage+NCWUtil.h"
 
 #define kIconResourceUrl @"http://exp.pgzs.com/support.ashx?act=710&ids="
 
-@interface NCWIconImageView ()
+@interface DBJIconImageView ()
 {
-    NCWApplicationItem *_appItem;
+    DBJApplicationItem *_appItem;
     BOOL                _needSave;
-    NCWWidgetPerson    *_person;
+    DBJWidgetPerson    *_person;
 }
 
 @end
 
-@implementation NCWIconImageView
+@implementation DBJIconImageView
 
-- (void)setNCWAppItem:(NCWApplicationItem *)appItem
+- (void)setNCWAppItem:(DBJApplicationItem *)appItem
 {
     _appItem = appItem;
   
@@ -84,7 +84,7 @@
     }
 }
 
-- (void)setNCWAppItem:(NCWApplicationItem *)appItem needSave:(BOOL)save
+- (void)setNCWAppItem:(DBJApplicationItem *)appItem needSave:(BOOL)save
 {
     _needSave = save;
     [self setNCWAppItem:appItem];
@@ -103,7 +103,7 @@
 //}
 
 
--(void)setNCWPersonImage:(NCWWidgetPerson *) person{
+-(void)setNCWPersonImage:(DBJWidgetPerson *) person{
     _person = person;
     
     NSString *fullName = _person.fullName;
@@ -115,7 +115,7 @@
     }else if([[NCWWidgetInfoManager sharedInstance] onlyContainChineseCharacter:fullName]&&fullName.length > 0){
         NSString *showName = [fullName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSString *lastCharacter = [showName substringFromIndex:showName.length-1];
-        NCWDrawTextView *drawTextView = [[NCWDrawTextView alloc] initWithFrame:CGRectMake(0, 0, 42, 42) Text:lastCharacter Letter:false];
+        DBJDrawTextView *drawTextView = [[DBJDrawTextView alloc] initWithFrame:CGRectMake(0, 0, 42, 42) Text:lastCharacter Letter:false];
         UIImage *image = [[NCWWidgetInfoManager sharedInstance] convertViewToImage:drawTextView];
         if (image) {
             self.image = image;
@@ -123,7 +123,7 @@
     }else if ([[NCWWidgetInfoManager sharedInstance] onlyContainLetter:fullName]&&fullName.length > 0){
         NSString *showName = [fullName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSString *firstLetter = [[showName substringToIndex:1] uppercaseString];
-        NCWDrawTextView *drawTextView = [[NCWDrawTextView alloc] initWithFrame:CGRectMake(0, 0, 42, 42) Text:firstLetter Letter:YES];
+        DBJDrawTextView *drawTextView = [[DBJDrawTextView alloc] initWithFrame:CGRectMake(0, 0, 42, 42) Text:firstLetter Letter:YES];
         UIImage *image = [[NCWWidgetInfoManager sharedInstance] convertViewToImage:drawTextView];
         if (image) {
             self.image = image;

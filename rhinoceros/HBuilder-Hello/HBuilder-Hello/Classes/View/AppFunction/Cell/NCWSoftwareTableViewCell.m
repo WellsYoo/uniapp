@@ -7,7 +7,7 @@
 //
 
 #import "NCWSoftwareTableViewCell.h"
-#import "NCWSoftwareIconButton.h"
+#import "DBJSoftwareIconButton.h"
 
 #import "UIImage+NCWUtil.h"
 
@@ -21,9 +21,9 @@
     UIControl    *_moreControl;
     UIImageView  *_moreBackgroundView;
     UIImageView  *_arrowView;
-    NCWSoftwareIconButton  *_iconView;
+    DBJSoftwareIconButton  *_iconView;
     
-    NCWApplicationItem *_appItem;
+    DBJApplicationItem *_appItem;
 }
 
 @end
@@ -62,7 +62,7 @@
         [self.contentView addSubview:_title];
         
         //应用图标
-        _iconView = [[NCWSoftwareIconButton alloc] initWithFrame:CGRectMake(4.5, 0, 45, kSoftwareTableViewCellHeight)];
+        _iconView = [[DBJSoftwareIconButton alloc] initWithFrame:CGRectMake(4.5, 0, 45, kSoftwareTableViewCellHeight)];
 //        _iconView.backgroundColor = [UIColor redColor];
         _iconView.userInteractionEnabled = NO;
         _iconView.clipsToBounds = YES;
@@ -109,7 +109,7 @@
     // Configure the view for the selected state
 }
 
-- (void)setAppItem:(NCWApplicationItem *)appItem
+- (void)setAppItem:(DBJApplicationItem *)appItem
 {
     _appItem = appItem;
     
@@ -137,8 +137,8 @@
             if (i > (kSoftwareTableViewCellMaxCount - 1)) {
                 column = i - kSoftwareTableViewCellMaxCount * row;
             }
-            NCWApplicationItem *item = [_appItem.subItems objectAtIndex:i];
-            NCWSoftwareIconButton *iconButton = [[NCWSoftwareIconButton alloc] initWithFrame:CGRectMake(column * (space + kSoftwareCellSubItemWidth),
+            DBJApplicationItem *item = [_appItem.subItems objectAtIndex:i];
+            DBJSoftwareIconButton *iconButton = [[DBJSoftwareIconButton alloc] initWithFrame:CGRectMake(column * (space + kSoftwareCellSubItemWidth),
                                                                                                         kSoftwareTableViewCellMoreHeight * row,
                                                                                                         kSoftwareCellSubItemWidth, kSoftwareTableViewCellMoreHeight)];
 //            [iconButton setBackgroundColor:[UIColor redColor]];
@@ -155,7 +155,7 @@
 
 #pragma mark - NCWSoftwareIconButton Delegate
 
-- (void)softwareIconButton:(NCWSoftwareIconButton *)iconButton pressedAtItem:(NCWApplicationItem *)appItem
+- (void)softwareIconButton:(DBJSoftwareIconButton *)iconButton pressedAtItem:(DBJApplicationItem *)appItem
 {
     if (_delegate && [_delegate respondsToSelector:@selector(softwareTableViewCell:didPressedAtItem:)]) {
         [_delegate softwareTableViewCell:self didPressedAtItem:appItem];

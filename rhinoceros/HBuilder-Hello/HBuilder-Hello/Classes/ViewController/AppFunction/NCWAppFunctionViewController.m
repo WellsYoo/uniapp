@@ -11,8 +11,8 @@
 #import "NCWSystemtViewController.h"
 
 #import "NCWBaseNavigationController.h"
-#import "NCWWidgetInfoManager.h"
-#import "NCWReallyManager.h"
+#import "DBJWidgetInfoManager.h"
+#import "DBJReallyManager.h"
 
 #import "NCWDialog.h"
 
@@ -42,7 +42,7 @@
 {
     self = [super init];
     if (self) {
-        BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+        BOOL shouldBeReally = [[DBJReallyManager sharedInstance] shouleBeReally];
         if (shouldBeReally) {
             _listHeadTitles = @[@"已安装应用", @"系统应用"];
         }else {
@@ -62,8 +62,8 @@
     //已选中application
     _selectedApps = [NSMutableArray array];
     _removeApps = [NSMutableArray array];
-    for (id item in [[NCWWidgetInfoManager sharedInstance] personListAtWidget]) {
-        if ([item isKindOfClass:[NCWApplicationItem class]]) {
+    for (id item in [[DBJWidgetInfoManager sharedInstance] personListAtWidget]) {
+        if ([item isKindOfClass:[DBJApplicationItem class]]) {
             [_selectedApps addObject:item];
         }
     }
@@ -73,11 +73,11 @@
     [navigationController addPartingLine];
     
     //是否变身
-    BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[DBJReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         self.title = @"选择APP和功能";
         
-        _listHeadView = [[NCWListHeadView alloc] initWithFrame:CGRectMake(12, 0, CGRectGetWidth(self.view.frame) - 2 * 12, kListHeadHeight)];
+        _listHeadView = [[DBJListHeadView alloc] initWithFrame:CGRectMake(12, 0, CGRectGetWidth(self.view.frame) - 2 * 12, kListHeadHeight)];
         _listHeadView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
         _listHeadView.clipsToBounds = YES;
         _listHeadView.listDelegate = self;
@@ -85,11 +85,11 @@
         _listHeadView.defaultIndex = 0;
         [self.view addSubview:_listHeadView];
         
-        _listBodyView = [[NCWListBodyView alloc] initWithFrame:CGRectMake(0, kListHeadHeight, CGRectGetWidth(self.view.frame),
+        _listBodyView = [[DBJListBodyView alloc] initWithFrame:CGRectMake(0, kListHeadHeight, CGRectGetWidth(self.view.frame),
                                                                           CGRectGetHeight(self.view.frame) - kListHeadHeight)];
     }else {
         self.title = @"选择功能";
-        _listBodyView = [[NCWListBodyView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame),
+        _listBodyView = [[DBJListBodyView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame),
                                                                           CGRectGetHeight(self.view.frame))];
     }
     
@@ -201,12 +201,12 @@
     return [_listHeadTitles count];
 }
 
-- (NSInteger)listHeadView:(NCWListHeadView *)listHeadView forWidth:(NSInteger)index
+- (NSInteger)listHeadView:(DBJListHeadView *)listHeadView forWidth:(NSInteger)index
 {
     return 100;
 }
 
-- (void)listHeadView:(NCWListHeadView *)listHeadView press:(UIButton *)sender
+- (void)listHeadView:(DBJListHeadView *)listHeadView press:(UIButton *)sender
 {
     [_listBodyView scrollToIndex:sender.tag];
 }
@@ -223,10 +223,10 @@
     }
 }
 
-- (id)forListBodyView:(NCWListBodyView *)view index:(NSInteger)index
+- (id)forListBodyView:(DBJListBodyView *)view index:(NSInteger)index
 {
     //是否变身
-    BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[DBJReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         NCWBaseAppViewController *viewController = nil;
         switch (index) {
@@ -269,7 +269,7 @@
 - (NSArray *)applicationController:(NCWBaseAppViewController *)appController selecedAppsWhichIsSystem:(BOOL)isSystem
 {
     NSMutableArray *selectedApps = [NSMutableArray array];
-    for (NCWApplicationItem *appItem in _selectedApps) {
+    for (DBJApplicationItem *appItem in _selectedApps) {
         if (isSystem) {
             if (appItem.isSystemApp) {
                 [selectedApps addObject:appItem];
@@ -283,7 +283,7 @@
     return selectedApps;
 }
 
-- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(NCWApplicationItem *)appItem
+- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(DBJApplicationItem *)appItem
 {
     if (appItem.isChecked) {
         if (![_selectedApps containsObject:appItem]) {
@@ -298,8 +298,8 @@
 - (BOOL)applicationControllerShouldCheck
 {
     NSInteger numOfItem = 0;
-    for (id item in [[NCWWidgetInfoManager sharedInstance] personListAtWidget]) {
-        if (![item isKindOfClass:[NCWApplicationItem class]]) {
+    for (id item in [[DBJWidgetInfoManager sharedInstance] personListAtWidget]) {
+        if (![item isKindOfClass:[DBJApplicationItem class]]) {
             numOfItem++;
         }
     }
@@ -331,13 +331,13 @@
 
 - (void)doneButtonPressHandler:(id)sender
 {
-    for (NCWApplicationItem *appItem in _selectedApps) {
-        [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
+    for (DBJApplicationItem *appItem in _selectedApps) {
+        [[DBJWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
     }
-    for (NCWApplicationItem *appItem in _removeApps) {
-        [[NCWWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
+    for (DBJApplicationItem *appItem in _removeApps) {
+        [[DBJWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
     }
-    [[NCWWidgetInfoManager sharedInstance] saveToWidget];
+    [[DBJWidgetInfoManager sharedInstance] saveToWidget];
     if (self.navigationController.viewControllers.count > 1) {
         [self.navigationController popViewControllerAnimated:YES];
     }else {

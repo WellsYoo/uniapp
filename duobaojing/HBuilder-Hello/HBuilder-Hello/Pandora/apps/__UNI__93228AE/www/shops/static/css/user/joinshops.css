@@ -1,0 +1,145 @@
+.contain {
+	background: #fff;
+}
+
+.title {
+	color: #282526;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 16px 10px 4px 10px;
+}
+icon {
+	color: #959595;
+}
+.title::before {
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 12px;
+	background: linear-gradient(-90deg, rgba(255, 1, 43, 1), rgba(255, 133, 2, 1));
+	margin-right: 8px;
+}
+
+label {
+	height: 40px;
+	margin: 0 10px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+label input {
+	border: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-textarea-placeholder {
+	color: rgba(40, 37, 38, 0.3);
+}
+
+textarea::-webkit-placeholder {
+	color: rgba(40, 37, 38, 0.3);
+
+}
+
+.icon-address {
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	background: url() center no-repeat;
+	background-size: contain;
+}
+
+label textarea {
+	padding: 10px;
+	height: 124px;
+	display: block;
+	width: 100%;
+	border: 1px solid #f4f4f4;
+}
+
+.code {
+	width: 80px;
+	height: 30px;
+	color: #fff;
+	font-size: 12px;
+	background: linear-gradient(-90deg, rgba(255, 1, 43, 1), rgba(255, 133, 2, 1));
+	border-radius: 5px;
+}
+
+.add {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	color: #ccc;
+	font-size: 14px;
+	border-radius: 50%;
+	margin: 0 6px;
+}
+
+.add:last-child {
+	background: #ccc;
+	color: #fff;
+}
+
+.vip-list {
+	padding: 10px;
+}
+
+.choose {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #BFBFBF;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.vip-level {
+	font-size: 15px;
+	color: #282625;
+}
+.vip-level span {
+	position: relative;
+	top: 1px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 6px;
+	background: linear-gradient(-90deg, rgba(255, 1, 43, 1) 0%, rgba(255, 133, 2, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/deep/ .van-tabs__wrap {
+	height: 0;
+}
+.next {
+	color: #fff;
+	font-size: 18px;
+	width: 140px;
+	height: 40px;
+	background:linear-gradient(-90deg,rgba(255,1,43,1),rgba(255,133,2,1));
+	margin: 20px auto 0;
+	border-radius: 20px;
+}
+.wrap-logo,.wrap-banner {
+	width: 120px;
+	height: 120px;
+	border:1px solid rgba(40,37,38,0.1);
+	margin-left: 10px;
+	margin-top: 10px;
+	background: url() center no-repeat;
+	background-size: 50px;
+	overflow: hidden;
+}
+.wrap-banner {
+	margin: 10px;
+	width: auto;
+	height: 120px;
+}
+.banner {
+	height: 240px;
+	background: url() center no-repeat;
+	background-size: cover;
+}
+label select {
+	color: #000;
+}
+swiper {
+	height: 100vh;
+}

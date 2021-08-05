@@ -6,7 +6,7 @@
 //  Copyright © 2015年 YWH. All rights reserved.
 //
 
-#import "NCWApplicationItem.h"
+#import "DBJApplicationItem.h"
 
 #define kSoftwareTableViewCellHeight     50.0f
 #define kSoftwareTableViewCellMoreHeight 68.0f
@@ -14,7 +14,7 @@
 
 @class NCWSoftwareTableViewCell;
 @protocol NCWSoftwareTableViewCellDelegate <NSObject>
-- (void)softwareTableViewCell:(NCWSoftwareTableViewCell *)cell didPressedAtItem:(NCWApplicationItem *)appItem;
+- (void)softwareTableViewCell:(NCWSoftwareTableViewCell *)cell didPressedAtItem:(DBJApplicationItem *)appItem;
 @end
 
 @interface NCWSoftwareTableViewCell : UITableViewCell
@@ -23,6 +23,6 @@
 }
 @property(nonatomic, weak) id<NCWSoftwareTableViewCellDelegate> delegate;
 
-- (void)setAppItem:(NCWApplicationItem *)appItem;
+- (void)setAppItem:(DBJApplicationItem *)appItem;
 
 @end

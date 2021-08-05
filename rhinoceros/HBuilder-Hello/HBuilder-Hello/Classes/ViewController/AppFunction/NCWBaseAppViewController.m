@@ -9,7 +9,7 @@
 #import "NCWBaseAppViewController.h"
 #import "NCWDialog.h"
 
-#import "NCWWidgetInfoManager.h"
+#import "DBJWidgetInfoManager.h"
 
 #define kSoftwareCellHeaderHeight   20.0f
 #define kUndefineTitleIndex         @"#"
@@ -42,11 +42,11 @@
         }
         //数据排序  q
         NSMutableArray *commonApps = [NSMutableArray array]; //常用
-        for (NCWApplicationItem *appItem in _tableData) {
+        for (DBJApplicationItem *appItem in _tableData) {
             //是否已选择
-            for (NCWApplicationItem *selectedApp in selectedApps) {
+            for (DBJApplicationItem *selectedApp in selectedApps) {
 //            BOOL shouldBreak = NO;//有子功能不查询主功能是否已选中
-                for (NCWApplicationItem *subItem in appItem.subItems) {
+                for (DBJApplicationItem *subItem in appItem.subItems) {
                     if ([subItem isEqual:selectedApp]) {
                         subItem.isChecked = YES;
                     }
@@ -80,7 +80,7 @@
                                                 kGroupItems:commonApps};
             [_sectionGroup addObject:commmonDictionary];
         }
-        for (NCWApplicationItem *appItem in _tableData) {
+        for (DBJApplicationItem *appItem in _tableData) {
             if (![_sectionTitles containsObject:appItem.titleIndex] && appItem.titleIndex) {
                 [_sectionTitles addObject:appItem.titleIndex];
             }
@@ -93,7 +93,7 @@
         for (NSInteger i = startIndex; i < _sectionTitles.count; i++) {
             NSString *appTitleIndex = [_sectionTitles objectAtIndex:i];
             NSMutableArray *appItems = [NSMutableArray array];
-            for (NCWApplicationItem *app in _tableData) {
+            for (DBJApplicationItem *app in _tableData) {
                 if ([app.titleIndex isEqualToString:appTitleIndex] && !app.isCommon) {
                     [appItems addObject:app];
                 }
@@ -130,7 +130,7 @@
 
 - (void)dealloc
 {
-    [[NCWWidgetInfoManager sharedInstance] clearRequestQueue];
+    [[DBJWidgetInfoManager sharedInstance] clearRequestQueue];
 }
 
 - (void)initAppItems
@@ -214,7 +214,7 @@
         //search
         [_searchResults removeAllObjects];
         NSString *keyword = [_delegate applicationControllerSearchKeyWord];
-        for (NCWApplicationItem *appItem in _tableData) {
+        for (DBJApplicationItem *appItem in _tableData) {
             for (NSInteger i = 0; i < keyword.length; i++) {
                 char subWord = [keyword characterAtIndex:i];
                 if ((subWord > 96 && subWord < 123) || (subWord > 64 && subWord < 91)) {
@@ -254,7 +254,7 @@
     if ([_delegate applicationControllerBeginSearch]) {
         __weak UITableView *searchResultTableView = [_delegate applicationControllerSearchResultTableView];
         if (searchResultTableView == tableView) {
-            NCWApplicationItem *appItem = [_searchResults objectAtIndex:indexPath.row];
+            DBJApplicationItem *appItem = [_searchResults objectAtIndex:indexPath.row];
             [cell setAppItem:appItem];
             return cell;
         }
@@ -262,7 +262,7 @@
     //normal
     NSDictionary *groupDictionary = [_sectionGroup objectAtIndex:indexPath.section];
     NSMutableArray *appItems = [groupDictionary objectForKey:kGroupItems];
-    NCWApplicationItem *appItem = [appItems objectAtIndex:indexPath.row];
+    DBJApplicationItem *appItem = [appItems objectAtIndex:indexPath.row];
     [cell setAppItem:appItem];
     
     return cell;
@@ -276,7 +276,7 @@
     if ([_delegate applicationControllerBeginSearch]) {
         __weak UITableView *searchResultTableView = [_delegate applicationControllerSearchResultTableView];
         if (searchResultTableView == tableView) {
-            NCWApplicationItem *appItem = [_searchResults objectAtIndex:indexPath.row];
+            DBJApplicationItem *appItem = [_searchResults objectAtIndex:indexPath.row];
             if (appItem.isExpress && appItem.subItems.count) {
                 NSInteger count = appItem.subItems.count / kSoftwareTableViewCellMaxCount;
                 if (appItem.subItems.count % kSoftwareTableViewCellMaxCount) {
@@ -290,7 +290,7 @@
     //normal
     NSDictionary *groupDictionary = [_sectionGroup objectAtIndex:indexPath.section];
     NSMutableArray *appItems = [groupDictionary objectForKey:kGroupItems];
-    NCWApplicationItem *appItem = [appItems objectAtIndex:indexPath.row];
+    DBJApplicationItem *appItem = [appItems objectAtIndex:indexPath.row];
     
     if (appItem.isExpress && appItem.subItems.count) {
         NSInteger count = appItem.subItems.count / kSoftwareTableViewCellMaxCount;
@@ -346,7 +346,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    NCWApplicationItem *appItem = nil;
+    DBJApplicationItem *appItem = nil;
     if ([_delegate applicationControllerBeginSearch]) {
         appItem = [_searchResults objectAtIndex:indexPath.row];
     }else {
@@ -380,7 +380,7 @@
 
 #pragma mark - NCWSoftwareTableViewCell Delegate
 
-- (void)softwareTableViewCell:(NCWSoftwareTableViewCell *)cell didPressedAtItem:(NCWApplicationItem *)appItem
+- (void)softwareTableViewCell:(NCWSoftwareTableViewCell *)cell didPressedAtItem:(DBJApplicationItem *)appItem
 {
     if (!appItem.isChecked) {
         if ([_delegate applicationControllerShouldCheck]) {

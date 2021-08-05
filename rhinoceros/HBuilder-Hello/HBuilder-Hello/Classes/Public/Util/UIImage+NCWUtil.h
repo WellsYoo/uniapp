@@ -16,7 +16,7 @@ typedef enum {
     UIImageRoundedCornerAll = 0x0f,
 } UIImageRoundedCorner;
 
-@interface UIImage (NCWUtil)
+@interface UIImage (DBJUtil)
 
 
 + (UIImage *)imageWithColor:(UIColor *)color;                       //纯颜色图片

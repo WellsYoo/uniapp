@@ -9,7 +9,7 @@
 #import "NCWApplicationViewController.h"
 #import "NCWWorkspace.h"
 
-#import "NCWReallyManager.h"
+#import "DBJReallyManager.h"
 
 #define kWechatBundleID @"com.tencent.xin"
 #define kWeiboBundleID  @"com.sina.weibo"
@@ -45,7 +45,7 @@
     
     _appIdentifiers = [NSMutableArray array];
     
-    BOOL shouldBeReally = [[NCWReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[DBJReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
@@ -91,7 +91,7 @@
                         NSString *realUrlScheme = [NSString stringWithFormat:@"%@://", urlScheme];
                         if (itemId != nil && bundleId != nil && bundleName != nil && realUrlScheme != nil) {
                             NSDictionary *appDictionary = @{kAppID:itemId, kBundle:bundleId, kTitle:bundleName, kIcon:@"icon_default", kScheme:realUrlScheme};
-                            NCWApplicationItem *appItem = [[NCWApplicationItem alloc] initWithDictionary:appDictionary];
+                            DBJApplicationItem *appItem = [[DBJApplicationItem alloc] initWithDictionary:appDictionary];
                             appItem.isFromInstalled = YES;
                             
                             [_appIdentifiers addObject:bundleId];
@@ -134,7 +134,7 @@
     NSDictionary *wechat = @{kBundle:kWechatBundleID, kTitle:@"微信", kIcon:@"weixin", kScheme:@"wechat",
                              kItems:@[wechatSelf, wechatFirend, wechatScan, wechatGame, wechatFunction, wechatGongz,
                                       wechatSetting, wechatInfo, wechatFeedback, wechatGeneral, wechatChatSetting]};
-    NCWApplicationItem *wechatItem = [[NCWApplicationItem alloc] initWithDictionary:wechat];
+    DBJApplicationItem *wechatItem = [[DBJApplicationItem alloc] initWithDictionary:wechat];
     wechatItem.isCommon = YES;
     
     [_appIdentifiers addObject:kWechatBundleID];
@@ -158,7 +158,7 @@
     NSDictionary *weiboScan = @{kBundle:kWeiboBundleID, kTitle:@"扫一扫", kIcon:@"weibo_scan", kScheme:@"sinaweibo://qrcode"};
     NSDictionary *weibo = @{kBundle:kWeiboBundleID, kTitle:@"微博", kIcon:@"weibo", kScheme:@"weibo", kItems:@[weiboSelf, weiboSend, weiboHot, weiboPhoto,
                                                                                                               weiboVideo, weiboSearch, weiboScan]};
-    NCWApplicationItem *weiboItem = [[NCWApplicationItem alloc] initWithDictionary:weibo];
+    DBJApplicationItem *weiboItem = [[DBJApplicationItem alloc] initWithDictionary:weibo];
     weiboItem.isCommon = YES;
     
     [_appIdentifiers addObject:kWeiboBundleID];
@@ -180,7 +180,7 @@
     NSDictionary *taobao = @{kBundle:kTaobaoBundleID, kBundle:kTaobaoBundleID, kTitle:@"淘宝", kIcon:@"taobao", kScheme:@"taobao",
                              kItems:@[taobaoSelf, taobaoWaimai, taobaoSecond, taobaoJu,
                                       taobaoClothes, taobaoHome]};
-    NCWApplicationItem *taobaoItem = [[NCWApplicationItem alloc] initWithDictionary:taobao];
+    DBJApplicationItem *taobaoItem = [[DBJApplicationItem alloc] initWithDictionary:taobao];
     taobaoItem.isCommon = YES;
     
     [_appIdentifiers addObject:kTaobaoBundleID];
@@ -204,7 +204,7 @@
     NSDictionary *alipay = @{kBundle:kAlipayBundleID, kTitle:@"支付宝", kIcon:@"alipay", kScheme:@"alipay",
                              kItems:@[alipaySelf, alipayPackage, alipayRed, alipayQrcode,
                                       alipayHeart, /*alipayScret,*/ alipayScan, alipaySound]};
-    NCWApplicationItem *alipayItem = [[NCWApplicationItem alloc] initWithDictionary:alipay];
+    DBJApplicationItem *alipayItem = [[DBJApplicationItem alloc] initWithDictionary:alipay];
     alipayItem.isCommon = YES;
     
     [_appIdentifiers addObject:kAlipayBundleID];
@@ -217,7 +217,7 @@
         return;
     }
     NSDictionary *appSelf = @{kBundle:[[NSBundle mainBundle] bundleIdentifier], kTitle:@"快手", kIcon:@"icon_self", kScheme:@"TodayAddContact://addPerson"};
-    NCWApplicationItem *selfItem = [[NCWApplicationItem alloc] initWithDictionary:appSelf];
+    DBJApplicationItem *selfItem = [[DBJApplicationItem alloc] initWithDictionary:appSelf];
     
     [_appIdentifiers addObject:[[NSBundle mainBundle] bundleIdentifier]];
     [_tableData addObject:selfItem];

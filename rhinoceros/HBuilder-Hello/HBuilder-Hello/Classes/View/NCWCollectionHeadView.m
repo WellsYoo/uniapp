@@ -7,7 +7,7 @@
 //
 
 #import "NCWCollectionHeadView.h"
-#import "NCWWidgetInfoManager.h"
+#import "DBJWidgetInfoManager.h"
 
 #define kLineColor [UIColor colorWithRed:0.85 green:0.87 blue:0.89 alpha:1.0]
 
@@ -44,12 +44,12 @@
         [self addSubview:_tipLabel];
        
         _switchButton = [[UISwitch alloc] init];
-         NSUserDefaults * widgetDefaults = [[NSUserDefaults alloc] initWithSuiteName:[NCWWidgetInfoManager groupIdentifier]];
+         NSUserDefaults * widgetDefaults = [[NSUserDefaults alloc] initWithSuiteName:[DBJWidgetInfoManager groupIdentifier]];
         if (![[NSUserDefaults standardUserDefaults] objectForKey:kFirstTimeLaunch]) {
             [[NSUserDefaults standardUserDefaults] setObject: @(YES) forKey:kFirstTimeLaunch];
             [[NSUserDefaults standardUserDefaults] synchronize];
            
-            NSUserDefaults * widgetDefaults = [[NSUserDefaults alloc] initWithSuiteName:[NCWWidgetInfoManager groupIdentifier]];
+            NSUserDefaults * widgetDefaults = [[NSUserDefaults alloc] initWithSuiteName:[DBJWidgetInfoManager groupIdentifier]];
             [widgetDefaults setObject:@(YES) forKey:kSwitch];
             [widgetDefaults synchronize];
             [_switchButton setOn:YES];
@@ -125,7 +125,7 @@
 {
     UISwitch *switchBtn = (UISwitch*)sender;
     BOOL show = [switchBtn isOn];
-    NSUserDefaults * widgetDefaults = [[NSUserDefaults alloc] initWithSuiteName:[NCWWidgetInfoManager groupIdentifier]];
+    NSUserDefaults * widgetDefaults = [[NSUserDefaults alloc] initWithSuiteName:[DBJWidgetInfoManager groupIdentifier]];
     [widgetDefaults setObject:@(show) forKey:kSwitch];
     [widgetDefaults synchronize];
 }

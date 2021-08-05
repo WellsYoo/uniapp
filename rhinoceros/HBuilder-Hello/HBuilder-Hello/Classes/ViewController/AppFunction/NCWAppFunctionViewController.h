@@ -7,15 +7,15 @@
 //
 
 #import "NCWBaseViewController.h"
-#import "NCWListHeadView.h"
-#import "NCWListBodyView.h"
+#import "DBJListHeadView.h"
+#import "DBJListBodyView.h"
 
 #define kHeadViewHeight (45 * (SCREEN_WIDTH / 320))
 
 @interface NCWAppFunctionViewController : NCWBaseViewController <NCWListHeadViewDelegate, NCWListBodyViewDelegate>
 {
-    NCWListHeadView *_listHeadView;
-    NCWListBodyView *_listBodyView;
+    DBJListHeadView *_listHeadView;
+    DBJListBodyView *_listBodyView;
     
     NSArray        *_listHeadTitles;
     NSMutableArray *_listBodyViewControllers;

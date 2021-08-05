@@ -9,7 +9,7 @@
 #import "NCWBaseViewController.h"
 #import "pinyin.h"
 
-#import "NCWApplicationItem.h"
+#import "DBJApplicationItem.h"
 #import "NCWSoftwareTableViewCell.h"
 
 #define kGroupSectionTitle @"GroupSectionTitle"
@@ -26,7 +26,7 @@
 
 @optional
 
-- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(NCWApplicationItem *)appItem;
+- (void)applicationController:(NCWBaseAppViewController *)appController didPressedAppItem:(DBJApplicationItem *)appItem;
 
 - (BOOL)applicationControllerBeginSearch;
 - (NSString *)applicationControllerSearchKeyWord;

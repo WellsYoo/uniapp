@@ -7,19 +7,19 @@
 //
 
 #import "NCWHomeViewController.h"
-#import "NCWSpringboardCell.h"
-#import "NCWSpringboardLayout.h"
-#import "NCWWidgetInfoManager.h"
+#import "DBJSpringboardCell.h"
+#import "DBJSpringboardLayout.h"
+#import "DBJWidgetInfoManager.h"
 #import "NCWCollectionHeadView.h"
 #import "NCWBaseNavigationController.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "NCWAppFunctionViewController.h"
 #import "NCWDialog.h"
-#import "NCWReallyManager.h"
+#import "DBJReallyManager.h"
 #import "NCWAdImageView.h"
 #import "NYAlertViewController.h"
-#import "GCDAsyncSocket.h"
+
 #import "UIScrollView+EmptyDataSet.h"
 
 #define NCWCollectionViewCellIdentifier     @"NCWCollectionViewCellIdentifier"
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger, ContactState)
 @property(nonatomic, strong)UIView           *bottomView;
 @property(nonatomic, strong)UIButton         *bottomButton;
 @property(nonatomic, strong)UIView           *bottomSeparateLine;
-@property(nonatomic, strong)NCWWidgetPerson   *meWidgetPerson;
+@property(nonatomic, strong)DBJWidgetPerson   *meWidgetPerson;
 @property(nonatomic, strong)NSMutableArray   *phoneNumberArray;
 @property(nonatomic, strong)NSMutableArray   *phoneNumberTypeArray;
 @property (nonatomic,assign) NCWType         contactType; //号码用途
@@ -83,7 +83,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     
     CGRect f1 = bounds;
     f1.size.height =f1.size.height  - kHomeBottomViewHeight;
-    if (![NCWReallyManager sharedInstance].shouleBeReally) {
+    if (![DBJReallyManager sharedInstance].shouleBeReally) {
         f1.size.height = f1.size.height - 50*kScreenWidth/320;
     }
     _collectionView.frame = f1;
@@ -139,12 +139,12 @@ typedef NS_ENUM(NSInteger, ContactState)
     [((NCWBaseNavigationController *)self.navigationController) addPartingLine];
     
     
-    NCWSpringboardLayout * layout = [[NCWSpringboardLayout alloc] initWithType:GS_SBLayoutTypeScroll];
+    DBJSpringboardLayout * layout = [[DBJSpringboardLayout alloc] initWithType:GS_SBLayoutTypeScroll];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.backgroundColor = colorWithRGB(efeff4);
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    [self.collectionView registerClass:[NCWSpringboardCell class] forCellWithReuseIdentifier:NCWCollectionViewCellIdentifier];
+    [self.collectionView registerClass:[DBJSpringboardCell class] forCellWithReuseIdentifier:NCWCollectionViewCellIdentifier];
     [self.collectionView registerClass:[NCWCollectionHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NCWCollectionViewHeadIdentifier];
     [self.view addSubview:self.collectionView];
     
@@ -177,7 +177,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     [_bottomButton addTarget:self action:@selector(editStateChange:) forControlEvents:UIControlEventTouchUpInside];
     [_bottomView addSubview:_bottomButton];
 
-    if (![NCWReallyManager sharedInstance].shouleBeReally){
+    if (![DBJReallyManager sharedInstance].shouleBeReally){
         _adView = [[NCWAdImageView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kHomeBottomViewHeight, kScreenWidth, 50*kScreenWidth/320)];
         [self.view insertSubview:_adView aboveSubview:_collectionView];
     }
@@ -205,9 +205,9 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 - (void)__reloadPersonList
 {
-    [[NCWWidgetInfoManager sharedInstance] clearRequestQueue];
+    [[DBJWidgetInfoManager sharedInstance] clearRequestQueue];
     [self.starPersonList removeAllObjects];
-    [self.starPersonList addObjectsFromArray:[[NCWWidgetInfoManager sharedInstance] personListAtWidget]];
+    [self.starPersonList addObjectsFromArray:[[DBJWidgetInfoManager sharedInstance] personListAtWidget]];
     [self.collectionView reloadData];
     _contactState = ContactStateEditing;
     [self editStateChange:nil];
@@ -295,7 +295,7 @@ typedef NS_ENUM(NSInteger, ContactState)
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NCWSpringboardCell * cell = (NCWSpringboardCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NCWCollectionViewCellIdentifier forIndexPath:indexPath];
+    DBJSpringboardCell * cell = (DBJSpringboardCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NCWCollectionViewCellIdentifier forIndexPath:indexPath];
     
     id item = [self.starPersonList objectAtIndex:indexPath.row];
     
@@ -332,7 +332,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     id person = [self.starPersonList objectAtIndex:fromIndexPath.row];
     [self.starPersonList removeObjectAtIndex:fromIndexPath.row];
     [self.starPersonList insertObject:person atIndex:toIndexPath.row];
-    [[NCWWidgetInfoManager sharedInstance] sortNCWListWithNewList:self.starPersonList];
+    [[DBJWidgetInfoManager sharedInstance] sortNCWListWithNewList:self.starPersonList];
 }
 
 
@@ -374,12 +374,12 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 #pragma mark - GSSpringboardCellDelegate
 
-- (void)gs_sbCellDidDeleted:(NCWSpringboardCell *)cell
+- (void)gs_sbCellDidDeleted:(DBJSpringboardCell *)cell
 {
     NSIndexPath * indexPath = [self.collectionView indexPathForCell:cell];
     id deleteItem = [self.starPersonList objectAtIndex:indexPath.row];
     [self.starPersonList removeObject:deleteItem];
-    [[NCWWidgetInfoManager sharedInstance] deleteFromWidget:deleteItem saveWidget:YES];
+    [[DBJWidgetInfoManager sharedInstance] deleteFromWidget:deleteItem saveWidget:YES];
     [self.collectionView gs_deleteItemAtIndexPath:indexPath];
     [self refreshAddButtonFrame];
 }
@@ -394,7 +394,7 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController*)peoplePicker didSelectPerson:(ABRecordRef)person{
     
-    _meWidgetPerson = [NCWWidgetPerson emptyPerson];
+    _meWidgetPerson = [DBJWidgetPerson emptyPerson];
     _meWidgetPerson = [_meWidgetPerson initWithABRecordRef:person];
     
     
@@ -410,7 +410,7 @@ typedef NS_ENUM(NSInteger, ContactState)
         _meWidgetPerson.phoneNumber = phoneNumber;
         _meWidgetPerson.phoneNumberType = label;
         _meWidgetPerson.contactType = _contactType;
-        [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
+        [[DBJWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
         
     }
     else if(phoneCount > 1)
@@ -473,7 +473,7 @@ typedef NS_ENUM(NSInteger, ContactState)
             _meWidgetPerson.phoneNumber = _phoneNumberArray[index];
             _meWidgetPerson.contactType = _contactType;
             _meWidgetPerson.phoneNumberType = _phoneNumberTypeArray[index];
-            [[NCWWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
+            [[DBJWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
             [self __reloadPersonList];
         }
     }
