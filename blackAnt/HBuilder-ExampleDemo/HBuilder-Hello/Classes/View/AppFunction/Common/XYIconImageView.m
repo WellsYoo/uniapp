@@ -19,7 +19,7 @@
 {
     YXpplicationItem *_appItem;
     BOOL                _needSave;
-    SFWWidgetPerson    *_person;
+    CCWidgetPerson    *_person;
 }
 
 @end
@@ -103,7 +103,7 @@
 //}
 
 
--(void)setNCWPersonImage:(SFWWidgetPerson *) person{
+-(void)setNCWPersonImage:(CCWidgetPerson *) person{
     _person = person;
     
     NSString *fullName = _person.fullName;

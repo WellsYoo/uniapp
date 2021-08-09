@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MTAreaDataModel.h"
+#import "CCAreaDataModel.h"
 #import "MTAreaManagerSetting.h"
 
 /**
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, MTAreaDataSource) {
  *	@param dataSource	数据来源
  *	@param isSuccess	是否成功获取
  */
-typedef void(^MTAreaCompletionHandler)(MTAreaDataModel *areaModel, MTAreaDataSource dataSource, BOOL isSuccess);
+typedef void(^MTAreaCompletionHandler)(CCAreaDataModel *areaModel, MTAreaDataSource dataSource, BOOL isSuccess);
 
 @interface MTAreaManagerKit : NSObject
 

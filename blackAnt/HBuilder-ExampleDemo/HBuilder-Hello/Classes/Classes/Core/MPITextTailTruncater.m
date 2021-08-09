@@ -8,7 +8,7 @@
 
 #import "MPITextTailTruncater.h"
 #import "MPITextKitContext.h"
-#import "MPITextRenderer.h"
+#import "CCTextRenderer.h"
 #import "MPITextRenderAttributes.h"
 #import "MPITextKitConst.h"
 
@@ -70,7 +70,7 @@
     
     if (!_truncationUsedRectValue) {
         CGRect truncationUsedRect =
-        [_truncationAttributedString boundingRectWithSize:MPITextContainerMaxSize
+        [_truncationAttributedString boundingRectWithSize:CCTextContainerMaxSize
                                                  options:NSStringDrawingUsesLineFragmentOrigin
                                                  context:nil];
         _truncationUsedRectValue = [NSValue valueWithCGRect:truncationUsedRect];

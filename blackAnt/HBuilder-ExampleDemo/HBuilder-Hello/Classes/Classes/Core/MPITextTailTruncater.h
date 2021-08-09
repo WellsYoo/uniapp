@@ -10,9 +10,9 @@
 #if __has_include(<MPITextKit/MPITextKit.h>)
 #import <MPITextKit/MPITextTruncating.h>
 #else
-#import "MPITextTruncating.h"
+#import "CCTextTruncating.h"
 #endif
 
-@interface MPITextTailTruncater : NSObject <MPITextTruncating>
+@interface MPITextTailTruncater : NSObject <CCTextTruncating>
 
 @end

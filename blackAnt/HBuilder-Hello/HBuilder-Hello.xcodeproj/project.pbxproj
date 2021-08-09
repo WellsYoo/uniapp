@@ -50,15 +50,15 @@
 		2F3D0733269C6DAA007CBAA8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5762F12614604A00A5C0BA /* GLKit.framework */; };
 		2FA04BAB26B0FA3100010208 /* NSObject+MTAreaManagerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0026B0FA3100010208 /* NSObject+MTAreaManagerUtil.m */; };
 		2FA04BAC26B0FA3100010208 /* UIDevice+MTAreaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0126B0FA3100010208 /* UIDevice+MTAreaManager.m */; };
-		2FA04BAD26B0FA3100010208 /* MTAreaRequestBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0526B0FA3100010208 /* MTAreaRequestBasic.m */; };
+		2FA04BAD26B0FA3100010208 /* CCAreaRequestBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0526B0FA3100010208 /* CCAreaRequestBasic.m */; };
 		2FA04BAE26B0FA3100010208 /* MTGPSDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0626B0FA3100010208 /* MTGPSDataModel.m */; };
-		2FA04BAF26B0FA3100010208 /* MTGPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0726B0FA3100010208 /* MTGPSManager.m */; };
+		2FA04BAF26B0FA3100010208 /* CCGPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0726B0FA3100010208 /* CCGPSManager.m */; };
 		2FA04BB026B0FA3100010208 /* MTAreaManagerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0C26B0FA3100010208 /* MTAreaManagerKit.m */; };
 		2FA04BB126B0FA3100010208 /* MTAreaConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FA04B0E26B0FA3100010208 /* MTAreaConfiguration.plist */; };
-		2FA04BB226B0FA3100010208 /* MTAreaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0F26B0FA3100010208 /* MTAreaDataModel.m */; };
+		2FA04BB226B0FA3100010208 /* CCAreaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0F26B0FA3100010208 /* CCAreaDataModel.m */; };
 		2FA04BB326B0FA3100010208 /* MTAreaManagerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1026B0FA3100010208 /* MTAreaManagerSetting.m */; };
-		2FA04BB426B0FA3100010208 /* HMYSpringboardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1526B0FA3100010208 /* HMYSpringboardLayout.m */; };
-		2FA04BB526B0FA3100010208 /* DFReallyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1626B0FA3100010208 /* DFReallyManager.m */; };
+		2FA04BB426B0FA3100010208 /* CCSpringboardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1526B0FA3100010208 /* CCSpringboardLayout.m */; };
+		2FA04BB526B0FA3100010208 /* CCReallyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1626B0FA3100010208 /* CCReallyManager.m */; };
 		2FA04BB626B0FA3100010208 /* XYWidgetInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1726B0FA3100010208 /* XYWidgetInfoManager.m */; };
 		2FA04BB726B0FA3100010208 /* HMYAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1926B0FA3100010208 /* HMYAppManager.m */; };
 		2FA04BB826B0FA3100010208 /* MTAppMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1A26B0FA3100010208 /* MTAppMessage.m */; };
@@ -68,13 +68,13 @@
 		2FA04BBC26B0FA3100010208 /* HMYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2426B0FA3100010208 /* HMYAlertViewController.m */; };
 		2FA04BBD26B0FA3100010208 /* NYAlertActionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2626B0FA3100010208 /* NYAlertActionConfiguration.m */; };
 		2FA04BBE26B0FA3100010208 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2C26B0FA3100010208 /* UIView+Additions.m */; };
-		2FA04BBF26B0FA3100010208 /* YXAextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2D26B0FA3100010208 /* YXAextView.m */; };
-		2FA04BC026B0FA3100010208 /* FSAlertViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2E26B0FA3100010208 /* FSAlertViewButton.m */; };
+		2FA04BBF26B0FA3100010208 /* CCAextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2D26B0FA3100010208 /* CCAextView.m */; };
+		2FA04BC026B0FA3100010208 /* CCAlertViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2E26B0FA3100010208 /* CCAlertViewButton.m */; };
 		2FA04BC126B0FA3100010208 /* NYAlertViewPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3026B0FA3100010208 /* NYAlertViewPresentationController.m */; };
-		2FA04BC226B0FA3100010208 /* YoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3126B0FA3100010208 /* YoAlertView.m */; };
+		2FA04BC226B0FA3100010208 /* CCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3126B0FA3100010208 /* CCAlertView.m */; };
 		2FA04BC326B0FA3100010208 /* HMYAlertViewDismissalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3426B0FA3100010208 /* HMYAlertViewDismissalAnimationController.m */; };
 		2FA04BC426B0FA3100010208 /* NYAlertViewPresentationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3526B0FA3100010208 /* NYAlertViewPresentationAnimationController.m */; };
-		2FA04BC526B0FA3100010208 /* HMYAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3726B0FA3100010208 /* HMYAlertAction.m */; };
+		2FA04BC526B0FA3100010208 /* CCAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3726B0FA3100010208 /* CCAlertAction.m */; };
 		2FA04BC626B0FA3100010208 /* UIColor+NCWTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B3E26B0FA3100010208 /* UIColor+NCWTool.m */; };
 		2FA04BC726B0FA3100010208 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4126B0FA3100010208 /* pinyin.c */; };
 		2FA04BC826B0FA3100010208 /* UIImage+NCWUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4326B0FA3100010208 /* UIImage+NCWUtil.m */; };
@@ -82,13 +82,13 @@
 		2FA04BCA26B0FA3100010208 /* ESTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4726B0FA3100010208 /* ESTabBarController.m */; };
 		2FA04BCB26B0FA3100010208 /* HMYDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4A26B0FA3100010208 /* HMYDialog.m */; };
 		2FA04BCC26B0FA3100010208 /* NCWMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4C26B0FA3100010208 /* NCWMBProgressHUD.m */; };
-		2FA04BCD26B0FA3100010208 /* SFWWidgetPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4F26B0FA3100010208 /* SFWWidgetPerson.m */; };
+		2FA04BCD26B0FA3100010208 /* CCWidgetPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B4F26B0FA3100010208 /* CCWidgetPerson.m */; };
 		2FA04BCE26B0FA3100010208 /* YXpplicationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5126B0FA3100010208 /* YXpplicationItem.m */; };
 		2FA04BCF26B0FA3100010208 /* AMTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5726B0FA3100010208 /* AMTagView.m */; };
 		2FA04BD026B0FA3100010208 /* HMYNWCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5926B0FA3100010208 /* HMYNWCView.m */; };
 		2FA04BD126B0FA3100010208 /* XYTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5B26B0FA3100010208 /* XYTagListView.m */; };
 		2FA04BD226B0FA3100010208 /* YOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5D26B0FA3100010208 /* YOImageView.m */; };
-		2FA04BD326B0FA3100010208 /* XYCollectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5E26B0FA3100010208 /* XYCollectionHeadView.m */; };
+		2FA04BD326B0FA3100010208 /* CCCollectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5E26B0FA3100010208 /* CCCollectionHeadView.m */; };
 		2FA04BD426B0FA3100010208 /* XYSpringboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B5F26B0FA3100010208 /* XYSpringboardCell.m */; };
 		2FA04BD526B0FA3100010208 /* YOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B6326B0FA3100010208 /* YOTableViewCell.m */; };
 		2FA04BD626B0FA3100010208 /* YOListHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B6626B0FA3100010208 /* YOListHeadView.m */; };
@@ -97,8 +97,8 @@
 		2FA04BD926B0FA3100010208 /* YOListBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B6C26B0FA3100010208 /* YOListBodyView.m */; };
 		2FA04BDA26B0FA3100010208 /* HMYtwareIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B6F26B0FA3100010208 /* HMYtwareIconButton.m */; };
 		2FA04BDB26B0FA3100010208 /* HMYSegmentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7026B0FA3100010208 /* HMYSegmentButton.m */; };
-		2FA04BDC26B0FA3100010208 /* FSaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7526B0FA3100010208 /* FSaseNavigationController.m */; };
-		2FA04BDD26B0FA3100010208 /* XYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7626B0FA3100010208 /* XYHomeViewController.m */; };
+		2FA04BDC26B0FA3100010208 /* CCaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7526B0FA3100010208 /* CCaseNavigationController.m */; };
+		2FA04BDD26B0FA3100010208 /* CCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7626B0FA3100010208 /* CCHomeViewController.m */; };
 		2FA04BDE26B0FA3100010208 /* NCWBaseAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7B26B0FA3100010208 /* NCWBaseAppViewController.m */; };
 		2FA04BDF26B0FA3100010208 /* XYAppFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7C26B0FA3100010208 /* XYAppFunctionViewController.m */; };
 		2FA04BE026B0FA3100010208 /* SFSstemtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B7D26B0FA3100010208 /* SFSstemtViewController.m */; };
@@ -115,17 +115,17 @@
 		2FA04BEB26B0FA3100010208 /* MTACKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B9A26B0FA3100010208 /* MTACKeychainQuery.m */; };
 		2FA04C7326B1093900010208 /* MPITextRendererKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3126B1093900010208 /* MPITextRendererKey.mm */; };
 		2FA04C7426B1093900010208 /* MPITextKitContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3326B1093900010208 /* MPITextKitContext.mm */; };
-		2FA04C7526B1093900010208 /* MPITextAttachmentsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3426B1093900010208 /* MPITextAttachmentsInfo.m */; };
+		2FA04C7526B1093900010208 /* CCTextAttachmentsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3426B1093900010208 /* CCTextAttachmentsInfo.m */; };
 		2FA04C7626B1093900010208 /* MPITextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3626B1093900010208 /* MPITextParser.m */; };
 		2FA04C7726B1093900010208 /* MPITextBackgroundsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3C26B1093900010208 /* MPITextBackgroundsInfo.m */; };
-		2FA04C7826B1093900010208 /* MPITextKitBugFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3D26B1093900010208 /* MPITextKitBugFixer.m */; };
+		2FA04C7826B1093900010208 /* CCTextKitBugFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3D26B1093900010208 /* CCTextKitBugFixer.m */; };
 		2FA04C7926B1093900010208 /* MPITextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C3E26B1093900010208 /* MPITextDebugOption.m */; };
 		2FA04C7A26B1093900010208 /* MPITextTailTruncater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4026B1093900010208 /* MPITextTailTruncater.m */; };
 		2FA04C7B26B1093900010208 /* MPITextRenderAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4126B1093900010208 /* MPITextRenderAttributes.m */; };
 		2FA04C7C26B1093900010208 /* MPITextLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4226B1093900010208 /* MPITextLayoutManager.m */; };
 		2FA04C7D26B1093900010208 /* MPITextTruncationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4326B1093900010208 /* MPITextTruncationInfo.m */; };
 		2FA04C7E26B1093900010208 /* MPITextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4426B1093900010208 /* MPITextViewModel.m */; };
-		2FA04C7F26B1093900010208 /* MPITextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4526B1093900010208 /* MPITextRenderer.m */; };
+		2FA04C7F26B1093900010208 /* CCTextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4526B1093900010208 /* CCTextRenderer.m */; };
 		2FA04C8026B1093900010208 /* MPITextDefaultsValueHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4926B1093900010208 /* MPITextDefaultsValueHelpers.m */; };
 		2FA04C8126B1093900010208 /* MPITextGeometryHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4B26B1093900010208 /* MPITextGeometryHelpers.m */; };
 		2FA04C8226B1093900010208 /* MPITextKitConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04C4D26B1093900010208 /* MPITextKitConst.m */; };
@@ -255,22 +255,22 @@
 		2FA04B0126B0FA3100010208 /* UIDevice+MTAreaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MTAreaManager.m"; sourceTree = "<group>"; };
 		2FA04B0226B0FA3100010208 /* MTAreaManagerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAreaManagerKit.h; sourceTree = "<group>"; };
 		2FA04B0326B0FA3100010208 /* MTAreaManagerSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAreaManagerSetting.h; sourceTree = "<group>"; };
-		2FA04B0526B0FA3100010208 /* MTAreaRequestBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAreaRequestBasic.m; sourceTree = "<group>"; };
+		2FA04B0526B0FA3100010208 /* CCAreaRequestBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAreaRequestBasic.m; sourceTree = "<group>"; };
 		2FA04B0626B0FA3100010208 /* MTGPSDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGPSDataModel.m; sourceTree = "<group>"; };
-		2FA04B0726B0FA3100010208 /* MTGPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGPSManager.m; sourceTree = "<group>"; };
-		2FA04B0826B0FA3100010208 /* MTAreaRequestBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAreaRequestBasic.h; sourceTree = "<group>"; };
-		2FA04B0926B0FA3100010208 /* MTGPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGPSManager.h; sourceTree = "<group>"; };
+		2FA04B0726B0FA3100010208 /* CCGPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGPSManager.m; sourceTree = "<group>"; };
+		2FA04B0826B0FA3100010208 /* CCAreaRequestBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAreaRequestBasic.h; sourceTree = "<group>"; };
+		2FA04B0926B0FA3100010208 /* CCGPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGPSManager.h; sourceTree = "<group>"; };
 		2FA04B0A26B0FA3100010208 /* MTGPSDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGPSDataModel.h; sourceTree = "<group>"; };
-		2FA04B0B26B0FA3100010208 /* MTAreaDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAreaDataModel.h; sourceTree = "<group>"; };
+		2FA04B0B26B0FA3100010208 /* CCAreaDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAreaDataModel.h; sourceTree = "<group>"; };
 		2FA04B0C26B0FA3100010208 /* MTAreaManagerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAreaManagerKit.m; sourceTree = "<group>"; };
 		2FA04B0E26B0FA3100010208 /* MTAreaConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MTAreaConfiguration.plist; sourceTree = "<group>"; };
-		2FA04B0F26B0FA3100010208 /* MTAreaDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAreaDataModel.m; sourceTree = "<group>"; };
+		2FA04B0F26B0FA3100010208 /* CCAreaDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAreaDataModel.m; sourceTree = "<group>"; };
 		2FA04B1026B0FA3100010208 /* MTAreaManagerSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAreaManagerSetting.m; sourceTree = "<group>"; };
-		2FA04B1226B0FA3100010208 /* HMYSpringboardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYSpringboardLayout.h; sourceTree = "<group>"; };
+		2FA04B1226B0FA3100010208 /* CCSpringboardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpringboardLayout.h; sourceTree = "<group>"; };
 		2FA04B1326B0FA3100010208 /* XYWidgetInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWidgetInfoManager.h; sourceTree = "<group>"; };
-		2FA04B1426B0FA3100010208 /* DFReallyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFReallyManager.h; sourceTree = "<group>"; };
-		2FA04B1526B0FA3100010208 /* HMYSpringboardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYSpringboardLayout.m; sourceTree = "<group>"; };
-		2FA04B1626B0FA3100010208 /* DFReallyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFReallyManager.m; sourceTree = "<group>"; };
+		2FA04B1426B0FA3100010208 /* CCReallyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCReallyManager.h; sourceTree = "<group>"; };
+		2FA04B1526B0FA3100010208 /* CCSpringboardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSpringboardLayout.m; sourceTree = "<group>"; };
+		2FA04B1626B0FA3100010208 /* CCReallyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCReallyManager.m; sourceTree = "<group>"; };
 		2FA04B1726B0FA3100010208 /* XYWidgetInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWidgetInfoManager.m; sourceTree = "<group>"; };
 		2FA04B1926B0FA3100010208 /* HMYAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAppManager.m; sourceTree = "<group>"; };
 		2FA04B1A26B0FA3100010208 /* MTAppMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAppMessage.m; sourceTree = "<group>"; };
@@ -280,27 +280,27 @@
 		2FA04B1E26B0FA3100010208 /* MTAppMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAppMessage.h; sourceTree = "<group>"; };
 		2FA04B1F26B0FA3100010208 /* HMYAppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAppRequest.m; sourceTree = "<group>"; };
 		2FA04B2026B0FA3100010208 /* HMYAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAppClient.m; sourceTree = "<group>"; };
-		2FA04B2226B0FA3100010208 /* HMYAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYAlertAction.h; sourceTree = "<group>"; };
+		2FA04B2226B0FA3100010208 /* CCAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertAction.h; sourceTree = "<group>"; };
 		2FA04B2326B0FA3100010208 /* NYAlertViewControllerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewControllerConfiguration.m; sourceTree = "<group>"; };
 		2FA04B2426B0FA3100010208 /* HMYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAlertViewController.m; sourceTree = "<group>"; };
 		2FA04B2526B0FA3100010208 /* NYAlertViewControllerTransitionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewControllerTransitionStyle.h; sourceTree = "<group>"; };
 		2FA04B2626B0FA3100010208 /* NYAlertActionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertActionConfiguration.m; sourceTree = "<group>"; };
 		2FA04B2826B0FA3100010208 /* NYAlertViewPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewPresentationController.h; sourceTree = "<group>"; };
-		2FA04B2926B0FA3100010208 /* YoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoAlertView.h; sourceTree = "<group>"; };
+		2FA04B2926B0FA3100010208 /* CCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertView.h; sourceTree = "<group>"; };
 		2FA04B2A26B0FA3100010208 /* NYAlertAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NYAlertAction+Private.h"; sourceTree = "<group>"; };
 		2FA04B2B26B0FA3100010208 /* HMYAlertViewDismissalAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYAlertViewDismissalAnimationController.h; sourceTree = "<group>"; };
 		2FA04B2C26B0FA3100010208 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
-		2FA04B2D26B0FA3100010208 /* YXAextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAextView.m; sourceTree = "<group>"; };
-		2FA04B2E26B0FA3100010208 /* FSAlertViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAlertViewButton.m; sourceTree = "<group>"; };
+		2FA04B2D26B0FA3100010208 /* CCAextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAextView.m; sourceTree = "<group>"; };
+		2FA04B2E26B0FA3100010208 /* CCAlertViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertViewButton.m; sourceTree = "<group>"; };
 		2FA04B2F26B0FA3100010208 /* NYAlertViewPresentationAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewPresentationAnimationController.h; sourceTree = "<group>"; };
 		2FA04B3026B0FA3100010208 /* NYAlertViewPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewPresentationController.m; sourceTree = "<group>"; };
-		2FA04B3126B0FA3100010208 /* YoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoAlertView.m; sourceTree = "<group>"; };
+		2FA04B3126B0FA3100010208 /* CCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertView.m; sourceTree = "<group>"; };
 		2FA04B3226B0FA3100010208 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		2FA04B3326B0FA3100010208 /* YXAextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXAextView.h; sourceTree = "<group>"; };
+		2FA04B3326B0FA3100010208 /* CCAextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAextView.h; sourceTree = "<group>"; };
 		2FA04B3426B0FA3100010208 /* HMYAlertViewDismissalAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAlertViewDismissalAnimationController.m; sourceTree = "<group>"; };
 		2FA04B3526B0FA3100010208 /* NYAlertViewPresentationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewPresentationAnimationController.m; sourceTree = "<group>"; };
-		2FA04B3626B0FA3100010208 /* FSAlertViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAlertViewButton.h; sourceTree = "<group>"; };
-		2FA04B3726B0FA3100010208 /* HMYAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAlertAction.m; sourceTree = "<group>"; };
+		2FA04B3626B0FA3100010208 /* CCAlertViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertViewButton.h; sourceTree = "<group>"; };
+		2FA04B3726B0FA3100010208 /* CCAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertAction.m; sourceTree = "<group>"; };
 		2FA04B3826B0FA3100010208 /* HMYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYAlertViewController.h; sourceTree = "<group>"; };
 		2FA04B3926B0FA3100010208 /* NYAlertViewControllerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewControllerConfiguration.h; sourceTree = "<group>"; };
 		2FA04B3A26B0FA3100010208 /* NYAlertActionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertActionConfiguration.h; sourceTree = "<group>"; };
@@ -319,12 +319,12 @@
 		2FA04B4B26B0FA3100010208 /* HMYDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYDialog.h; sourceTree = "<group>"; };
 		2FA04B4C26B0FA3100010208 /* NCWMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWMBProgressHUD.m; sourceTree = "<group>"; };
 		2FA04B4E26B0FA3100010208 /* YXpplicationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXpplicationItem.h; sourceTree = "<group>"; };
-		2FA04B4F26B0FA3100010208 /* SFWWidgetPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFWWidgetPerson.m; sourceTree = "<group>"; };
-		2FA04B5026B0FA3100010208 /* SFWWidgetPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFWWidgetPerson.h; sourceTree = "<group>"; };
+		2FA04B4F26B0FA3100010208 /* CCWidgetPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWidgetPerson.m; sourceTree = "<group>"; };
+		2FA04B5026B0FA3100010208 /* CCWidgetPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWidgetPerson.h; sourceTree = "<group>"; };
 		2FA04B5126B0FA3100010208 /* YXpplicationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXpplicationItem.m; sourceTree = "<group>"; };
 		2FA04B5326B0FA3100010208 /* XYTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTagListView.h; sourceTree = "<group>"; };
 		2FA04B5426B0FA3100010208 /* XYSpringboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSpringboardCell.h; sourceTree = "<group>"; };
-		2FA04B5526B0FA3100010208 /* XYCollectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCollectionHeadView.h; sourceTree = "<group>"; };
+		2FA04B5526B0FA3100010208 /* CCCollectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCollectionHeadView.h; sourceTree = "<group>"; };
 		2FA04B5626B0FA3100010208 /* YOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOImageView.h; sourceTree = "<group>"; };
 		2FA04B5726B0FA3100010208 /* AMTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTagView.m; sourceTree = "<group>"; };
 		2FA04B5826B0FA3100010208 /* AMTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTag.h; sourceTree = "<group>"; };
@@ -332,7 +332,7 @@
 		2FA04B5B26B0FA3100010208 /* XYTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTagListView.m; sourceTree = "<group>"; };
 		2FA04B5C26B0FA3100010208 /* AMTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTagView.h; sourceTree = "<group>"; };
 		2FA04B5D26B0FA3100010208 /* YOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOImageView.m; sourceTree = "<group>"; };
-		2FA04B5E26B0FA3100010208 /* XYCollectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCollectionHeadView.m; sourceTree = "<group>"; };
+		2FA04B5E26B0FA3100010208 /* CCCollectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCollectionHeadView.m; sourceTree = "<group>"; };
 		2FA04B5F26B0FA3100010208 /* XYSpringboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSpringboardCell.m; sourceTree = "<group>"; };
 		2FA04B6226B0FA3100010208 /* YOTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOTableViewCell.h; sourceTree = "<group>"; };
 		2FA04B6326B0FA3100010208 /* YOTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOTableViewCell.m; sourceTree = "<group>"; };
@@ -349,11 +349,11 @@
 		2FA04B7126B0FA3100010208 /* HMYSegmentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYSegmentButton.h; sourceTree = "<group>"; };
 		2FA04B7226B0FA3100010208 /* HMYtwareIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYtwareIconButton.h; sourceTree = "<group>"; };
 		2FA04B7326B0FA3100010208 /* HMYNWCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYNWCView.h; sourceTree = "<group>"; };
-		2FA04B7526B0FA3100010208 /* FSaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSaseNavigationController.m; sourceTree = "<group>"; };
-		2FA04B7626B0FA3100010208 /* XYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHomeViewController.m; sourceTree = "<group>"; };
+		2FA04B7526B0FA3100010208 /* CCaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCaseNavigationController.m; sourceTree = "<group>"; };
+		2FA04B7626B0FA3100010208 /* CCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHomeViewController.m; sourceTree = "<group>"; };
 		2FA04B7726B0FA3100010208 /* FSFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFViewController.h; sourceTree = "<group>"; };
-		2FA04B7826B0FA3100010208 /* FSaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSaseNavigationController.h; sourceTree = "<group>"; };
-		2FA04B7926B0FA3100010208 /* XYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHomeViewController.h; sourceTree = "<group>"; };
+		2FA04B7826B0FA3100010208 /* CCaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCaseNavigationController.h; sourceTree = "<group>"; };
+		2FA04B7926B0FA3100010208 /* CCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHomeViewController.h; sourceTree = "<group>"; };
 		2FA04B7B26B0FA3100010208 /* NCWBaseAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWBaseAppViewController.m; sourceTree = "<group>"; };
 		2FA04B7C26B0FA3100010208 /* XYAppFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAppFunctionViewController.m; sourceTree = "<group>"; };
 		2FA04B7D26B0FA3100010208 /* SFSstemtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSstemtViewController.m; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		2FA04B9B26B0FA3100010208 /* MTACKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTACKeychain.h; sourceTree = "<group>"; };
 		2FA04B9D26B0FA3100010208 /* NotificationCenterWidgetSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenterWidgetSdk.h; sourceTree = "<group>"; };
 		2FA04C2B26B1093900010208 /* MPITextViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextViewProtocol.h; sourceTree = "<group>"; };
-		2FA04C2C26B1093900010208 /* MPITextKitBugFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextKitBugFixer.h; sourceTree = "<group>"; };
+		2FA04C2C26B1093900010208 /* CCTextKitBugFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextKitBugFixer.h; sourceTree = "<group>"; };
 		2FA04C2D26B1093900010208 /* MPITextRendererKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextRendererKey.h; sourceTree = "<group>"; };
 		2FA04C2E26B1093900010208 /* MPITextBackgroundsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextBackgroundsInfo.h; sourceTree = "<group>"; };
 		2FA04C2F26B1093900010208 /* MPITextKitContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextKitContext.h; sourceTree = "<group>"; };
@@ -391,16 +391,16 @@
 		2FA04C3126B1093900010208 /* MPITextRendererKey.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPITextRendererKey.mm; sourceTree = "<group>"; };
 		2FA04C3226B1093900010208 /* MPITextRenderAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextRenderAttributes.h; sourceTree = "<group>"; };
 		2FA04C3326B1093900010208 /* MPITextKitContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPITextKitContext.mm; sourceTree = "<group>"; };
-		2FA04C3426B1093900010208 /* MPITextAttachmentsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextAttachmentsInfo.m; sourceTree = "<group>"; };
+		2FA04C3426B1093900010208 /* CCTextAttachmentsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextAttachmentsInfo.m; sourceTree = "<group>"; };
 		2FA04C3526B1093900010208 /* MPITextTailTruncater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextTailTruncater.h; sourceTree = "<group>"; };
 		2FA04C3626B1093900010208 /* MPITextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextParser.m; sourceTree = "<group>"; };
-		2FA04C3726B1093900010208 /* MPITextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextRenderer.h; sourceTree = "<group>"; };
+		2FA04C3726B1093900010208 /* CCTextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextRenderer.h; sourceTree = "<group>"; };
 		2FA04C3826B1093900010208 /* MPITextViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextViewModel.h; sourceTree = "<group>"; };
-		2FA04C3926B1093900010208 /* MPITextTruncating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextTruncating.h; sourceTree = "<group>"; };
+		2FA04C3926B1093900010208 /* CCTextTruncating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextTruncating.h; sourceTree = "<group>"; };
 		2FA04C3A26B1093900010208 /* MPITextTruncationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextTruncationInfo.h; sourceTree = "<group>"; };
 		2FA04C3B26B1093900010208 /* MPITextLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextLayoutManager.h; sourceTree = "<group>"; };
 		2FA04C3C26B1093900010208 /* MPITextBackgroundsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextBackgroundsInfo.m; sourceTree = "<group>"; };
-		2FA04C3D26B1093900010208 /* MPITextKitBugFixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextKitBugFixer.m; sourceTree = "<group>"; };
+		2FA04C3D26B1093900010208 /* CCTextKitBugFixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextKitBugFixer.m; sourceTree = "<group>"; };
 		2FA04C3E26B1093900010208 /* MPITextDebugOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextDebugOption.m; sourceTree = "<group>"; };
 		2FA04C3F26B1093900010208 /* MPITextAttachmentsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextAttachmentsInfo.h; sourceTree = "<group>"; };
 		2FA04C4026B1093900010208 /* MPITextTailTruncater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextTailTruncater.m; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 		2FA04C4226B1093900010208 /* MPITextLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextLayoutManager.m; sourceTree = "<group>"; };
 		2FA04C4326B1093900010208 /* MPITextTruncationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextTruncationInfo.m; sourceTree = "<group>"; };
 		2FA04C4426B1093900010208 /* MPITextViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextViewModel.m; sourceTree = "<group>"; };
-		2FA04C4526B1093900010208 /* MPITextRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextRenderer.m; sourceTree = "<group>"; };
+		2FA04C4526B1093900010208 /* CCTextRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextRenderer.m; sourceTree = "<group>"; };
 		2FA04C4626B1093900010208 /* MPITextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextParser.h; sourceTree = "<group>"; };
 		2FA04C4726B1093900010208 /* MPITextKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPITextKit.h; sourceTree = "<group>"; };
 		2FA04C4926B1093900010208 /* MPITextDefaultsValueHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPITextDefaultsValueHelpers.m; sourceTree = "<group>"; };
@@ -824,10 +824,10 @@
 				2FA04B0226B0FA3100010208 /* MTAreaManagerKit.h */,
 				2FA04B0326B0FA3100010208 /* MTAreaManagerSetting.h */,
 				2FA04B0426B0FA3100010208 /* Utils */,
-				2FA04B0B26B0FA3100010208 /* MTAreaDataModel.h */,
+				2FA04B0B26B0FA3100010208 /* CCAreaDataModel.h */,
 				2FA04B0C26B0FA3100010208 /* MTAreaManagerKit.m */,
 				2FA04B0D26B0FA3100010208 /* Resource */,
-				2FA04B0F26B0FA3100010208 /* MTAreaDataModel.m */,
+				2FA04B0F26B0FA3100010208 /* CCAreaDataModel.m */,
 				2FA04B1026B0FA3100010208 /* MTAreaManagerSetting.m */,
 			);
 			path = AreaManagerKit;
@@ -847,11 +847,11 @@
 		2FA04B0426B0FA3100010208 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				2FA04B0526B0FA3100010208 /* MTAreaRequestBasic.m */,
+				2FA04B0526B0FA3100010208 /* CCAreaRequestBasic.m */,
 				2FA04B0626B0FA3100010208 /* MTGPSDataModel.m */,
-				2FA04B0726B0FA3100010208 /* MTGPSManager.m */,
-				2FA04B0826B0FA3100010208 /* MTAreaRequestBasic.h */,
-				2FA04B0926B0FA3100010208 /* MTGPSManager.h */,
+				2FA04B0726B0FA3100010208 /* CCGPSManager.m */,
+				2FA04B0826B0FA3100010208 /* CCAreaRequestBasic.h */,
+				2FA04B0926B0FA3100010208 /* CCGPSManager.h */,
 				2FA04B0A26B0FA3100010208 /* MTGPSDataModel.h */,
 			);
 			path = Utils;
@@ -868,11 +868,11 @@
 		2FA04B1126B0FA3100010208 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				2FA04B1226B0FA3100010208 /* HMYSpringboardLayout.h */,
+				2FA04B1226B0FA3100010208 /* CCSpringboardLayout.h */,
 				2FA04B1326B0FA3100010208 /* XYWidgetInfoManager.h */,
-				2FA04B1426B0FA3100010208 /* DFReallyManager.h */,
-				2FA04B1526B0FA3100010208 /* HMYSpringboardLayout.m */,
-				2FA04B1626B0FA3100010208 /* DFReallyManager.m */,
+				2FA04B1426B0FA3100010208 /* CCReallyManager.h */,
+				2FA04B1526B0FA3100010208 /* CCSpringboardLayout.m */,
+				2FA04B1626B0FA3100010208 /* CCReallyManager.m */,
 				2FA04B1726B0FA3100010208 /* XYWidgetInfoManager.m */,
 			);
 			path = Manager;
@@ -896,13 +896,13 @@
 		2FA04B2126B0FA3100010208 /* YOXViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2FA04B2226B0FA3100010208 /* HMYAlertAction.h */,
+				2FA04B2226B0FA3100010208 /* CCAlertAction.h */,
 				2FA04B2326B0FA3100010208 /* NYAlertViewControllerConfiguration.m */,
 				2FA04B2426B0FA3100010208 /* HMYAlertViewController.m */,
 				2FA04B2526B0FA3100010208 /* NYAlertViewControllerTransitionStyle.h */,
 				2FA04B2626B0FA3100010208 /* NYAlertActionConfiguration.m */,
 				2FA04B2726B0FA3100010208 /* Private */,
-				2FA04B3726B0FA3100010208 /* HMYAlertAction.m */,
+				2FA04B3726B0FA3100010208 /* CCAlertAction.m */,
 				2FA04B3826B0FA3100010208 /* HMYAlertViewController.h */,
 				2FA04B3926B0FA3100010208 /* NYAlertViewControllerConfiguration.h */,
 				2FA04B3A26B0FA3100010208 /* NYAlertActionConfiguration.h */,
@@ -913,8 +913,8 @@
 		2FA04B2726B0FA3100010208 /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				2FA04B3626B0FA3100010208 /* FSAlertViewButton.h */,
-				2FA04B2E26B0FA3100010208 /* FSAlertViewButton.m */,
+				2FA04B3626B0FA3100010208 /* CCAlertViewButton.h */,
+				2FA04B2E26B0FA3100010208 /* CCAlertViewButton.m */,
 				2FA04B2B26B0FA3100010208 /* HMYAlertViewDismissalAnimationController.h */,
 				2FA04B3426B0FA3100010208 /* HMYAlertViewDismissalAnimationController.m */,
 				2FA04B2A26B0FA3100010208 /* NYAlertAction+Private.h */,
@@ -924,10 +924,10 @@
 				2FA04B3026B0FA3100010208 /* NYAlertViewPresentationController.m */,
 				2FA04B3226B0FA3100010208 /* UIView+Additions.h */,
 				2FA04B2C26B0FA3100010208 /* UIView+Additions.m */,
-				2FA04B2926B0FA3100010208 /* YoAlertView.h */,
-				2FA04B3126B0FA3100010208 /* YoAlertView.m */,
-				2FA04B3326B0FA3100010208 /* YXAextView.h */,
-				2FA04B2D26B0FA3100010208 /* YXAextView.m */,
+				2FA04B2926B0FA3100010208 /* CCAlertView.h */,
+				2FA04B3126B0FA3100010208 /* CCAlertView.m */,
+				2FA04B3326B0FA3100010208 /* CCAextView.h */,
+				2FA04B2D26B0FA3100010208 /* CCAextView.m */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -981,8 +981,8 @@
 			isa = PBXGroup;
 			children = (
 				2FA04B4E26B0FA3100010208 /* YXpplicationItem.h */,
-				2FA04B4F26B0FA3100010208 /* SFWWidgetPerson.m */,
-				2FA04B5026B0FA3100010208 /* SFWWidgetPerson.h */,
+				2FA04B4F26B0FA3100010208 /* CCWidgetPerson.m */,
+				2FA04B5026B0FA3100010208 /* CCWidgetPerson.h */,
 				2FA04B5126B0FA3100010208 /* YXpplicationItem.m */,
 			);
 			path = Model;
@@ -993,7 +993,7 @@
 			children = (
 				2FA04B5326B0FA3100010208 /* XYTagListView.h */,
 				2FA04B5426B0FA3100010208 /* XYSpringboardCell.h */,
-				2FA04B5526B0FA3100010208 /* XYCollectionHeadView.h */,
+				2FA04B5526B0FA3100010208 /* CCCollectionHeadView.h */,
 				2FA04B5626B0FA3100010208 /* YOImageView.h */,
 				2FA04B5726B0FA3100010208 /* AMTagView.m */,
 				2FA04B5826B0FA3100010208 /* AMTag.h */,
@@ -1001,7 +1001,7 @@
 				2FA04B5B26B0FA3100010208 /* XYTagListView.m */,
 				2FA04B5C26B0FA3100010208 /* AMTagView.h */,
 				2FA04B5D26B0FA3100010208 /* YOImageView.m */,
-				2FA04B5E26B0FA3100010208 /* XYCollectionHeadView.m */,
+				2FA04B5E26B0FA3100010208 /* CCCollectionHeadView.m */,
 				2FA04B5F26B0FA3100010208 /* XYSpringboardCell.m */,
 				2FA04B6026B0FA3100010208 /* AppFunction */,
 				2FA04B7326B0FA3100010208 /* HMYNWCView.h */,
@@ -1057,11 +1057,11 @@
 		2FA04B7426B0FA3100010208 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2FA04B7526B0FA3100010208 /* FSaseNavigationController.m */,
-				2FA04B7626B0FA3100010208 /* XYHomeViewController.m */,
+				2FA04B7526B0FA3100010208 /* CCaseNavigationController.m */,
+				2FA04B7626B0FA3100010208 /* CCHomeViewController.m */,
 				2FA04B7726B0FA3100010208 /* FSFViewController.h */,
-				2FA04B7826B0FA3100010208 /* FSaseNavigationController.h */,
-				2FA04B7926B0FA3100010208 /* XYHomeViewController.h */,
+				2FA04B7826B0FA3100010208 /* CCaseNavigationController.h */,
+				2FA04B7926B0FA3100010208 /* CCHomeViewController.h */,
 				2FA04B7A26B0FA3100010208 /* AppFunction */,
 				2FA04B8326B0FA3100010208 /* FSFViewController.m */,
 			);
@@ -1276,7 +1276,7 @@
 			isa = PBXGroup;
 			children = (
 				2FA04C2B26B1093900010208 /* MPITextViewProtocol.h */,
-				2FA04C2C26B1093900010208 /* MPITextKitBugFixer.h */,
+				2FA04C2C26B1093900010208 /* CCTextKitBugFixer.h */,
 				2FA04C2D26B1093900010208 /* MPITextRendererKey.h */,
 				2FA04C2E26B1093900010208 /* MPITextBackgroundsInfo.h */,
 				2FA04C2F26B1093900010208 /* MPITextKitContext.h */,
@@ -1284,16 +1284,16 @@
 				2FA04C3126B1093900010208 /* MPITextRendererKey.mm */,
 				2FA04C3226B1093900010208 /* MPITextRenderAttributes.h */,
 				2FA04C3326B1093900010208 /* MPITextKitContext.mm */,
-				2FA04C3426B1093900010208 /* MPITextAttachmentsInfo.m */,
+				2FA04C3426B1093900010208 /* CCTextAttachmentsInfo.m */,
 				2FA04C3526B1093900010208 /* MPITextTailTruncater.h */,
 				2FA04C3626B1093900010208 /* MPITextParser.m */,
-				2FA04C3726B1093900010208 /* MPITextRenderer.h */,
+				2FA04C3726B1093900010208 /* CCTextRenderer.h */,
 				2FA04C3826B1093900010208 /* MPITextViewModel.h */,
-				2FA04C3926B1093900010208 /* MPITextTruncating.h */,
+				2FA04C3926B1093900010208 /* CCTextTruncating.h */,
 				2FA04C3A26B1093900010208 /* MPITextTruncationInfo.h */,
 				2FA04C3B26B1093900010208 /* MPITextLayoutManager.h */,
 				2FA04C3C26B1093900010208 /* MPITextBackgroundsInfo.m */,
-				2FA04C3D26B1093900010208 /* MPITextKitBugFixer.m */,
+				2FA04C3D26B1093900010208 /* CCTextKitBugFixer.m */,
 				2FA04C3E26B1093900010208 /* MPITextDebugOption.m */,
 				2FA04C3F26B1093900010208 /* MPITextAttachmentsInfo.h */,
 				2FA04C4026B1093900010208 /* MPITextTailTruncater.m */,
@@ -1301,7 +1301,7 @@
 				2FA04C4226B1093900010208 /* MPITextLayoutManager.m */,
 				2FA04C4326B1093900010208 /* MPITextTruncationInfo.m */,
 				2FA04C4426B1093900010208 /* MPITextViewModel.m */,
-				2FA04C4526B1093900010208 /* MPITextRenderer.m */,
+				2FA04C4526B1093900010208 /* CCTextRenderer.m */,
 				2FA04C4626B1093900010208 /* MPITextParser.h */,
 			);
 			path = Core;
@@ -1934,6 +1934,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-HBuilder/Pods-HBuilder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/FlatUIKit/FlatUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FrameAccessor/FrameAccessor.framework",
 				"${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/GKPageScrollView/GKPageScrollView.framework",
@@ -1955,6 +1956,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlatUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameAccessor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKPageScrollView.framework",
@@ -1997,19 +1999,19 @@
 				2FA04BC126B0FA3100010208 /* NYAlertViewPresentationController.m in Sources */,
 				2FA04BBC26B0FA3100010208 /* HMYAlertViewController.m in Sources */,
 				8EED62B5198A1D14000A4449 /* ViewController.m in Sources */,
-				2FA04BD326B0FA3100010208 /* XYCollectionHeadView.m in Sources */,
+				2FA04BD326B0FA3100010208 /* CCCollectionHeadView.m in Sources */,
 				2FA04C7326B1093900010208 /* MPITextRendererKey.mm in Sources */,
 				2FA04BD926B0FA3100010208 /* YOListBodyView.m in Sources */,
 				2FA04BB926B0FA3100010208 /* HMYAppRequest.m in Sources */,
 				2FA04BC326B0FA3100010208 /* HMYAlertViewDismissalAnimationController.m in Sources */,
 				2FA04BCE26B0FA3100010208 /* YXpplicationItem.m in Sources */,
-				2FA04BB226B0FA3100010208 /* MTAreaDataModel.m in Sources */,
+				2FA04BB226B0FA3100010208 /* CCAreaDataModel.m in Sources */,
 				2FA04BDE26B0FA3100010208 /* NCWBaseAppViewController.m in Sources */,
 				2FA04BE426B0FA3100010208 /* UIButton+ESTabBar.m in Sources */,
 				2FA04C7D26B1093900010208 /* MPITextTruncationInfo.m in Sources */,
 				2FA04BAE26B0FA3100010208 /* MTGPSDataModel.m in Sources */,
 				2FA04BBB26B0FA3100010208 /* NYAlertViewControllerConfiguration.m in Sources */,
-				2FA04BC526B0FA3100010208 /* HMYAlertAction.m in Sources */,
+				2FA04BC526B0FA3100010208 /* CCAlertAction.m in Sources */,
 				2FA04BD426B0FA3100010208 /* XYSpringboardCell.m in Sources */,
 				2FA04BD126B0FA3100010208 /* XYTagListView.m in Sources */,
 				2FA04C7B26B1093900010208 /* MPITextRenderAttributes.m in Sources */,
@@ -2027,7 +2029,7 @@
 				2FA04C7C26B1093900010208 /* MPITextLayoutManager.m in Sources */,
 				2FA04C8826B1093900010208 /* MPIAttributedLabel.m in Sources */,
 				2FA04BD826B0FA3100010208 /* YOScrollView.m in Sources */,
-				2FA04BAD26B0FA3100010208 /* MTAreaRequestBasic.m in Sources */,
+				2FA04BAD26B0FA3100010208 /* CCAreaRequestBasic.m in Sources */,
 				2FA04BD026B0FA3100010208 /* HMYNWCView.m in Sources */,
 				8EED62AC198A1D13000A4449 /* AppDelegate.m in Sources */,
 				2FA04BC626B0FA3100010208 /* UIColor+NCWTool.m in Sources */,
@@ -2035,10 +2037,10 @@
 				2FA04C7A26B1093900010208 /* MPITextTailTruncater.m in Sources */,
 				2FA04BD626B0FA3100010208 /* YOListHeadView.m in Sources */,
 				2FA04C8026B1093900010208 /* MPITextDefaultsValueHelpers.m in Sources */,
-				2FA04BDC26B0FA3100010208 /* FSaseNavigationController.m in Sources */,
-				2FA04C7F26B1093900010208 /* MPITextRenderer.m in Sources */,
-				2FA04BB526B0FA3100010208 /* DFReallyManager.m in Sources */,
-				2FA04BCD26B0FA3100010208 /* SFWWidgetPerson.m in Sources */,
+				2FA04BDC26B0FA3100010208 /* CCaseNavigationController.m in Sources */,
+				2FA04C7F26B1093900010208 /* CCTextRenderer.m in Sources */,
+				2FA04BB526B0FA3100010208 /* CCReallyManager.m in Sources */,
+				2FA04BCD26B0FA3100010208 /* CCWidgetPerson.m in Sources */,
 				2FA04BE326B0FA3100010208 /* ESTabBarController+Autolayout.m in Sources */,
 				2FA04C8426B1093900010208 /* MPITextAttachment.m in Sources */,
 				2FA04BE226B0FA3100010208 /* FSFViewController.m in Sources */,
@@ -2056,15 +2058,15 @@
 				2FA04C7726B1093900010208 /* MPITextBackgroundsInfo.m in Sources */,
 				2FA04BE126B0FA3100010208 /* XYApplicationViewController.m in Sources */,
 				2FA04BEB26B0FA3100010208 /* MTACKeychainQuery.m in Sources */,
-				2FA04BBF26B0FA3100010208 /* YXAextView.m in Sources */,
+				2FA04BBF26B0FA3100010208 /* CCAextView.m in Sources */,
 				2FA04C8626B1093900010208 /* MPITextLink.m in Sources */,
 				2FA04C7426B1093900010208 /* MPITextKitContext.mm in Sources */,
-				2FA04C7826B1093900010208 /* MPITextKitBugFixer.m in Sources */,
+				2FA04C7826B1093900010208 /* CCTextKitBugFixer.m in Sources */,
 				2FA04BCF26B0FA3100010208 /* AMTagView.m in Sources */,
-				2FA04BB426B0FA3100010208 /* HMYSpringboardLayout.m in Sources */,
+				2FA04BB426B0FA3100010208 /* CCSpringboardLayout.m in Sources */,
 				2FA04BD226B0FA3100010208 /* YOImageView.m in Sources */,
-				2FA04BC226B0FA3100010208 /* YoAlertView.m in Sources */,
-				2FA04BDD26B0FA3100010208 /* XYHomeViewController.m in Sources */,
+				2FA04BC226B0FA3100010208 /* CCAlertView.m in Sources */,
+				2FA04BDD26B0FA3100010208 /* CCHomeViewController.m in Sources */,
 				2FA04BCB26B0FA3100010208 /* HMYDialog.m in Sources */,
 				2FA04BE726B0FA3100010208 /* MTKeyboardAvoidingCollectionView.m in Sources */,
 				2FA04C8E26B1093900010208 /* NSMutableAttributedString+MPITextKit.m in Sources */,
@@ -2072,12 +2074,12 @@
 				2FA04BE526B0FA3100010208 /* MTACPresentTransition.m in Sources */,
 				2FA04C7626B1093900010208 /* MPITextParser.m in Sources */,
 				2FA04BE926B0FA3100010208 /* UIScrollView+MTKeyboardAvoidingAdditions.m in Sources */,
-				2FA04BC026B0FA3100010208 /* FSAlertViewButton.m in Sources */,
+				2FA04BC026B0FA3100010208 /* CCAlertViewButton.m in Sources */,
 				2FA04BC826B0FA3100010208 /* UIImage+NCWUtil.m in Sources */,
-				2FA04C7526B1093900010208 /* MPITextAttachmentsInfo.m in Sources */,
+				2FA04C7526B1093900010208 /* CCTextAttachmentsInfo.m in Sources */,
 				2FA04BE626B0FA3100010208 /* MTKeyboardAvoidingScrollView.m in Sources */,
 				2FA04C8A26B1093900010208 /* MPITextWeakProxy.m in Sources */,
-				2FA04BAF26B0FA3100010208 /* MTGPSManager.m in Sources */,
+				2FA04BAF26B0FA3100010208 /* CCGPSManager.m in Sources */,
 				2FA04C7E26B1093900010208 /* MPITextViewModel.m in Sources */,
 				2FA04BD526B0FA3100010208 /* YOTableViewCell.m in Sources */,
 			);
@@ -2193,7 +2195,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = 533B7LX2AD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2247,7 +2249,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = 533B7LX2AD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

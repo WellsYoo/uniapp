@@ -7,7 +7,7 @@
 //
 
 #import "MPITextLayoutManager.h"
-#import "MPITextAttachmentsInfo.h"
+#import "CCTextAttachmentsInfo.h"
 #import "MPITextBackgroundsInfo.h"
 #import "MPITextAttachment.h"
 #import "MPITextAttributes.h"
@@ -170,7 +170,7 @@
 
 #pragma mark - Attachment
 
-- (MPITextAttachmentsInfo *)attachmentsInfoForGlyphRange:(NSRange)glyphsToShow inTextContainer:(NSTextContainer *)textContainer {
+- (CCTextAttachmentsInfo *)attachmentsInfoForGlyphRange:(NSRange)glyphsToShow inTextContainer:(NSTextContainer *)textContainer {
     if (glyphsToShow.length == 0) {
         return nil;
     }
@@ -178,7 +178,7 @@
     NSTextStorage *textStorage = self.textStorage;
     
     NSMutableArray<MPITextAttachment *> *attachments = [NSMutableArray new];
-    NSMutableArray<MPITextAttachmentInfo *> *attachmentInfos = [NSMutableArray new];
+    NSMutableArray<CCTextAttachmentInfo *> *attachmentInfos = [NSMutableArray new];
     
     NSRange characterRange = [self characterRangeForGlyphRange:glyphsToShow actualGlyphRange:NULL];
     [textStorage enumerateAttribute:NSAttachmentAttributeName inRange:characterRange options:kNilOptions usingBlock:^(id  _Nullable value, NSRange range, BOOL * _Nonnull stop) {
@@ -197,7 +197,7 @@
         attachmentFrame.origin.y -= attachment.attachmentSize.height;
         attachmentFrame.size.height = attachment.attachmentSize.height;
         
-        MPITextAttachmentInfo *attachmentInfo = [[MPITextAttachmentInfo alloc] initWithFrame:attachmentFrame
+        CCTextAttachmentInfo *attachmentInfo = [[CCTextAttachmentInfo alloc] initWithFrame:attachmentFrame
                                                                               characterIndex:range.location];
         
         [attachments addObject:value];
@@ -205,13 +205,13 @@
     }];
     
     if (attachments.count > 0) {
-        return [[MPITextAttachmentsInfo alloc] initWithAttachments:attachments attachmentInfos:attachmentInfos];
+        return [[CCTextAttachmentsInfo alloc] initWithAttachments:attachments attachmentInfos:attachmentInfos];
     }
     
     return nil;
 }
 
-- (void)drawImageAttchmentsWithAttachmentsInfo:(MPITextAttachmentsInfo *)attachmentsInfo
+- (void)drawImageAttchmentsWithAttachmentsInfo:(CCTextAttachmentsInfo *)attachmentsInfo
                                        atPoint:(CGPoint)origin
                                inTextContainer:(NSTextContainer *)textContainer {
     if (!attachmentsInfo || attachmentsInfo.attachments.count == 0) {
@@ -222,7 +222,7 @@
     NSArray *attachmentInfos = attachmentsInfo.attachmentInfos;
     
     [attachments enumerateObjectsUsingBlock:^(MPITextAttachment * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        MPITextAttachmentInfo *attachmentInfo = attachmentInfos[idx];
+        CCTextAttachmentInfo *attachmentInfo = attachmentInfos[idx];
         CGRect frame = attachmentInfo.frame;
         NSUInteger characterIndex = attachmentInfo.characterIndex;
         frame.origin.x += origin.x;
@@ -237,7 +237,7 @@
     }];
 }
 
-- (void)drawViewAndLayerAttchmentsWithAttachmentsInfo:(MPITextAttachmentsInfo *)attachmentsInfo
+- (void)drawViewAndLayerAttchmentsWithAttachmentsInfo:(CCTextAttachmentsInfo *)attachmentsInfo
                                               atPoint:(CGPoint)origin
                                       inTextContainer:(NSTextContainer *)textContainer
                                              textView:(UIView *)textView {
@@ -250,7 +250,7 @@
     NSArray *attachmentInfos = attachmentsInfo.attachmentInfos;
     
     [attachments enumerateObjectsUsingBlock:^(MPITextAttachment * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        MPITextAttachmentInfo *attachmentInfo = attachmentInfos[idx];
+        CCTextAttachmentInfo *attachmentInfo = attachmentInfos[idx];
         CGRect frame = attachmentInfo.frame;
         NSUInteger characterIndex = attachmentInfo.characterIndex;
         frame.origin.x += origin.x;

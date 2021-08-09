@@ -18,7 +18,7 @@
 
 @class MPITextTailTruncater;
 @class MPITextKitContext;
-@class MPITextRenderer;
+@class CCTextRenderer;
 @class MPITextLink;
 
 @protocol MPIAttributedTextViewDelegate;

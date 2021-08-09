@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SFWWidgetPerson.h"
+#import "CCWidgetPerson.h"
 #import <AddressBook/AddressBook.h>
 #import "YXpplicationItem.h"
 

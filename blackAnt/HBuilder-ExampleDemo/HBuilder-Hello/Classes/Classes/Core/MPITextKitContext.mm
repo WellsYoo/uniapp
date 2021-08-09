@@ -8,7 +8,7 @@
 
 #import "MPITextKitContext.h"
 #import "MPITextThread.h"
-#import "MPITextKitBugFixer.h"
+#import "CCTextKitBugFixer.h"
 #import "MPITextKitConst.h"
 
 @interface MPITextKitContext ()
@@ -42,7 +42,7 @@
         // Create the TextKit component stack with our default configuration.
         _layoutManager = [[MPITextLayoutManager alloc] init];
         _layoutManager.usesFontLeading = NO;
-        _layoutManager.delegate = [MPITextKitBugFixer sharedFixer];
+        _layoutManager.delegate = [CCTextKitBugFixer sharedFixer];
         
         _textContainer = [[NSTextContainer alloc] initWithSize:constrainedSize];
         // We want the text laid out up to the very edges of the container.

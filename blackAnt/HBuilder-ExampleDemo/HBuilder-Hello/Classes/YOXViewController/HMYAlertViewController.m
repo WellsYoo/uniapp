@@ -1,15 +1,15 @@
 #import "HMYAlertViewController.h"
 
-#import "YoAlertView.h"
+#import "CCAlertView.h"
 #import "NYAlertAction+Private.h"
-#import "FSAlertViewButton.h"
+#import "CCAlertViewButton.h"
 #import "HMYAlertViewDismissalAnimationController.h"
 #import "HMYAlertViewDismissalAnimationController.h"
 #import "NYAlertViewPresentationController.h"
 
 @interface HMYAlertViewController () <UIGestureRecognizerDelegate, UIViewControllerTransitioningDelegate>
 
-@property YoAlertView *view;
+@property CCAlertView *view;
 @property UIPanGestureRecognizer *panGestureRecognizer;
 @property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
 
@@ -24,7 +24,7 @@
 - (instancetype)initWithOptions:(NYAlertViewControllerConfiguration *)configuration
                           title:(NSString *)title
                         message:(NSString *)message
-                        actions:(NSArray<HMYAlertAction *> *)actions {
+                        actions:(NSArray<CCAlertAction *> *)actions {
     self = [super initWithNibName:nil bundle:nil];
 
     if (self) {
@@ -54,7 +54,7 @@
 }
 
 - (void)loadView {
-    self.view = [[YoAlertView alloc] initWithConfiguration:self.configuration];
+    self.view = [[CCAlertView alloc] initWithConfiguration:self.configuration];
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -143,9 +143,9 @@
     
     // Create buttons for each action
     for (int i = 0; i < [self.actions count]; i++) {
-        HMYAlertAction *action = self.actions[i];
+        CCAlertAction *action = self.actions[i];
         
-        FSAlertViewButton *button = [FSAlertViewButton buttonWithType:UIButtonTypeCustom];
+        CCAlertViewButton *button = [CCAlertViewButton buttonWithType:UIButtonTypeCustom];
 
         button.tag = i;
         [button addTarget:self action:@selector(actionButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -185,7 +185,7 @@
 }
 
 - (void)actionButtonPressed:(UIButton *)button {
-    HMYAlertAction *action = self.actions[button.tag];
+    CCAlertAction *action = self.actions[button.tag];
 
     if (action.handler) {
         action.handler(action);

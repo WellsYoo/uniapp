@@ -177,6 +177,7 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FlatUIKit/FlatUIKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FrameAccessor/FrameAccessor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKPageScrollView/GKPageScrollView.framework"
@@ -197,6 +198,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FlatUIKit/FlatUIKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FrameAccessor/FrameAccessor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GKPageScrollView/GKPageScrollView.framework"

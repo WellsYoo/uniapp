@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class MPITextAttachmentsInfo;
+@class CCTextAttachmentsInfo;
 @class MPITextBackgroundsInfo;
 @class MPITextDebugOption;
 
@@ -46,17 +46,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable MPITextBackgroundsInfo *)backgroundsInfoForGlyphRange:(NSRange)glyphsToShow
                                                      inTextContainer:(NSTextContainer *)textContainer;
 
-- (nullable MPITextAttachmentsInfo *)attachmentsInfoForGlyphRange:(NSRange)glyphsToShow
+- (nullable CCTextAttachmentsInfo *)attachmentsInfoForGlyphRange:(NSRange)glyphsToShow
                                                      inTextContainer:(NSTextContainer *)textContainer;
 
 - (void)drawBackgroundWithBackgroundsInfo:(MPITextBackgroundsInfo *)backgroundsInfo
                                   atPoint:(CGPoint)origin;
 
-- (void)drawImageAttchmentsWithAttachmentsInfo:(MPITextAttachmentsInfo *)attachmentsInfo
+- (void)drawImageAttchmentsWithAttachmentsInfo:(CCTextAttachmentsInfo *)attachmentsInfo
                                        atPoint:(CGPoint)origin
                                inTextContainer:(NSTextContainer *)textContainer;
 
-- (void)drawViewAndLayerAttchmentsWithAttachmentsInfo:(MPITextAttachmentsInfo *)attachmentsInfo
+- (void)drawViewAndLayerAttchmentsWithAttachmentsInfo:(CCTextAttachmentsInfo *)attachmentsInfo
                                               atPoint:(CGPoint)origin
                                       inTextContainer:(NSTextContainer *)textContainer
                                              textView:(UIView *)textView;

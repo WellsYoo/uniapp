@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, MPITextItemInteraction) {
     MPITextItemInteractionLongPress,
 };
 
-FOUNDATION_EXTERN const CGSize MPITextContainerMaxSize;
+FOUNDATION_EXTERN const CGSize CCTextContainerMaxSize;
 
 UIKIT_EXTERN NSAttributedStringKey const MPITextLinkAttributeName; ///< Attribute name for links. The value must be MPITextLink object.
 UIKIT_EXTERN NSAttributedStringKey const MPITextBackgroundAttributeName;

@@ -22,7 +22,7 @@
 @property(nonatomic, strong)UIImageView *deleteButtonImage;
 @property(nonatomic, strong)UILabel     *personNameLabel;
 @property(nonatomic, strong)UIImageView *cornerMarkView;
-@property(nonatomic, strong)SFWWidgetPerson *mPerson;
+@property(nonatomic, strong)CCWidgetPerson *mPerson;
 @property(nonatomic, strong)YXpplicationItem *ncwAppItem;
 
 @end
@@ -80,7 +80,7 @@
 
 - (void)bindPerson:(id )item
 {
-    if ([item isKindOfClass:[SFWWidgetPerson class]]) {
+    if ([item isKindOfClass:[CCWidgetPerson class]]) {
         _mPerson = item;
         _ncwAppItem = nil;
          _cornerMarkView.hidden = NO;

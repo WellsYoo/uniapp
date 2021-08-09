@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class MPITextRenderer;
+@class CCTextRenderer;
 
 @interface MPITextTruncationInfo : NSObject
 

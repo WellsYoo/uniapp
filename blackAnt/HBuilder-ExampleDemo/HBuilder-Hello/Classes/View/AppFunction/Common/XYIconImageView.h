@@ -7,11 +7,11 @@
 //
 
 #import "YXpplicationItem.h"
-#import "SFWWidgetPerson.h"
+#import "CCWidgetPerson.h"
 @interface XYIconImageView : UIImageView
 
 - (void)setNCWAppItem:(YXpplicationItem *)appItem;
 - (void)setNCWAppItem:(YXpplicationItem *)appItem needSave:(BOOL)save;
--(void)setNCWPersonImage:(SFWWidgetPerson *) person;
+-(void)setNCWPersonImage:(CCWidgetPerson *) person;
 
 @end

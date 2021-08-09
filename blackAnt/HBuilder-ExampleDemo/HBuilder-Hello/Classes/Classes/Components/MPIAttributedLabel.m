@@ -44,7 +44,7 @@ static MPITextCache *sharedTextSizeCache()
     return textViewSizeCache;
 }
 
-static MPITextRenderer *rendererForAttributes(MPITextRenderAttributes *attributes, CGSize constrainedSize) {
+static CCTextRenderer *rendererForAttributes(MPITextRenderAttributes *attributes, CGSize constrainedSize) {
     if (constrainedSize.width < FLT_EPSILON ||
         constrainedSize.height < FLT_EPSILON) {
         return nil;
@@ -53,16 +53,16 @@ static MPITextRenderer *rendererForAttributes(MPITextRenderAttributes *attribute
     
     MPITextCache *cache = sharedRendererCache();
     
-    MPITextRenderer *renderer = [cache objectForKey:key];
+    CCTextRenderer *renderer = [cache objectForKey:key];
     if (renderer == nil) {
-        renderer = [[MPITextRenderer alloc] initWithTextKitAttributes:attributes constrainedSize:constrainedSize];
+        renderer = [[CCTextRenderer alloc] initWithTextKitAttributes:attributes constrainedSize:constrainedSize];
         [cache setObject:renderer forKey:key];
     }
     
     return renderer;
 }
 
-static void cacheRenderer(MPITextRenderer *renderer, MPITextRenderAttributes *attributes, CGSize constrainedSize) {
+static void cacheRenderer(CCTextRenderer *renderer, MPITextRenderAttributes *attributes, CGSize constrainedSize) {
     MPITextCache *cache = sharedRendererCache();
     
     MPITextRendererKey *key = [[MPITextRendererKey alloc] initWithAttributes:attributes constrainedSize:constrainedSize];
@@ -89,33 +89,33 @@ CGSize MPITextSuggestFrameSizeForAttributes(MPITextRenderAttributes *attributes,
         return CGSizeZero;
     }
     
-    if (fitsSize.width < FLT_EPSILON || fitsSize.width > MPITextContainerMaxSize.width) {
-        fitsSize.width = MPITextContainerMaxSize.width;
+    if (fitsSize.width < FLT_EPSILON || fitsSize.width > CCTextContainerMaxSize.width) {
+        fitsSize.width = CCTextContainerMaxSize.width;
     }
-    if (fitsSize.height < FLT_EPSILON || fitsSize.height > MPITextContainerMaxSize.width) {
-        fitsSize.height = MPITextContainerMaxSize.height;
+    if (fitsSize.height < FLT_EPSILON || fitsSize.height > CCTextContainerMaxSize.width) {
+        fitsSize.height = CCTextContainerMaxSize.height;
     }
     
     CGFloat horizontalValue = MPITextUIEdgeInsetsGetHorizontalValue(textContainerInset);
     CGFloat verticalValue = MPITextUIEdgeInsetsGetVerticalValue(textContainerInset);
     
     CGSize constrainedSize = fitsSize;
-    if (constrainedSize.width < MPITextContainerMaxSize.width - FLT_EPSILON) {
+    if (constrainedSize.width < CCTextContainerMaxSize.width - FLT_EPSILON) {
         constrainedSize.width = fitsSize.width - horizontalValue;
     }
-    if (constrainedSize.height < MPITextContainerMaxSize.height - FLT_EPSILON) {
+    if (constrainedSize.height < CCTextContainerMaxSize.height - FLT_EPSILON) {
         constrainedSize.height = fitsSize.height - verticalValue;
     }
     
     MPITextRendererKey *key = [[MPITextRendererKey alloc] initWithAttributes:attributes constrainedSize:constrainedSize];
     
-    MPITextRenderer *renderer = nil;
+    CCTextRenderer *renderer = nil;
     CGSize textSize = CGSizeZero;
     NSValue *textSizeValue = textSizeForKey(key);
     if (textSizeValue) {
         textSize = textSizeValue.CGSizeValue;
     } else {
-        renderer = [[MPITextRenderer alloc] initWithTextKitAttributes:attributes constrainedSize:constrainedSize];
+        renderer = [[CCTextRenderer alloc] initWithTextKitAttributes:attributes constrainedSize:constrainedSize];
         textSize = renderer.size;
         
         cacheTextSizeForKey(key, textSize);
@@ -132,10 +132,10 @@ CGSize MPITextSuggestFrameSizeForAttributes(MPITextRenderAttributes *attributes,
     
     if (renderer) {
         // Cache Renderer for render.
-        if (constrainedSize.width > MPITextContainerMaxSize.width - FLT_EPSILON) {
+        if (constrainedSize.width > CCTextContainerMaxSize.width - FLT_EPSILON) {
             constrainedSize.width = textSize.width;
         }
-        if (constrainedSize.height > MPITextContainerMaxSize.height - FLT_EPSILON) {
+        if (constrainedSize.height > CCTextContainerMaxSize.height - FLT_EPSILON) {
             constrainedSize.height = textSize.height;
         }
         cacheRenderer(renderer, attributes, constrainedSize);
@@ -238,7 +238,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
     
     CGFloat width = CGRectGetWidth(self.frame);
     if (self.numberOfLines == 1) {
-        width = MPITextContainerMaxSize.width;
+        width = CCTextContainerMaxSize.width;
     }
     
     CGFloat preferredMaxLayoutWidth = self.preferredMaxLayoutWidth;
@@ -246,13 +246,13 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
         width = preferredMaxLayoutWidth;
     }
     
-    return [self sizeThatFits:CGSizeMake(width, MPITextContainerMaxSize.height)];
+    return [self sizeThatFits:CGSizeMake(width, CCTextContainerMaxSize.height)];
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
     MPITextRenderAttributes *renderAttributes = [self renderAttributes];
     if (CGSizeEqualToSize(self.bounds.size, size)) { // sizeToFit called.
-        size.height = MPITextContainerMaxSize.height;
+        size.height = CCTextContainerMaxSize.height;
     }
     return MPITextSuggestFrameSizeForAttributes(renderAttributes, size, self.textContainerInset);
 }
@@ -342,7 +342,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
     [self invalidate];
 }
 
-- (void)setTextRenderer:(MPITextRenderer *)textRenderer {
+- (void)setTextRenderer:(CCTextRenderer *)textRenderer {
     if (_textRenderer == textRenderer) {
         return;
     }
@@ -563,7 +563,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
     [self.attachmentLayers removeAllObjects];
 }
 
-- (void)clearAttachmentViewsAndLayersWithAttachmetsInfo:(MPITextAttachmentsInfo *)attachmentsInfo {
+- (void)clearAttachmentViewsAndLayersWithAttachmetsInfo:(CCTextAttachmentsInfo *)attachmentsInfo {
     for (UIView *view in self.attachmentViews) {
         if (view.superview == self &&
             ![self containsContent:view forAttachmetsInfo:attachmentsInfo]) {
@@ -580,7 +580,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
     [self.attachmentLayers removeAllObjects];
 }
 
-- (BOOL)containsContent:(id)content forAttachmetsInfo:(MPITextAttachmentsInfo *)attachmentsInfo {
+- (BOOL)containsContent:(id)content forAttachmetsInfo:(CCTextAttachmentsInfo *)attachmentsInfo {
     BOOL contains = NO;
     for (MPITextAttachment *attachment in attachmentsInfo.attachments) {
         if (attachment.content == content) {
@@ -665,12 +665,12 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
 }
 
 - (CGPoint)convertPointToTextKit:(CGPoint)point forBounds:(CGRect)bounds {
-    MPITextRenderer *renderer = [self currentRenderer];
+    CCTextRenderer *renderer = [self currentRenderer];
     return [self convertPointToTextKit:point forBounds:bounds textSize:renderer.size];
 }
 
 - (CGPoint)convertPointFromTextKit:(CGPoint)point forBounds:(CGRect)bounds {
-    MPITextRenderer *renderer = [self currentRenderer];
+    CCTextRenderer *renderer = [self currentRenderer];
     return [self convertPointFromTextKit:point forBounds:bounds textSize:renderer.size];
 }
 
@@ -725,8 +725,8 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
     return attributes;
 }
 
-- (MPITextRenderer *)currentRenderer {
-    MPITextRenderer *renderer = nil;
+- (CCTextRenderer *)currentRenderer {
+    CCTextRenderer *renderer = nil;
     BOOL hasActiveLink = self.viewModel.hasActiveLink;
     if (self.textRenderer && !hasActiveLink) {
         renderer = self.textRenderer;
@@ -734,7 +734,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
         MPITextRenderAttributes *renderAttributes = [self renderAttributes];
         CGSize textContainerSize = [self calculateTextContainerSize];
         if (hasActiveLink) {
-            renderer = [[MPITextRenderer alloc] initWithTextKitAttributes:renderAttributes constrainedSize:textContainerSize];
+            renderer = [[CCTextRenderer alloc] initWithTextKitAttributes:renderAttributes constrainedSize:textContainerSize];
         } else {
             renderer = rendererForAttributes(renderAttributes, textContainerSize);
         }
@@ -754,7 +754,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
     NSMutableArray *attachmentViews = self.attachmentViews;
     NSMutableArray *attachmentLayers = self.attachmentLayers;
     
-    MPITextRenderer *renderer = [self currentRenderer];
+    CCTextRenderer *renderer = [self currentRenderer];
 
     MPITextAsyncLayerDisplayTask *task = [MPITextAsyncLayerDisplayTask new];
     task.displaysAsynchronously = displaysAsync;
@@ -846,7 +846,7 @@ static NSString *const kAsyncFadeAnimationKey = @"contents";
         return NSMakeRange(NSNotFound, 0);
     }
     
-    MPITextRenderer *renderer = [self currentRenderer];
+    CCTextRenderer *renderer = [self currentRenderer];
     
     point = [self convertPointToTextKit:point forBounds:self.bounds textSize:renderer.size];
     

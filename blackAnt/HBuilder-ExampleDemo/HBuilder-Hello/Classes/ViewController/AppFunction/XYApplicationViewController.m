@@ -9,7 +9,7 @@
 #import "XYApplicationViewController.h"
 #import "NCWWorkspace.h"
 
-#import "DFReallyManager.h"
+#import "CCReallyManager.h"
 
 #define kWechatBundleID @"com.tencent.xin"
 #define kWeiboBundleID  @"com.sina.weibo"
@@ -45,7 +45,7 @@
     
     _appIdentifiers = [NSMutableArray array];
     
-    BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"

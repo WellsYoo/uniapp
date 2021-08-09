@@ -17,7 +17,7 @@
 #import "MPITextViewModel.h"
 #import "MPITextAttributes.h"
 #import "MPITextRenderAttributes.h"
-#import "MPITextRenderer.h"
+#import "CCTextRenderer.h"
 #import "MPITextDebugOption.h"
 #endif
 
@@ -61,7 +61,7 @@ CGSize MPITextSuggestFrameSizeForAttributes(MPITextRenderAttributes *attributes,
  
  Set it to get higher performance.
  */
-@property (nullable, nonatomic, strong) MPITextRenderer *textRenderer;
+@property (nullable, nonatomic, strong) CCTextRenderer *textRenderer;
 
 /**
  The text displayed by the label. Default is nil.

@@ -38,6 +38,8 @@ target 'HBuilder' do
      pod 'FlatUIKit'
      pod 'WZLBadge'
      pod 'KVOController'
+     pod 'FontAwesomeKit'
+     
      pod 'pop'
 
 end

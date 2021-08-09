@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "HMYAlertAction.h"
+#import "CCAlertAction.h"
 #import "NYAlertViewControllerConfiguration.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -9,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithOptions:(nullable NYAlertViewControllerConfiguration *)configuration
                           title:(nullable NSString *)title
                         message:(nullable NSString *)message
-                        actions:(NSArray<HMYAlertAction *> *)actions;
+                        actions:(NSArray<CCAlertAction *> *)actions;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  An array of NYAlertAction objects representing the actions that the user can take in response to the alert view
  */
-@property (nonatomic, readonly) NSArray<HMYAlertAction *> *actions;
+@property (nonatomic, readonly) NSArray<CCAlertAction *> *actions;
 
 /**
  An array of UITextField objects displayed by the alert view

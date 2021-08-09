@@ -195,7 +195,7 @@ DEF_SINGLETON(MEWidgetInfoManager)
                 case MEPersonContactTypePhone:
                 case MEPersonContactTypeMSG:
                 {
-                    SFWWidgetPerson * person = [[SFWWidgetPerson alloc] initWithData:item];
+                    CCWidgetPerson * person = [[CCWidgetPerson alloc] initWithData:item];
                     if (person) {
                         [_personList addObject:person];
                     }
@@ -222,8 +222,8 @@ DEF_SINGLETON(MEWidgetInfoManager)
 {
     NSMutableArray * infoList = [[NSMutableArray alloc] init];
     for (id item in self.personList) {
-        if ([item isKindOfClass:[SFWWidgetPerson class]]) {
-            SFWWidgetPerson *person = (SFWWidgetPerson *)item;
+        if ([item isKindOfClass:[CCWidgetPerson class]]) {
+            CCWidgetPerson *person = (CCWidgetPerson *)item;
             NSDictionary * personInfo = [person personInfoForWidget];
             [infoList addObject:personInfo];
         }else {
@@ -258,7 +258,7 @@ DEF_SINGLETON(MEWidgetInfoManager)
         //添加联系人对象到列表
         [self.personList addObject:ncwItem];
     }
-    if (contain && [ncwItem isKindOfClass:[SFWWidgetPerson class]] ) {
+    if (contain && [ncwItem isKindOfClass:[CCWidgetPerson class]] ) {
         [HMYDialog toast:@"您已添加过此号码！"];
     }
     if (save) {
@@ -274,10 +274,10 @@ DEF_SINGLETON(MEWidgetInfoManager)
     BOOL succeed;
     __block NSInteger index = -1;
     [self.personList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[SFWWidgetPerson class]]&&[ncwItem isKindOfClass:[SFWWidgetPerson class]]) {
+        if ([obj isKindOfClass:[CCWidgetPerson class]]&&[ncwItem isKindOfClass:[CCWidgetPerson class]]) {
             
-            SFWWidgetPerson * tmpPerson = (SFWWidgetPerson *)obj;
-            if ( [tmpPerson isEqualToPerson:(SFWWidgetPerson *)ncwItem]) {
+            CCWidgetPerson * tmpPerson = (CCWidgetPerson *)obj;
+            if ( [tmpPerson isEqualToPerson:(CCWidgetPerson *)ncwItem]) {
                 index = idx;
                 *stop = YES;
             }
@@ -352,9 +352,9 @@ DEF_SINGLETON(MEWidgetInfoManager)
 {
     __block BOOL contain = NO;
     [self.personList enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[SFWWidgetPerson class]]&&[ncwItem isKindOfClass:[SFWWidgetPerson class]]) {
-            SFWWidgetPerson * tmpPerson = (SFWWidgetPerson *)obj;
-            if ([tmpPerson isEqualToPerson:(SFWWidgetPerson *)ncwItem]) {
+        if ([obj isKindOfClass:[CCWidgetPerson class]]&&[ncwItem isKindOfClass:[CCWidgetPerson class]]) {
+            CCWidgetPerson * tmpPerson = (CCWidgetPerson *)obj;
+            if ([tmpPerson isEqualToPerson:(CCWidgetPerson *)ncwItem]) {
                 contain = YES;
                 *stop = YES;
             }

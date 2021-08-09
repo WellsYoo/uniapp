@@ -11,8 +11,8 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 
-#import "MTGPSManager.h"
-#import "MTAreaRequestBasic.h"
+#import "CCGPSManager.h"
+#import "CCAreaRequestBasic.h"
 
 #import "NSObject+MTAreaManagerUtil.h"
 
@@ -44,7 +44,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
     //  是否需要GPS定位
     if ([MTAreaManagerSetting shared].needGPSLocation) {
         
-        [MTGPSManager requestGPSWithCompletionHandler:^(MTGPSDataModel *gpsModel, BOOL isSuccess) {
+        [CCGPSManager requestGPSWithCompletionHandler:^(MTGPSDataModel *gpsModel, BOOL isSuccess) {
             if (isSuccess) {
                 [MTAreaManagerSetting shared].gpsDataModel = gpsModel;
             }
@@ -65,7 +65,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
                                                        timeoutInterval:[MTAreaManagerSetting shared].timeoutInterval];
     request.HTTPMethod = @"POST";
     
-    NSDictionary *json = [[MTAreaRequestBasic shared] basicParametersForAreaRequest];
+    NSDictionary *json = [[CCAreaRequestBasic shared] basicParametersForAreaRequest];
     NSData *postData = [json areaManager_postData];
     request.HTTPBody = postData;
     
@@ -80,7 +80,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
             NSDictionary *data = dict[@"data"];
             
             if (data) {
-                MTAreaDataModel *model = [[MTAreaDataModel alloc] initWithDictionary:data];
+                CCAreaDataModel *model = [[CCAreaDataModel alloc] initWithDictionary:data];
                 
                 if (self.completionHandler) {
                     self.completionHandler(model, MTAreaDataServerSource, YES);
@@ -103,33 +103,33 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
     
 }
 
-+ (MTAreaDataModel *)areaDataModelWithCountryCode:(NSString *)countryCode {
++ (CCAreaDataModel *)areaDataModelWithCountryCode:(NSString *)countryCode {
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"MTAreaConfiguration" ofType:@"plist"];
     NSDictionary *areaList = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
-    MTAreaDataModel *model = [[MTAreaDataModel alloc] initWithDictionary:areaList[countryCode]];
+    CCAreaDataModel *model = [[CCAreaDataModel alloc] initWithDictionary:areaList[countryCode]];
     model.countryCode = countryCode;
     return model;
 }
 
-+ (MTAreaDataModel *)fetchSystemArea {
++ (CCAreaDataModel *)fetchSystemArea {
     
     NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
     NSString *countryCode = [[locale objectForKey:NSLocaleCountryCode] uppercaseString];
     
-    MTAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
+    CCAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
     
     return model;
 }
 
-+ (MTAreaDataModel *)fetchSIMCardArea {
++ (CCAreaDataModel *)fetchSIMCardArea {
     
     CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = networkInfo.subscriberCellularProvider;
     NSString *countryCode = [carrier.isoCountryCode uppercaseString];
     
     if (countryCode.length) {
-        MTAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
+        CCAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
         return model;
     } else {
         return nil;
@@ -186,7 +186,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
 + (void)fetchLocalAreaWithCompletionHandler:(MTAreaCompletionHandler)handler {
     
     //  取SIM卡地区信息
-    MTAreaDataModel *model = [self fetchSIMCardArea];
+    CCAreaDataModel *model = [self fetchSIMCardArea];
     if (model) {
         if (handler) {
             handler(model, MTAreaDataSIMCardSource, YES);
@@ -206,7 +206,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
     NSAssert(dataSource==MTAreaDataSystemSource || dataSource==MTAreaDataSIMCardSource,
              @"dataSource只能传入MTAreaDataSystemSource或者MTAreaDataSIMCardSource");
     
-    MTAreaDataModel *model = nil;
+    CCAreaDataModel *model = nil;
     switch (dataSource) {
         case MTAreaDataSystemSource:
             model = [self fetchSystemArea];

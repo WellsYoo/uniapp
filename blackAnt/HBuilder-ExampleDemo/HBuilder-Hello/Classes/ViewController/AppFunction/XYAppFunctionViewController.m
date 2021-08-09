@@ -10,9 +10,9 @@
 #import "XYApplicationViewController.h"
 #import "SFSstemtViewController.h"
 
-#import "FSaseNavigationController.h"
+#import "CCaseNavigationController.h"
 #import "XYWidgetInfoManager.h"
-#import "DFReallyManager.h"
+#import "CCReallyManager.h"
 
 #import "HMYDialog.h"
 
@@ -42,7 +42,7 @@
 {
     self = [super init];
     if (self) {
-        BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
+        BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
         if (shouldBeReally) {
             _listHeadTitles = @[@"已安装应用", @"系统应用"];
         }else {
@@ -69,11 +69,11 @@
     }
     
     //NavigationController
-    FSaseNavigationController *navigationController = (FSaseNavigationController *)self.navigationController;
+    CCaseNavigationController *navigationController = (CCaseNavigationController *)self.navigationController;
     [navigationController addPartingLine];
     
     //是否变身
-    BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         self.title = @"选择APP和功能";
         
@@ -226,7 +226,7 @@
 - (id)forListBodyView:(YOListBodyView *)view index:(NSInteger)index
 {
     //是否变身
-    BOOL shouldBeReally = [[DFReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         NCWBaseAppViewController *viewController = nil;
         switch (index) {
