@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HMYAppRequestMessage : NSObject
+@interface EGAppRequestMessage : NSObject
 
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSDictionary *requestData;
@@ -17,7 +17,7 @@
 @end
 
 
-@interface MTAppResponseMessage : NSObject
+@interface EGAppResponseMessage : NSObject
 
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSDictionary *responseData;

@@ -8,7 +8,7 @@
 
 #import "HMYAppManager.h"
 #import "HMYAppRequest.h"
-#import "HMYAppClient.h"
+#import "EGAppClient.h"
 
 #define kImagePasteboardType @"kImagePasteboard"
 
@@ -270,7 +270,7 @@ typedef NS_ENUM(NSUInteger, MTResponseType) {
                         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
                         NSData *imageData = [pasteboard dataForPasteboardType:kImagePasteboardType];
                         NSDictionary *inputParams = [[parameters[kXMTCustomParams] mtam_URLDecodedString] parseURLParams];
-                        MTAppResponseMessage *message = [[MTAppResponseMessage alloc] init];
+                        EGAppResponseMessage *message = [[EGAppResponseMessage alloc] init];
                         message.responseData = [inputParams copy];
                         if (imageData) {
                             UIImage *image = [UIImage imageWithData:imageData];
@@ -330,7 +330,7 @@ typedef NS_ENUM(NSUInteger, MTResponseType) {
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[parameters[kXMTError] stringByAppendingURLParams:errorParams]]];
             }
         } else {
-            MTAppSuccessBlock success = ^(MTAppResponseMessage *responseMessage, BOOL cancelled) {
+            MTAppSuccessBlock success = ^(EGAppResponseMessage *responseMessage, BOOL cancelled) {
                 if (cancelled) {
                     if (parameters[kXMTCancel]) {
                         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:parameters[kXMTCancel]]];
@@ -382,7 +382,7 @@ typedef NS_ENUM(NSUInteger, MTResponseType) {
                 MTAppActionHandlerBlock actionHandler = _actions[action];
                 NSDictionary *inputParams = [[parameters[kXMTCustomParams] mtam_URLDecodedString] parseURLParams];
                 NSData *imageData = [pasteboard dataForPasteboardType:kImagePasteboardType];
-                HMYAppRequestMessage *requestMessage = [[HMYAppRequestMessage alloc] init];
+                EGAppRequestMessage *requestMessage = [[EGAppRequestMessage alloc] init];
                 requestMessage.requestData = inputParams;
                 requestMessage.image = pasteboard.image;
                 if (imageData) {

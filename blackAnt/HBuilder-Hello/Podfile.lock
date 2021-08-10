@@ -1,27 +1,5 @@
 PODS:
-  - DZNEmptyDataSet (1.8.1)
   - FlatUIKit (1.6.2)
-  - FontAwesomeKit (2.2.1):
-    - FontAwesomeKit/Core (= 2.2.1)
-    - FontAwesomeKit/FontAwesome (= 2.2.1)
-    - FontAwesomeKit/FoundationIcons (= 2.2.1)
-    - FontAwesomeKit/IonIcons (= 2.2.1)
-    - FontAwesomeKit/Material (= 2.2.1)
-    - FontAwesomeKit/Octicons (= 2.2.1)
-    - FontAwesomeKit/Zocial (= 2.2.1)
-  - FontAwesomeKit/Core (2.2.1)
-  - FontAwesomeKit/FontAwesome (2.2.1):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/FoundationIcons (2.2.1):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/IonIcons (2.2.1):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/Material (2.2.1):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/Octicons (2.2.1):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/Zocial (2.2.1):
-    - FontAwesomeKit/Core
   - FrameAccessor (2.0)
   - GKNavigationBar (1.1.8)
   - GKPageScrollView (1.4.1)
@@ -39,13 +17,10 @@ PODS:
     - SDWebImage/Core (= 5.9.5)
   - SDWebImage/Core (5.9.5)
   - TYCyclePagerView (1.2.0)
-  - WZLBadge (1.2.6)
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
-  - DZNEmptyDataSet (~> 1.8.1)
   - FlatUIKit
-  - FontAwesomeKit
   - FrameAccessor (~> 2.0)
   - GKNavigationBar
   - GKPageScrollView
@@ -60,14 +35,11 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - TYCyclePagerView
-  - WZLBadge
   - ZipArchive
 
 SPEC REPOS:
   trunk:
-    - DZNEmptyDataSet
     - FlatUIKit
-    - FontAwesomeKit
     - FrameAccessor
     - GKNavigationBar
     - GKPageScrollView
@@ -82,13 +54,10 @@ SPEC REPOS:
     - SDCycleScrollView
     - SDWebImage
     - TYCyclePagerView
-    - WZLBadge
     - ZipArchive
 
 SPEC CHECKSUMS:
-  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
-  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
   GKNavigationBar: b68d31d24fc14a297b109e71280187dc311e0794
   GKPageScrollView: 99daceceb35bfd1b0a2aa9c7a7e1cddba4e11a7b
@@ -103,9 +72,8 @@ SPEC CHECKSUMS:
   SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
   TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
-  WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: f3fc69a2edcd54da7ae1f38e95b93ae008811347
+PODFILE CHECKSUM: 5a48cba0fdbc566285dd38978e74e4f9a6fa9cfb
 
 COCOAPODS: 1.10.1

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 Meitu. All rights reserved.
 //
 
-#import "HMYAppClient.h"
+#import "EGAppClient.h"
 #import "HMYAppRequest.h"
 
 @implementation NSString (MTAppURL)
@@ -30,7 +30,7 @@
 }
 @end
 
-@implementation HMYAppClient
+@implementation EGAppClient
 
 + (instancetype)client {
     return [[self alloc] init];
@@ -105,8 +105,8 @@
 }
 
 - (void)performWithURLString:(NSString *)urlString
-              requestMessage:(HMYAppRequestMessage * _Nullable)requestMessage
-                   onSuccess:(void(^)(MTAppResponseMessage *responseMessage))success
+              requestMessage:(EGAppRequestMessage * _Nullable)requestMessage
+                   onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
                    onFailure:(void(^)(NSError *failure))failure {
     NSParameterAssert(urlString);
     NSURL *url = [NSURL URLWithString:urlString];
@@ -124,7 +124,7 @@
         if (requestMessage.requestData) {
             [requestData addEntriesFromDictionary:requestMessage.requestData];
         }
-        HMYAppRequestMessage *message = [[HMYAppRequestMessage alloc] initWithImage:requestMessage.image requestData:requestData];
+        EGAppRequestMessage *message = [[EGAppRequestMessage alloc] initWithImage:requestMessage.image requestData:requestData];
         request.client          = self;
         request.requestMessage  = message;
         request.action          = action;
@@ -152,8 +152,8 @@
  *  @param  failure 失败回调
  */
 - (void)performAction:(NSString *)action
-       requestMessage:(HMYAppRequestMessage *)requestMessage
-            onSuccess:(void(^)(MTAppResponseMessage *responseMessage))success
+       requestMessage:(EGAppRequestMessage *)requestMessage
+            onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
             onFailure:(void(^)(NSError *failure))failure {
     HMYAppRequest *request = [[HMYAppRequest alloc] init];
     request.client          = self;
@@ -177,7 +177,7 @@
  *  @param  failure 失败回调
  */
 - (void)performAction:(NSString *)action
-            onSuccess:(void(^)(MTAppResponseMessage *responseMessage))success
+            onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
             onFailure:(void(^)(NSError *failure))failure {
     
     HMYAppRequest *request = [[HMYAppRequest alloc] init];

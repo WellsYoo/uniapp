@@ -40,6 +40,19 @@
 		2F0BA3F9215B48A700F67004 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA3F8215B48A700F67004 /* Images.xcassets */; };
 		2F0BA416215B8B1400F67004 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA415215B8B1300F67004 /* VideoToolbox.framework */; };
 		2F0BA418215B8B5C00F67004 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */; };
+		2F2B64B526C10D3800935930 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B64A026C10D3800935930 /* octicons.ttf */; };
+		2F2B64B626C10D3800935930 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64A126C10D3800935930 /* FAKIcon.m */; };
+		2F2B64B726C10D3800935930 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B64A226C10D3800935930 /* zocial-regular-webfont.ttf */; };
+		2F2B64B826C10D3800935930 /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64A426C10D3800935930 /* FAKOcticons.m */; };
+		2F2B64B926C10D3800935930 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B64A526C10D3800935930 /* FontAwesome.otf */; };
+		2F2B64BA26C10D3800935930 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64A626C10D3800935930 /* FAKZocial.m */; };
+		2F2B64BB26C10D3800935930 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64A726C10D3800935930 /* FAKMaterialIcons.m */; };
+		2F2B64BC26C10D3800935930 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64A826C10D3800935930 /* FAKFontAwesome.m */; };
+		2F2B64BD26C10D3800935930 /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B64AA26C10D3800935930 /* Material-Design-Iconic-Font.ttf */; };
+		2F2B64BE26C10D3800935930 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B64AB26C10D3800935930 /* ionicons.ttf */; };
+		2F2B64BF26C10D3800935930 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64AC26C10D3800935930 /* FAKFoundationIcons.m */; };
+		2F2B64C026C10D3800935930 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B64AD26C10D3800935930 /* foundation-icons.ttf */; };
+		2F2B64C126C10D3800935930 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B64B126C10D3800935930 /* FAKIonIcons.m */; };
 		2F3D0728269C6731007CBAA8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D0727269C6731007CBAA8 /* IJKMediaFramework.framework */; };
 		2F3D072A269C6754007CBAA8 /* liblibVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D0729269C6753007CBAA8 /* liblibVideo.a */; };
 		2F3D072B269C6761007CBAA8 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
@@ -63,7 +76,7 @@
 		2FA04BB726B0FA3100010208 /* HMYAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1926B0FA3100010208 /* HMYAppManager.m */; };
 		2FA04BB826B0FA3100010208 /* MTAppMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1A26B0FA3100010208 /* MTAppMessage.m */; };
 		2FA04BB926B0FA3100010208 /* HMYAppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1F26B0FA3100010208 /* HMYAppRequest.m */; };
-		2FA04BBA26B0FA3100010208 /* HMYAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2026B0FA3100010208 /* HMYAppClient.m */; };
+		2FA04BBA26B0FA3100010208 /* EGAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2026B0FA3100010208 /* EGAppClient.m */; };
 		2FA04BBB26B0FA3100010208 /* NYAlertViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2326B0FA3100010208 /* NYAlertViewControllerConfiguration.m */; };
 		2FA04BBC26B0FA3100010208 /* HMYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2426B0FA3100010208 /* HMYAlertViewController.m */; };
 		2FA04BBD26B0FA3100010208 /* NYAlertActionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B2626B0FA3100010208 /* NYAlertActionConfiguration.m */; };
@@ -244,6 +257,27 @@
 		2F0BA40F215B784000F67004 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		2F0BA415215B8B1300F67004 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		2F2B64A026C10D3800935930 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
+		2F2B64A126C10D3800935930 /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIcon.m; sourceTree = "<group>"; };
+		2F2B64A226C10D3800935930 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		2F2B64A326C10D3800935930 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		2F2B64A426C10D3800935930 /* FAKOcticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKOcticons.m; sourceTree = "<group>"; };
+		2F2B64A526C10D3800935930 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		2F2B64A626C10D3800935930 /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKZocial.m; sourceTree = "<group>"; };
+		2F2B64A726C10D3800935930 /* FAKMaterialIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMaterialIcons.m; sourceTree = "<group>"; };
+		2F2B64A826C10D3800935930 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
+		2F2B64A926C10D3800935930 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
+		2F2B64AA26C10D3800935930 /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
+		2F2B64AB26C10D3800935930 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		2F2B64AC26C10D3800935930 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFoundationIcons.m; sourceTree = "<group>"; };
+		2F2B64AD26C10D3800935930 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
+		2F2B64AE26C10D3800935930 /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKZocial.h; sourceTree = "<group>"; };
+		2F2B64AF26C10D3800935930 /* FAKOcticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKOcticons.h; sourceTree = "<group>"; };
+		2F2B64B026C10D3800935930 /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIcon.h; sourceTree = "<group>"; };
+		2F2B64B126C10D3800935930 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
+		2F2B64B226C10D3800935930 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
+		2F2B64B326C10D3800935930 /* FAKMaterialIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMaterialIcons.h; sourceTree = "<group>"; };
+		2F2B64B426C10D3800935930 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
 		2F3D0727269C6731007CBAA8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../SDK/Libs/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		2F3D0729269C6753007CBAA8 /* liblibVideo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibVideo.a; path = ../SDK/Libs/liblibVideo.a; sourceTree = "<group>"; };
 		2F3D072C269C676F007CBAA8 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = ../SDK/Libs/Masonry.framework; sourceTree = "<group>"; };
@@ -274,12 +308,12 @@
 		2FA04B1726B0FA3100010208 /* XYWidgetInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWidgetInfoManager.m; sourceTree = "<group>"; };
 		2FA04B1926B0FA3100010208 /* HMYAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAppManager.m; sourceTree = "<group>"; };
 		2FA04B1A26B0FA3100010208 /* MTAppMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAppMessage.m; sourceTree = "<group>"; };
-		2FA04B1B26B0FA3100010208 /* HMYAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYAppClient.h; sourceTree = "<group>"; };
+		2FA04B1B26B0FA3100010208 /* EGAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAppClient.h; sourceTree = "<group>"; };
 		2FA04B1C26B0FA3100010208 /* HMYAppRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYAppRequest.h; sourceTree = "<group>"; };
 		2FA04B1D26B0FA3100010208 /* HMYAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYAppManager.h; sourceTree = "<group>"; };
 		2FA04B1E26B0FA3100010208 /* MTAppMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAppMessage.h; sourceTree = "<group>"; };
 		2FA04B1F26B0FA3100010208 /* HMYAppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAppRequest.m; sourceTree = "<group>"; };
-		2FA04B2026B0FA3100010208 /* HMYAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAppClient.m; sourceTree = "<group>"; };
+		2FA04B2026B0FA3100010208 /* EGAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAppClient.m; sourceTree = "<group>"; };
 		2FA04B2226B0FA3100010208 /* CCAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertAction.h; sourceTree = "<group>"; };
 		2FA04B2326B0FA3100010208 /* NYAlertViewControllerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewControllerConfiguration.m; sourceTree = "<group>"; };
 		2FA04B2426B0FA3100010208 /* HMYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYAlertViewController.m; sourceTree = "<group>"; };
@@ -796,13 +830,42 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2F2B649F26C10D3800935930 /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B64A026C10D3800935930 /* octicons.ttf */,
+				2F2B64A126C10D3800935930 /* FAKIcon.m */,
+				2F2B64A226C10D3800935930 /* zocial-regular-webfont.ttf */,
+				2F2B64A326C10D3800935930 /* FontAwesomeKit.h */,
+				2F2B64A426C10D3800935930 /* FAKOcticons.m */,
+				2F2B64A526C10D3800935930 /* FontAwesome.otf */,
+				2F2B64A626C10D3800935930 /* FAKZocial.m */,
+				2F2B64A726C10D3800935930 /* FAKMaterialIcons.m */,
+				2F2B64A826C10D3800935930 /* FAKFontAwesome.m */,
+				2F2B64A926C10D3800935930 /* FAKIonIcons.h */,
+				2F2B64AA26C10D3800935930 /* Material-Design-Iconic-Font.ttf */,
+				2F2B64AB26C10D3800935930 /* ionicons.ttf */,
+				2F2B64AC26C10D3800935930 /* FAKFoundationIcons.m */,
+				2F2B64AD26C10D3800935930 /* foundation-icons.ttf */,
+				2F2B64AE26C10D3800935930 /* FAKZocial.h */,
+				2F2B64AF26C10D3800935930 /* FAKOcticons.h */,
+				2F2B64B026C10D3800935930 /* FAKIcon.h */,
+				2F2B64B126C10D3800935930 /* FAKIonIcons.m */,
+				2F2B64B226C10D3800935930 /* FAKFontAwesome.h */,
+				2F2B64B326C10D3800935930 /* FAKMaterialIcons.h */,
+				2F2B64B426C10D3800935930 /* FAKFoundationIcons.h */,
+			);
+			path = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
 		2FA04AFB26B0FA3100010208 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2F2B649F26C10D3800935930 /* FontAwesomeKit */,
 				2FA04C2926B1093900010208 /* Classes */,
 				2FA04AFC26B0FA3100010208 /* AreaManagerKit */,
 				2FA04B1126B0FA3100010208 /* Manager */,
-				2FA04B1826B0FA3100010208 /* MTAppManagerKit */,
+				2FA04B1826B0FA3100010208 /* EGAppManagerKit */,
 				2FA04B2126B0FA3100010208 /* YOXViewController */,
 				2FA04B3B26B0FA3100010208 /* Public */,
 				2FA04B4D26B0FA3100010208 /* Model */,
@@ -878,19 +941,19 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		2FA04B1826B0FA3100010208 /* MTAppManagerKit */ = {
+		2FA04B1826B0FA3100010208 /* EGAppManagerKit */ = {
 			isa = PBXGroup;
 			children = (
 				2FA04B1926B0FA3100010208 /* HMYAppManager.m */,
 				2FA04B1A26B0FA3100010208 /* MTAppMessage.m */,
-				2FA04B1B26B0FA3100010208 /* HMYAppClient.h */,
+				2FA04B1B26B0FA3100010208 /* EGAppClient.h */,
 				2FA04B1C26B0FA3100010208 /* HMYAppRequest.h */,
 				2FA04B1D26B0FA3100010208 /* HMYAppManager.h */,
 				2FA04B1E26B0FA3100010208 /* MTAppMessage.h */,
 				2FA04B1F26B0FA3100010208 /* HMYAppRequest.m */,
-				2FA04B2026B0FA3100010208 /* HMYAppClient.m */,
+				2FA04B2026B0FA3100010208 /* EGAppClient.m */,
 			);
-			path = MTAppManagerKit;
+			path = EGAppManagerKit;
 			sourceTree = "<group>";
 		};
 		2FA04B2126B0FA3100010208 /* YOXViewController */ = {
@@ -1845,7 +1908,7 @@
 				ORGANIZATIONNAME = DCloud;
 				TargetAttributes = {
 					8EED6297198A1D13000A4449 = {
-						DevelopmentTeam = 533B7LX2AD;
+						DevelopmentTeam = 27AJ95V7X6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1880,22 +1943,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2B64B726C10D3800935930 /* zocial-regular-webfont.ttf in Resources */,
 				4F52A30425E8DEDD00405116 /* DCTZImagePickerController.bundle in Resources */,
 				4F4C65462465606C006A13AA /* PandoraApi.bundle in Resources */,
 				2F0BA3F9215B48A700F67004 /* Images.xcassets in Resources */,
 				4F4C65512465606C006A13AA /* weex-polyfill.js in Resources */,
 				4F4C654E2465606C006A13AA /* DCPGVideo.bundle in Resources */,
+				2F2B64B926C10D3800935930 /* FontAwesome.otf in Resources */,
 				2FA04BB126B0FA3100010208 /* MTAreaConfiguration.plist in Resources */,
 				8EED62A6198A1D13000A4449 /* InfoPlist.strings in Resources */,
 				4F4C65372465606B006A13AA /* __uniappes6.js in Resources */,
 				67E9CDCF22968D2E0076E0FB /* Localizable.strings in Resources */,
 				4F4DDAFF25AC46610008AE37 /* DCSVProgressHUD.bundle in Resources */,
+				2F2B64BE26C10D3800935930 /* ionicons.ttf in Resources */,
 				67B7CAA221DCE8180083E96A /* control.xml in Resources */,
+				2F2B64C026C10D3800935930 /* foundation-icons.ttf in Resources */,
 				2FA04BC926B0FA3100010208 /* ESTabBarController.xib in Resources */,
 				4F4C65522465606C006A13AA /* weexUniJs.js in Resources */,
 				2F3D0730269C6D2D007CBAA8 /* DCMediaEditingController.bundle in Resources */,
+				2F2B64BD26C10D3800935930 /* Material-Design-Iconic-Font.ttf in Resources */,
 				4F4C65472465606C006A13AA /* unincomponents.ttf in Resources */,
 				8EED6590198A3DF7000A4449 /* Pandora in Resources */,
+				2F2B64B526C10D3800935930 /* octicons.ttf in Resources */,
 				4F4C653A2465606B006A13AA /* uni-jsframework.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1932,9 +2001,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HBuilder/Pods-HBuilder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/FlatUIKit/FlatUIKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FrameAccessor/FrameAccessor.framework",
 				"${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/GKPageScrollView/GKPageScrollView.framework",
@@ -1948,15 +2015,12 @@
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TYCyclePagerView/TYCyclePagerView.framework",
-				"${BUILT_PRODUCTS_DIR}/WZLBadge/WZLBadge.framework",
 				"${BUILT_PRODUCTS_DIR}/ZipArchive/ZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlatUIKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameAccessor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKPageScrollView.framework",
@@ -1970,7 +2034,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYCyclePagerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WZLBadge.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
@@ -1992,6 +2055,7 @@
 				2FA04BCC26B0FA3100010208 /* NCWMBProgressHUD.m in Sources */,
 				2FA04BB826B0FA3100010208 /* MTAppMessage.m in Sources */,
 				2FA04C8F26B1093900010208 /* NSMutableParagraphStyle+MPITextKit.m in Sources */,
+				2F2B64BB26C10D3800935930 /* FAKMaterialIcons.m in Sources */,
 				2FA04BC426B0FA3100010208 /* NYAlertViewPresentationAnimationController.m in Sources */,
 				2FA04BE026B0FA3100010208 /* SFSstemtViewController.m in Sources */,
 				2FA04C9026B1093900010208 /* NSAttributedString+MPITextKit.m in Sources */,
@@ -2019,13 +2083,14 @@
 				2FA04C8C26B1093900010208 /* MPITextInteractiveGestureRecognizer.m in Sources */,
 				2FA04C8526B1093900010208 /* MPITextBackground.m in Sources */,
 				2FA04BD726B0FA3100010208 /* XYIconImageView.m in Sources */,
+				2F2B64B626C10D3800935930 /* FAKIcon.m in Sources */,
 				2FA04C7926B1093900010208 /* MPITextDebugOption.m in Sources */,
 				2FA04BBD26B0FA3100010208 /* NYAlertActionConfiguration.m in Sources */,
 				2FA04BAB26B0FA3100010208 /* NSObject+MTAreaManagerUtil.m in Sources */,
 				2FA04BBE26B0FA3100010208 /* UIView+Additions.m in Sources */,
 				2FA04C8226B1093900010208 /* MPITextKitConst.m in Sources */,
 				2FA04BDF26B0FA3100010208 /* XYAppFunctionViewController.m in Sources */,
-				2FA04BBA26B0FA3100010208 /* HMYAppClient.m in Sources */,
+				2FA04BBA26B0FA3100010208 /* EGAppClient.m in Sources */,
 				2FA04C7C26B1093900010208 /* MPITextLayoutManager.m in Sources */,
 				2FA04C8826B1093900010208 /* MPIAttributedLabel.m in Sources */,
 				2FA04BD826B0FA3100010208 /* YOScrollView.m in Sources */,
@@ -2044,6 +2109,7 @@
 				2FA04BE326B0FA3100010208 /* ESTabBarController+Autolayout.m in Sources */,
 				2FA04C8426B1093900010208 /* MPITextAttachment.m in Sources */,
 				2FA04BE226B0FA3100010208 /* FSFViewController.m in Sources */,
+				2F2B64C126C10D3800935930 /* FAKIonIcons.m in Sources */,
 				2FA04C8B26B1093900010208 /* MPITextCache.m in Sources */,
 				2FA04C8726B1093900010208 /* MPITextBackedString.m in Sources */,
 				2FA04C8D26B1093900010208 /* MPITextAsyncLayer.m in Sources */,
@@ -2056,7 +2122,9 @@
 				2FA04BB026B0FA3100010208 /* MTAreaManagerKit.m in Sources */,
 				2FA04BCA26B0FA3100010208 /* ESTabBarController.m in Sources */,
 				2FA04C7726B1093900010208 /* MPITextBackgroundsInfo.m in Sources */,
+				2F2B64BA26C10D3800935930 /* FAKZocial.m in Sources */,
 				2FA04BE126B0FA3100010208 /* XYApplicationViewController.m in Sources */,
+				2F2B64BC26C10D3800935930 /* FAKFontAwesome.m in Sources */,
 				2FA04BEB26B0FA3100010208 /* MTACKeychainQuery.m in Sources */,
 				2FA04BBF26B0FA3100010208 /* CCAextView.m in Sources */,
 				2FA04C8626B1093900010208 /* MPITextLink.m in Sources */,
@@ -2071,8 +2139,10 @@
 				2FA04BE726B0FA3100010208 /* MTKeyboardAvoidingCollectionView.m in Sources */,
 				2FA04C8E26B1093900010208 /* NSMutableAttributedString+MPITextKit.m in Sources */,
 				2FA04BEA26B0FA3100010208 /* MTACKeychain.m in Sources */,
+				2F2B64B826C10D3800935930 /* FAKOcticons.m in Sources */,
 				2FA04BE526B0FA3100010208 /* MTACPresentTransition.m in Sources */,
 				2FA04C7626B1093900010208 /* MPITextParser.m in Sources */,
+				2F2B64BF26C10D3800935930 /* FAKFoundationIcons.m in Sources */,
 				2FA04BE926B0FA3100010208 /* UIScrollView+MTKeyboardAvoidingAdditions.m in Sources */,
 				2FA04BC026B0FA3100010208 /* CCAlertViewButton.m in Sources */,
 				2FA04BC826B0FA3100010208 /* UIImage+NCWUtil.m in Sources */,
@@ -2195,8 +2265,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.1;
-				DEVELOPMENT_TEAM = 533B7LX2AD;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = 27AJ95V7X6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2229,7 +2299,7 @@
 					"-llibVideo",
 					"-llibCamera",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.circle.shop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayi.erge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2249,8 +2319,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.1;
-				DEVELOPMENT_TEAM = 533B7LX2AD;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = 27AJ95V7X6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2283,7 +2353,7 @@
 					"-llibVideo",
 					"-llibCamera",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.circle.shop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayi.erge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

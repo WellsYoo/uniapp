@@ -12,7 +12,7 @@
 #import "MTAppMessage.h"
 
 NS_ASSUME_NONNULL_BEGIN
-@interface HMYAppClient : NSObject
+@interface EGAppClient : NSObject
 
 @property(nonatomic, copy) NSString *URLScheme;     /**< 应用程序URL Scheme */
 @property(nonatomic, strong) HMYAppManager *manager; /**< 应用程序管理器 */
@@ -72,8 +72,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param failure 失败回调
  */
 - (void)performWithURLString:(NSString *)urlString
-              requestMessage:(HMYAppRequestMessage * _Nullable)requestMessage
-                   onSuccess:(void(^)(MTAppResponseMessage *responseMessage))success
+              requestMessage:(EGAppRequestMessage * _Nullable)requestMessage
+                   onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
                    onFailure:(void(^)(NSError *failure))failure;
 
 /**
@@ -84,7 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param  failure 失败回调
  */
 - (void)performAction:(NSString *)action
-            onSuccess:(void(^)(MTAppResponseMessage *responseMessage))success
+            onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
             onFailure:(void(^)(NSError *failure))failure;
 
 /**
@@ -96,8 +96,8 @@ NS_ASSUME_NONNULL_BEGIN
  *	@param 	requestMessage 其中 图片  不能为nil，否则直接执行failure
  */
 - (void)performAction:(NSString *)action
-       requestMessage:(HMYAppRequestMessage *)requestMessage
-            onSuccess:(void(^)(MTAppResponseMessage *responseMessage))success
+       requestMessage:(EGAppRequestMessage *)requestMessage
+            onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
             onFailure:(void(^)(NSError *failure))failure;
 
 NS_ASSUME_NONNULL_END

@@ -10,18 +10,18 @@
 #import <Foundation/Foundation.h>
 #import "MTAppMessage.h"
 
-@class HMYAppClient;
+@class EGAppClient;
 
 @interface HMYAppRequest : NSObject
 
 @property (nonatomic, copy, readonly) NSString *requestID;
 
-@property (nonatomic, retain) HMYAppClient *client;
+@property (nonatomic, retain) EGAppClient *client;
 
 @property (nonatomic, copy) NSString *action;
-@property (nonatomic, strong) HMYAppRequestMessage *requestMessage;
+@property (nonatomic, strong) EGAppRequestMessage *requestMessage;
 
-@property (nonatomic, copy) void(^successCalback)(MTAppResponseMessage
+@property (nonatomic, copy) void(^successCalback)(EGAppResponseMessage
 *message);
 @property (nonatomic, copy) void(^errorCalback)(NSError *);
 

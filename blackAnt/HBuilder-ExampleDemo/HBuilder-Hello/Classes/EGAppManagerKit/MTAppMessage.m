@@ -7,7 +7,7 @@
 
 #import "MTAppMessage.h"
 
-@implementation HMYAppRequestMessage
+@implementation EGAppRequestMessage
 - (instancetype)initWithImage:(UIImage *)image
                   requestData:(NSDictionary *)requestData {
     self = [self init];
@@ -19,6 +19,6 @@
 }
 @end
 
-@implementation MTAppResponseMessage
+@implementation EGAppResponseMessage
 
 @end

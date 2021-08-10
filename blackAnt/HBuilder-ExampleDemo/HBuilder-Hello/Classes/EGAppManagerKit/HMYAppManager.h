@@ -105,8 +105,8 @@ typedef NS_ENUM(NSInteger, MTError) {
 };
 
 typedef void(^MTAppFailureBlock)(NSError *error);
-typedef void(^MTAppSuccessBlock)(MTAppResponseMessage *responseMessage, BOOL cancelled);
-typedef void(^MTAppActionHandlerBlock)(HMYAppRequestMessage *requestMessage, MTAppSuccessBlock success, MTAppFailureBlock failure);
+typedef void(^MTAppSuccessBlock)(EGAppResponseMessage *responseMessage, BOOL cancelled);
+typedef void(^MTAppActionHandlerBlock)(EGAppRequestMessage *requestMessage, MTAppSuccessBlock success, MTAppFailureBlock failure);
 
 @interface HMYAppManager : NSObject
 
