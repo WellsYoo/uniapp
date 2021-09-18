@@ -6,32 +6,32 @@
 //  Copyright © 2016年 美图网. All rights reserved.
 //
 
-#import "MTAreaManagerKit.h"
+#import "EGAreaManagerKit.h"
 
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 
 #import "CCGPSManager.h"
-#import "CCAreaRequestBasic.h"
+#import "EGAreaRequestBasic.h"
 
 #import "NSObject+MTAreaManagerUtil.h"
 
 static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
 
-@interface MTAreaManagerKit ()
+@interface EGAreaManagerKit ()
 
 @property (nonatomic, copy) MTAreaCompletionHandler completionHandler;
 
 @end
 
-@implementation MTAreaManagerKit
+@implementation EGAreaManagerKit
 
 + (instancetype)shared {
     
-    static MTAreaManagerKit *sharedInstance = nil;
+    static EGAreaManagerKit *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[MTAreaManagerKit alloc] init];
+        sharedInstance = [[EGAreaManagerKit alloc] init];
     });
     return sharedInstance;
 }
@@ -65,7 +65,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
                                                        timeoutInterval:[MTAreaManagerSetting shared].timeoutInterval];
     request.HTTPMethod = @"POST";
     
-    NSDictionary *json = [[CCAreaRequestBasic shared] basicParametersForAreaRequest];
+    NSDictionary *json = [[EGAreaRequestBasic shared] basicParametersForAreaRequest];
     NSData *postData = [json areaManager_postData];
     request.HTTPBody = postData;
     
@@ -143,7 +143,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
                       isTest:(BOOL)isTest
            completionHandler:(MTAreaCompletionHandler)handler {
     
-    [MTAreaManagerKit requestAreaWithAppId:appId
+    [EGAreaManagerKit requestAreaWithAppId:appId
                                   language:language
                                    channel:@"AppStore"
                                     isTest:isTest
@@ -157,7 +157,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
                       isTest:(BOOL)isTest
            completionHandler:(MTAreaCompletionHandler)handler {
     
-    [MTAreaManagerKit requestAreaWithAppId:appId
+    [EGAreaManagerKit requestAreaWithAppId:appId
                                   language:language
                                    channel:channel
                                     isTest:isTest
@@ -180,7 +180,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
         [MTAreaManagerSetting shared].simCardCountryCode = [self fetchSIMCardArea].countryCode;
     }
     
-    [[MTAreaManagerKit shared] requestAreaWithCompletionHandler:handler];
+    [[EGAreaManagerKit shared] requestAreaWithCompletionHandler:handler];
 }
 
 + (void)fetchLocalAreaWithCompletionHandler:(MTAreaCompletionHandler)handler {

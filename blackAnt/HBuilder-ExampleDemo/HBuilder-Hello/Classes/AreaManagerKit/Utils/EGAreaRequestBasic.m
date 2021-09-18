@@ -6,14 +6,14 @@
 //  Copyright © 2016年 美图网. All rights reserved.
 //
 
-#import "CCAreaRequestBasic.h"
+#import "EGAreaRequestBasic.h"
 
 #import "MTAreaManagerSetting.h"
 
 #import "UIDevice+MTAreaManager.h"
 #import "NSObject+MTAreaManagerUtil.h"
 
-@interface CCAreaRequestBasic ()
+@interface EGAreaRequestBasic ()
 
 @property (nonatomic, copy) NSString *token;                    /**< token值 */
 @property (nonatomic, copy) NSString *secret;                   /**< 密文 */
@@ -40,14 +40,14 @@
 
 @end
 
-@implementation CCAreaRequestBasic
+@implementation EGAreaRequestBasic
 
 + (instancetype)shared {
     
-    static CCAreaRequestBasic *sharedInstance = nil;
+    static EGAreaRequestBasic *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[CCAreaRequestBasic alloc] init];
+        sharedInstance = [[EGAreaRequestBasic alloc] init];
     });
     return sharedInstance;
 }

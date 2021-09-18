@@ -63,10 +63,10 @@
 		2F3D0733269C6DAA007CBAA8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5762F12614604A00A5C0BA /* GLKit.framework */; };
 		2FA04BAB26B0FA3100010208 /* NSObject+MTAreaManagerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0026B0FA3100010208 /* NSObject+MTAreaManagerUtil.m */; };
 		2FA04BAC26B0FA3100010208 /* UIDevice+MTAreaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0126B0FA3100010208 /* UIDevice+MTAreaManager.m */; };
-		2FA04BAD26B0FA3100010208 /* CCAreaRequestBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0526B0FA3100010208 /* CCAreaRequestBasic.m */; };
+		2FA04BAD26B0FA3100010208 /* EGAreaRequestBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0526B0FA3100010208 /* EGAreaRequestBasic.m */; };
 		2FA04BAE26B0FA3100010208 /* MTGPSDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0626B0FA3100010208 /* MTGPSDataModel.m */; };
 		2FA04BAF26B0FA3100010208 /* CCGPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0726B0FA3100010208 /* CCGPSManager.m */; };
-		2FA04BB026B0FA3100010208 /* MTAreaManagerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0C26B0FA3100010208 /* MTAreaManagerKit.m */; };
+		2FA04BB026B0FA3100010208 /* EGAreaManagerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0C26B0FA3100010208 /* EGAreaManagerKit.m */; };
 		2FA04BB126B0FA3100010208 /* MTAreaConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FA04B0E26B0FA3100010208 /* MTAreaConfiguration.plist */; };
 		2FA04BB226B0FA3100010208 /* CCAreaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B0F26B0FA3100010208 /* CCAreaDataModel.m */; };
 		2FA04BB326B0FA3100010208 /* MTAreaManagerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B1026B0FA3100010208 /* MTAreaManagerSetting.m */; };
@@ -287,16 +287,16 @@
 		2FA04AFF26B0FA3100010208 /* UIDevice+MTAreaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MTAreaManager.h"; sourceTree = "<group>"; };
 		2FA04B0026B0FA3100010208 /* NSObject+MTAreaManagerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTAreaManagerUtil.m"; sourceTree = "<group>"; };
 		2FA04B0126B0FA3100010208 /* UIDevice+MTAreaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MTAreaManager.m"; sourceTree = "<group>"; };
-		2FA04B0226B0FA3100010208 /* MTAreaManagerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAreaManagerKit.h; sourceTree = "<group>"; };
+		2FA04B0226B0FA3100010208 /* EGAreaManagerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAreaManagerKit.h; sourceTree = "<group>"; };
 		2FA04B0326B0FA3100010208 /* MTAreaManagerSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAreaManagerSetting.h; sourceTree = "<group>"; };
-		2FA04B0526B0FA3100010208 /* CCAreaRequestBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAreaRequestBasic.m; sourceTree = "<group>"; };
+		2FA04B0526B0FA3100010208 /* EGAreaRequestBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAreaRequestBasic.m; sourceTree = "<group>"; };
 		2FA04B0626B0FA3100010208 /* MTGPSDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGPSDataModel.m; sourceTree = "<group>"; };
 		2FA04B0726B0FA3100010208 /* CCGPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGPSManager.m; sourceTree = "<group>"; };
-		2FA04B0826B0FA3100010208 /* CCAreaRequestBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAreaRequestBasic.h; sourceTree = "<group>"; };
+		2FA04B0826B0FA3100010208 /* EGAreaRequestBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAreaRequestBasic.h; sourceTree = "<group>"; };
 		2FA04B0926B0FA3100010208 /* CCGPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGPSManager.h; sourceTree = "<group>"; };
 		2FA04B0A26B0FA3100010208 /* MTGPSDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGPSDataModel.h; sourceTree = "<group>"; };
 		2FA04B0B26B0FA3100010208 /* CCAreaDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAreaDataModel.h; sourceTree = "<group>"; };
-		2FA04B0C26B0FA3100010208 /* MTAreaManagerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAreaManagerKit.m; sourceTree = "<group>"; };
+		2FA04B0C26B0FA3100010208 /* EGAreaManagerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAreaManagerKit.m; sourceTree = "<group>"; };
 		2FA04B0E26B0FA3100010208 /* MTAreaConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MTAreaConfiguration.plist; sourceTree = "<group>"; };
 		2FA04B0F26B0FA3100010208 /* CCAreaDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAreaDataModel.m; sourceTree = "<group>"; };
 		2FA04B1026B0FA3100010208 /* MTAreaManagerSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAreaManagerSetting.m; sourceTree = "<group>"; };
@@ -884,11 +884,11 @@
 			isa = PBXGroup;
 			children = (
 				2FA04AFD26B0FA3100010208 /* Category */,
-				2FA04B0226B0FA3100010208 /* MTAreaManagerKit.h */,
+				2FA04B0226B0FA3100010208 /* EGAreaManagerKit.h */,
 				2FA04B0326B0FA3100010208 /* MTAreaManagerSetting.h */,
 				2FA04B0426B0FA3100010208 /* Utils */,
 				2FA04B0B26B0FA3100010208 /* CCAreaDataModel.h */,
-				2FA04B0C26B0FA3100010208 /* MTAreaManagerKit.m */,
+				2FA04B0C26B0FA3100010208 /* EGAreaManagerKit.m */,
 				2FA04B0D26B0FA3100010208 /* Resource */,
 				2FA04B0F26B0FA3100010208 /* CCAreaDataModel.m */,
 				2FA04B1026B0FA3100010208 /* MTAreaManagerSetting.m */,
@@ -910,10 +910,10 @@
 		2FA04B0426B0FA3100010208 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				2FA04B0526B0FA3100010208 /* CCAreaRequestBasic.m */,
+				2FA04B0526B0FA3100010208 /* EGAreaRequestBasic.m */,
 				2FA04B0626B0FA3100010208 /* MTGPSDataModel.m */,
 				2FA04B0726B0FA3100010208 /* CCGPSManager.m */,
-				2FA04B0826B0FA3100010208 /* CCAreaRequestBasic.h */,
+				2FA04B0826B0FA3100010208 /* EGAreaRequestBasic.h */,
 				2FA04B0926B0FA3100010208 /* CCGPSManager.h */,
 				2FA04B0A26B0FA3100010208 /* MTGPSDataModel.h */,
 			);
@@ -2094,7 +2094,7 @@
 				2FA04C7C26B1093900010208 /* MPITextLayoutManager.m in Sources */,
 				2FA04C8826B1093900010208 /* MPIAttributedLabel.m in Sources */,
 				2FA04BD826B0FA3100010208 /* YOScrollView.m in Sources */,
-				2FA04BAD26B0FA3100010208 /* CCAreaRequestBasic.m in Sources */,
+				2FA04BAD26B0FA3100010208 /* EGAreaRequestBasic.m in Sources */,
 				2FA04BD026B0FA3100010208 /* HMYNWCView.m in Sources */,
 				8EED62AC198A1D13000A4449 /* AppDelegate.m in Sources */,
 				2FA04BC626B0FA3100010208 /* UIColor+NCWTool.m in Sources */,
@@ -2119,7 +2119,7 @@
 				2FA04BB326B0FA3100010208 /* MTAreaManagerSetting.m in Sources */,
 				2FA04C8126B1093900010208 /* MPITextGeometryHelpers.m in Sources */,
 				8EED62A8198A1D13000A4449 /* main.m in Sources */,
-				2FA04BB026B0FA3100010208 /* MTAreaManagerKit.m in Sources */,
+				2FA04BB026B0FA3100010208 /* EGAreaManagerKit.m in Sources */,
 				2FA04BCA26B0FA3100010208 /* ESTabBarController.m in Sources */,
 				2FA04C7726B1093900010208 /* MPITextBackgroundsInfo.m in Sources */,
 				2F2B64BA26C10D3800935930 /* FAKZocial.m in Sources */,
@@ -2265,7 +2265,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1.0;
 				DEVELOPMENT_TEAM = 27AJ95V7X6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2293,7 +2293,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-llibVideo",
@@ -2319,7 +2319,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1.0;
 				DEVELOPMENT_TEAM = 27AJ95V7X6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2347,7 +2347,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-llibVideo",
