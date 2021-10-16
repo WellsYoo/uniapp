@@ -42,6 +42,19 @@
 		2F0BA416215B8B1400F67004 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA415215B8B1300F67004 /* VideoToolbox.framework */; };
 		2F0BA418215B8B5C00F67004 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */; };
 		2F0BA4DC215BA12300F67004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */; };
+		2F4987F2271AA6E1007153FF /* libAMapLocationPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4987F1271AA6E1007153FF /* libAMapLocationPlugin.a */; };
+		2F4987F4271AA701007153FF /* liblibGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4987F3271AA701007153FF /* liblibGeolocation.a */; };
+		2F4987F6271AA728007153FF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4987F5271AA728007153FF /* ExternalAccessory.framework */; };
+		2F4987F7271AA72D007153FF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5762F12614604A00A5C0BA /* GLKit.framework */; };
+		2F4987F9271AA765007153FF /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4987F8271AA765007153FF /* AMapLocationKit.framework */; };
+		2F4987FB271AA76D007153FF /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4987FA271AA76D007153FF /* AMapFoundationKit.framework */; };
+		2F4987FC271AB450007153FF /* liblibCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD8121CB50C3F00C0F062 /* liblibCamera.a */; };
+		2F4987FD271AB45E007153FF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E163D011A8D208500308A8B /* AssetsLibrary.framework */; };
+		2F4987FE271AB466007153FF /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6731F397232F4D8E007838BC /* Photos.framework */; };
+		2F4987FF271AB46C007153FF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED6413198A262C000A4449 /* CoreMedia.framework */; };
+		2F498801271AB474007153FF /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F498800271AB474007153FF /* MetalKit.framework */; };
+		2F498802271AB48B007153FF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49810C2126B01900D20880 /* Accelerate.framework */; };
+		2F498803271AB49D007153FF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E163D011A8D208500308A8B /* AssetsLibrary.framework */; };
 		2FD11BBB215C79C5000A23AD /* liblibAdSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD11BBA215C79C5000A23AD /* liblibAdSupport.a */; };
 		2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDE1569215F468000588710 /* liblibWeex.a */; };
 		4F4C65372465606B006A13AA /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65192465606B006A13AA /* __uniappes6.js */; };
@@ -155,6 +168,12 @@
 		2F0BA415215B8B1300F67004 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F4987F1271AA6E1007153FF /* libAMapLocationPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMapLocationPlugin.a; path = ../SDK/Libs/libAMapLocationPlugin.a; sourceTree = "<group>"; };
+		2F4987F3271AA701007153FF /* liblibGeolocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibGeolocation.a; path = ../SDK/Libs/liblibGeolocation.a; sourceTree = "<group>"; };
+		2F4987F5271AA728007153FF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		2F4987F8271AA765007153FF /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = ../SDK/Libs/AMapLocationKit.framework; sourceTree = "<group>"; };
+		2F4987FA271AA76D007153FF /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = ../SDK/Libs/AMapFoundationKit.framework; sourceTree = "<group>"; };
+		2F498800271AB474007153FF /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		2FD11BBA215C79C5000A23AD /* liblibAdSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibAdSupport.a; path = ../SDK/Libs/liblibAdSupport.a; sourceTree = "<group>"; };
 		2FDE1569215F468000588710 /* liblibWeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibWeex.a; path = ../SDK/Libs/liblibWeex.a; sourceTree = "<group>"; };
 		4F4C64532465600B006A13AA /* PDRCoreAppWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRCoreAppWindow.h; sourceTree = "<group>"; };
@@ -421,6 +440,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EED641C198A2654000A4449 /* SystemConfiguration.framework in Frameworks */,
+				8EED641E198A265F000A4449 /* CoreTelephony.framework in Frameworks */,
+				7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */,
+				2F4987F7271AA72D007153FF /* GLKit.framework in Frameworks */,
+				2F4987F6271AA728007153FF /* ExternalAccessory.framework in Frameworks */,
+				24BD5AF01C99494A00B05AA2 /* libz.tbd in Frameworks */,
+				2F498803271AB49D007153FF /* AssetsLibrary.framework in Frameworks */,
+				24BD5AF61C994BB200B05AA2 /* libc++.tbd in Frameworks */,
 				4FE36666254FE3D100DCD173 /* libuchardet.a in Frameworks */,
 				4F8546B12518D8BF00858D80 /* storage.framework in Frameworks */,
 				2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */,
@@ -443,52 +470,57 @@
 				24AFD8461CB50C4000C0F062 /* libcoreSupport.a in Frameworks */,
 				247F85DB1FA32B2C006ECAC6 /* liblibPDRCore.a in Frameworks */,
 				24AFD8651CB50C4000C0F062 /* liblibUI.a in Frameworks */,
+				2F4987F2271AA6E1007153FF /* libAMapLocationPlugin.a in Frameworks */,
 				24AFD8641CB50C4000C0F062 /* liblibStorage.a in Frameworks */,
 				24AFD8681CB50C4000C0F062 /* liblibXHR.a in Frameworks */,
 				24AFD8691CB50C4000C0F062 /* liblibZip.a in Frameworks */,
 				7A1967C3212536EC00B330A9 /* libmp3lame.a in Frameworks */,
 				24AFD86B1CB50C4000C0F062 /* libopencore-amrnb.a in Frameworks */,
+				2F4987FC271AB450007153FF /* liblibCamera.a in Frameworks */,
 				24AFD8761CB50C4000C0F062 /* libTouchJSON.a in Frameworks */,
 				7A49810B2126B01200D20880 /* libiconv.tbd in Frameworks */,
 				6731F394232F4CE2007838BC /* libresolv.tbd in Frameworks */,
 				2F0BA418215B8B5C00F67004 /* libbz2.1.0.tbd in Frameworks */,
-				24BD5AF61C994BB200B05AA2 /* libc++.tbd in Frameworks */,
 				24BD5AF21C994A1700B05AA2 /* libicucore.tbd in Frameworks */,
-				24BD5AF01C99494A00B05AA2 /* libz.tbd in Frameworks */,
 				24BD5AEE1C99494200B05AA2 /* libxml2.tbd in Frameworks */,
 				24BD5AEA1C99492A00B05AA2 /* libiconv.2.tbd in Frameworks */,
+				2F498801271AB474007153FF /* MetalKit.framework in Frameworks */,
 				24BD5AE81C99491D00B05AA2 /* libsqlite3.0.tbd in Frameworks */,
 				6731F396232F4D05007838BC /* UserNotifications.framework in Frameworks */,
 				6731F398232F4D8E007838BC /* Photos.framework in Frameworks */,
 				2F0BA416215B8B1400F67004 /* VideoToolbox.framework in Frameworks */,
 				8EED6594198A5743000A4449 /* AVFoundation.framework in Frameworks */,
+				2F4987FF271AB46C007153FF /* CoreMedia.framework in Frameworks */,
 				7A49810D2126B01900D20880 /* Accelerate.framework in Frameworks */,
 				24F990131DFBDA3300848C2B /* CoreData.framework in Frameworks */,
 				8EED629E198A1D13000A4449 /* CoreGraphics.framework in Frameworks */,
 				8EED629C198A1D13000A4449 /* Foundation.framework in Frameworks */,
 				8EED62A0198A1D13000A4449 /* UIKit.framework in Frameworks */,
+				2F4987FE271AB466007153FF /* Photos.framework in Frameworks */,
 				24A7515F1D9CCCC600C8B0F9 /* QuickLook.framework in Frameworks */,
+				2F498802271AB48B007153FF /* Accelerate.framework in Frameworks */,
 				242725CD1D26686700EBD79E /* CoreMotion.framework in Frameworks */,
 				7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */,
-				7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */,
-				8EED641C198A2654000A4449 /* SystemConfiguration.framework in Frameworks */,
 				242725CB1D2666ED00EBD79E /* JavaScriptCore.framework in Frameworks */,
 				2447371B1D0830BB00D0F08F /* WebKit.framework in Frameworks */,
+				2F4987F9271AA765007153FF /* AMapLocationKit.framework in Frameworks */,
 				240905031C200AEF0070786F /* CoreBluetooth.framework in Frameworks */,
 				8E6E37AC1B0E1B580036EB48 /* ImageIO.framework in Frameworks */,
 				8E163D021A8D208500308A8B /* AssetsLibrary.framework in Frameworks */,
 				8EED6596198A574C000A4449 /* CoreLocation.framework in Frameworks */,
 				8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */,
+				2F4987FB271AA76D007153FF /* AMapFoundationKit.framework in Frameworks */,
 				8EED65A0198A5789000A4449 /* Accounts.framework in Frameworks */,
 				8EED659E198A5782000A4449 /* Social.framework in Frameworks */,
+				2F4987F4271AA701007153FF /* liblibGeolocation.a in Frameworks */,
 				8EED659C198A5773000A4449 /* AddressBookUI.framework in Frameworks */,
 				8EED6592198A5737000A4449 /* AddressBook.framework in Frameworks */,
 				8EED6422198A2678000A4449 /* AudioToolbox.framework in Frameworks */,
 				8EED6420198A2668000A4449 /* MediaPlayer.framework in Frameworks */,
-				8EED641E198A265F000A4449 /* CoreTelephony.framework in Frameworks */,
 				8EED6416198A2635000A4449 /* CoreVideo.framework in Frameworks */,
 				8EED6414198A262C000A4449 /* CoreMedia.framework in Frameworks */,
 				8EED6412198A2622000A4449 /* MobileCoreServices.framework in Frameworks */,
+				2F4987FD271AB45E007153FF /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +832,12 @@
 		8EED629A198A1D13000A4449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F498800271AB474007153FF /* MetalKit.framework */,
+				2F4987FA271AA76D007153FF /* AMapFoundationKit.framework */,
+				2F4987F8271AA765007153FF /* AMapLocationKit.framework */,
+				2F4987F5271AA728007153FF /* ExternalAccessory.framework */,
+				2F4987F3271AA701007153FF /* liblibGeolocation.a */,
+				2F4987F1271AA6E1007153FF /* libAMapLocationPlugin.a */,
 				4F5762F12614604A00A5C0BA /* GLKit.framework */,
 				4F4FD8FD2601EBEA00A08818 /* libUniAd-Ks-content.a */,
 				4F4FD8FC2601EBEA00A08818 /* libUniAd-Ks.a */,
@@ -1158,7 +1196,12 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 2.5.1;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lAMapLocationPlugin",
+					"-llibGeolocation",
+					"-llibCamera",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daxiangtest.anmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1205,7 +1248,12 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 2.5.1;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lAMapLocationPlugin",
+					"-llibGeolocation",
+					"-llibCamera",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daxiangtest.anmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
