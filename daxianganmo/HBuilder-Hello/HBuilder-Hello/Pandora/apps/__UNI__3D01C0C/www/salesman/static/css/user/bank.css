@@ -1,0 +1,13 @@
+page {
+	 background-color: #202020;
+ }
+ .contain {
+	min-height: 100%;
+	background-color: #202020;
+ }
+ .item {
+	 background: #313131;
+ }
+ input {
+	 text-align: right;
+ } 
