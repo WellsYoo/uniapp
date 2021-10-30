@@ -1,0 +1,15 @@
+page {
+	background: #2EB37E linear-gradient(360deg, #7BD39C 0%, #2EB37E 100%);
+}
+.contain {
+	min-height: 100vh;
+	background: #2EB37E linear-gradient(360deg, #7BD39C 0%, #2EB37E 100%);
+}
+.contain-page {
+	top: -15px;
+}
+.user-img {
+	position: relative;
+	top: 16px;
+	z-index: 1;
+}

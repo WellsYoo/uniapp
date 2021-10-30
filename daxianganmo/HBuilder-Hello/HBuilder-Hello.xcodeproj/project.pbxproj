@@ -1202,7 +1202,7 @@
 					"-llibGeolocation",
 					"-llibCamera",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daxiangtest.anmo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydaxiang.amo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1254,7 +1254,7 @@
 					"-llibGeolocation",
 					"-llibCamera",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daxiangtest.anmo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydaxiang.amo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

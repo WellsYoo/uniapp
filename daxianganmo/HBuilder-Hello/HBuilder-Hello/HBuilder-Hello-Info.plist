@@ -73,8 +73,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>DCLOUD_AD_ID</key>
-	<string>去dcloud官方网站申请对应的值</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
@@ -104,12 +102,6 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>MiSDKAppID</key>
-	<string>去官方网站申请对应的值</string>
-	<key>MiSDKAppKey</key>
-	<string>去官方网站申请对应的值</string>
-	<key>MiSDKRun</key>
-	<string>debug</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -417,8 +409,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UniversalLinks</key>
-	<string>填写自己的值</string>
 	<key>amap</key>
 	<dict>
 		<key>appkey</key>
@@ -469,8 +459,6 @@
 		<key>appsecret</key>
 		<string>去官方网站申请对应的值</string>
 	</dict>
-	<key>marketChannel</key>
-	<string>按照文档格式配置对应的值</string>
 	<key>sinaweibo</key>
 	<dict>
 		<key>appSecret</key>

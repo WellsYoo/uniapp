@@ -1,0 +1,8 @@
+.per-img {
+	width: 32%;
+	padding: 16%;
+	margin-right: 2%;
+}
+.per-img:nth-child(3n+3) {
+	margin-right: 0;
+}

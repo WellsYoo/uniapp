@@ -6,8 +6,9 @@
 
 page {
 	background: #FFFFFF;
-	font-size: 28upx;
+	font-size: 30upx;
 	color: #383838;
+	min-height: 100vh;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 
 body {
 	margin: 0;
-	font-size: 14px;
+	font-size: 30upx;
 	color: #383838;
 	/* height: 100%; */
 
