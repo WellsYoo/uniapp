@@ -19,11 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dclogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="chI-mp-JJn">
-                                <rect key="frame" x="147" y="100" width="81" height="81"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="chI-mp-JJn">
+                                <rect key="frame" x="112.5" y="150" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="81" id="1H3-O0-44D"/>
-                                    <constraint firstAttribute="height" constant="81" id="clJ-nz-OrU"/>
+                                    <constraint firstAttribute="width" constant="150" id="1H3-O0-44D"/>
+                                    <constraint firstAttribute="height" constant="150" id="clJ-nz-OrU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -32,23 +32,11 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大象按摩技师端" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAp-n0-0hk">
-                                <rect key="frame" x="0.0" y="201" width="375" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="uFn-lJ-cpp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="chI-mp-JJn" firstAttribute="centerX" secondItem="z0m-pv-cfa" secondAttribute="centerX" id="42Z-Cr-3Xf"/>
-                            <constraint firstItem="lAp-n0-0hk" firstAttribute="leading" secondItem="z0m-pv-cfa" secondAttribute="leading" id="Dbn-k8-Zle"/>
-                            <constraint firstAttribute="trailing" secondItem="lAp-n0-0hk" secondAttribute="trailing" id="XC1-Es-H4H"/>
-                            <constraint firstItem="chI-mp-JJn" firstAttribute="top" secondItem="z0m-pv-cfa" secondAttribute="top" constant="100" id="pJB-gQ-UXh"/>
-                            <constraint firstItem="lAp-n0-0hk" firstAttribute="top" secondItem="chI-mp-JJn" secondAttribute="bottom" constant="20" id="xri-EJ-2Z7"/>
+                            <constraint firstItem="chI-mp-JJn" firstAttribute="top" secondItem="z0m-pv-cfa" secondAttribute="top" constant="150" id="pJB-gQ-UXh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,9 +46,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dclogo.png" width="60" height="60"/>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="launch_icon.png" width="60" height="60"/>
     </resources>
 </document>

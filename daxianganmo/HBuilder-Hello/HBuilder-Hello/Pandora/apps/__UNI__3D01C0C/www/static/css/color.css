@@ -101,7 +101,7 @@
 	border: 1px solid #856D43!important;
 }
 .b-color-e {
-	border: 1px solid #EDEBEB!important;
+	border: 1px solid #f4f4f4!important;
 }
 .b-color {
 	border-color: #2EB37E!important;
@@ -137,13 +137,13 @@
 	font-size: 32upx!important;
 }
 .f13-size {
-	font-size: 26upx!important;
+	font-size: 28upx!important;
 }
 .f12-size {
-	font-size: 24upx!important;
+	font-size: 26upx!important;
 }
 .f10-size {
-	font-size: 20upx!important;
+	font-size: 22upx!important;
 }
 .f20-size {
 	font-size: 40upx!important;
@@ -401,7 +401,7 @@
 	padding: 0 10px!important;
 }
 .padding-lr12 {
-	padding: 0 12px!important;
+	padding: 0 12px;
 }
 .padding-lr15 {
 	padding: 0 15px;

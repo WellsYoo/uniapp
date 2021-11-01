@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UniversalLinks</key>
+	<string>https://h5.wode24h.com/app/</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
@@ -53,11 +55,13 @@
 			</array>
 		</dict>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wxbe7f03382358338d</string>
+				<string>wx54e9f639fe47bd2d</string>
 			</array>
 		</dict>
 		<dict>
@@ -78,12 +82,6 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>tencentweiboSdkv2</string>
-		<string>weibosdk2.5</string>
-		<string>sinaweibo</string>
-		<string>sinaweibohd</string>
-		<string>alipay</string>
-		<string>safepay</string>
-		<string>cydia</string>
 		<string>weixin</string>
 		<string>weixinULAPI</string>
 		<string>weibosdk</string>
@@ -108,25 +106,23 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>照相机</string>
-	<key>NSContactsUsageDescription</key>
-	<string>通讯录</string>
+	<string>大象按摩需要您的允许才能正常使用相机，用于拍摄图片进行头像上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像。</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>始终允许获取你的位置信息</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>总是获取</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSLocationWhenInUseDescription</key>
-	<string></string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription - 2</key>
-	<string>用户使用时期定位</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>访问麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>相册</string>
+	<string>大象按摩需要您的允许才能正常使用相册，用于拍摄图片进行头像上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像。</string>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>请放心，开启权限不会获取您在其他站点的隐私信息，该权限仅用于标识设备并保障服务安全与提示浏览体验</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>StatusBarBackground</key>
 	<string>#FFFFFF</string>
 	<key>UIApplicationShortcutItems</key>
@@ -398,8 +394,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
@@ -419,17 +413,8 @@
 		<key>appkey</key>
 		<string>去官方网站申请对应的值</string>
 	</dict>
-	<key>baiduspeech</key>
-	<dict>
-		<key>API_KEY</key>
-		<string>去官方网站申请对应的值</string>
-		<key>APP_ID</key>
-		<string>去官方网站申请对应的值</string>
-		<key>SECRET_KEY</key>
-		<string>去官方网站申请对应的值</string>
-	</dict>
 	<key>dcloud_appkey</key>
-	<string>149721fb9876be862b0812be90919c72</string>
+	<string>f9205ad99402996e38dc17d007ceaac8</string>
 	<key>dcloud_uninview_background</key>
 	<true/>
 	<key>dcloud_uniplugins</key>
@@ -450,44 +435,12 @@
 			</array>
 		</dict>
 	</array>
-	<key>getui</key>
-	<dict>
-		<key>appid</key>
-		<string>去官方网站申请对应的appid</string>
-		<key>appkey</key>
-		<string>去官方网站申请对应的key</string>
-		<key>appsecret</key>
-		<string>去官方网站申请对应的值</string>
-	</dict>
-	<key>sinaweibo</key>
-	<dict>
-		<key>appSecret</key>
-		<string>去官方网站申请对应的值</string>
-		<key>appkey</key>
-		<string>去官方网站申请对应的值</string>
-		<key>redirectURI</key>
-		<string>填写自己的</string>
-	</dict>
-	<key>umeng</key>
-	<dict>
-		<key>appkey</key>
-		<string>去官方网站申请对应的值</string>
-	</dict>
 	<key>weixinoauth</key>
 	<dict>
 		<key>appSecret</key>
 		<string>去官方网站申请对应的值</string>
 		<key>appid</key>
 		<string>去官方网站申请对应的appid</string>
-	</dict>
-	<key>xiaomioauth</key>
-	<dict>
-		<key>appid</key>
-		<string>去官方网站申请对应的appid</string>
-		<key>appsecret</key>
-		<string>去官方网站申请对应的值</string>
-		<key>redirectURI</key>
-		<string>填写自己的</string>
 	</dict>
 </dict>
 </plist>

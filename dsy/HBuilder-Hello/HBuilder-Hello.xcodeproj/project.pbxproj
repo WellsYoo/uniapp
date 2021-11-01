@@ -43,51 +43,6 @@
 		2F1962D325C57DC1007889F2 /* libuchardet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE36665254FE3D100DCD173 /* libuchardet.a */; };
 		2F1962D625C57E67007889F2 /* libDCUniZXing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B422DC916C005A0D88 /* libDCUniZXing.a */; };
 		2F1962D925C57F3C007889F2 /* liblibMedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AFD8181CB50C4000C0F062 /* liblibMedia.a */; };
-		2F1963EC25C58531007889F2 /* NYAlertViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638125C58531007889F2 /* NYAlertViewControllerConfiguration.m */; };
-		2F1963ED25C58531007889F2 /* NYAlertActionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638325C58531007889F2 /* NYAlertActionConfiguration.m */; };
-		2F1963EE25C58531007889F2 /* NYAlertTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638525C58531007889F2 /* NYAlertTextView.m */; };
-		2F1963EF25C58531007889F2 /* NYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638725C58531007889F2 /* NYAlertView.m */; };
-		2F1963F025C58531007889F2 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638A25C58531007889F2 /* UIView+Additions.m */; };
-		2F1963F125C58531007889F2 /* NYAlertViewPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19638D25C58531007889F2 /* NYAlertViewPresentationController.m */; };
-		2F1963F225C58531007889F2 /* NYAlertViewDismissalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639125C58531007889F2 /* NYAlertViewDismissalAnimationController.m */; };
-		2F1963F325C58531007889F2 /* NYAlertViewPresentationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639225C58531007889F2 /* NYAlertViewPresentationAnimationController.m */; };
-		2F1963F425C58531007889F2 /* NYAlertViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639325C58531007889F2 /* NYAlertViewButton.m */; };
-		2F1963F525C58531007889F2 /* NYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639425C58531007889F2 /* NYAlertViewController.m */; };
-		2F1963F625C58531007889F2 /* NYAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639525C58531007889F2 /* NYAlertAction.m */; };
-		2F1963F725C58531007889F2 /* NCWSpringboardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639925C58531007889F2 /* NCWSpringboardLayout.m */; };
-		2F1963F825C58531007889F2 /* NCWWidgetInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639D25C58531007889F2 /* NCWWidgetInfoManager.m */; };
-		2F1963F925C58531007889F2 /* NCWReallyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19639E25C58531007889F2 /* NCWReallyManager.m */; };
-		2F1963FA25C58531007889F2 /* UIColor+NCWTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963A225C58531007889F2 /* UIColor+NCWTool.m */; };
-		2F1963FB25C58531007889F2 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963A525C58531007889F2 /* pinyin.c */; };
-		2F1963FC25C58531007889F2 /* UIImage+NCWUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963A725C58531007889F2 /* UIImage+NCWUtil.m */; };
-		2F1963FD25C58531007889F2 /* NCWDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963AA25C58531007889F2 /* NCWDialog.m */; };
-		2F1963FE25C58531007889F2 /* NCWMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963AB25C58531007889F2 /* NCWMBProgressHUD.m */; };
-		2F1963FF25C58531007889F2 /* NCWWidgetPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963AE25C58531007889F2 /* NCWWidgetPerson.m */; };
-		2F19640025C58531007889F2 /* NCWApplicationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963AF25C58531007889F2 /* NCWApplicationItem.m */; };
-		2F19640125C58531007889F2 /* NCWDrawTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963B325C58531007889F2 /* NCWDrawTextView.m */; };
-		2F19640225C58531007889F2 /* NCWSpringboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963B425C58531007889F2 /* NCWSpringboardCell.m */; };
-		2F19640325C58531007889F2 /* AMTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963B625C58531007889F2 /* AMTagListView.m */; };
-		2F19640425C58531007889F2 /* AMTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963B725C58531007889F2 /* AMTagView.m */; };
-		2F19640525C58531007889F2 /* NCWAdImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963B825C58531007889F2 /* NCWAdImageView.m */; };
-		2F19640625C58531007889F2 /* NCWCollectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963BC25C58531007889F2 /* NCWCollectionHeadView.m */; };
-		2F19640725C58531007889F2 /* NCWSoftwareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963C025C58531007889F2 /* NCWSoftwareTableViewCell.m */; };
-		2F19640825C58531007889F2 /* NCWIconImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963C325C58531007889F2 /* NCWIconImageView.m */; };
-		2F19640925C58531007889F2 /* NCWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963C425C58531007889F2 /* NCWScrollView.m */; };
-		2F19640A25C58531007889F2 /* NCWListBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963C625C58531007889F2 /* NCWListBodyView.m */; };
-		2F19640B25C58531007889F2 /* NCWListHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963CA25C58531007889F2 /* NCWListHeadView.m */; };
-		2F19640C25C58531007889F2 /* NCWSoftwareIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963CE25C58531007889F2 /* NCWSoftwareIconButton.m */; };
-		2F19640D25C58531007889F2 /* NCWSegmentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963CF25C58531007889F2 /* NCWSegmentButton.m */; };
-		2F19640E25C58531007889F2 /* ESTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1963D425C58531007889F2 /* ESTabBarController.xib */; };
-		2F19640F25C58531007889F2 /* ESTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963D525C58531007889F2 /* ESTabBarController.m */; };
-		2F19641025C58531007889F2 /* NCWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963D825C58531007889F2 /* NCWBaseViewController.m */; };
-		2F19641125C58531007889F2 /* NCWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963D925C58531007889F2 /* NCWHomeViewController.m */; };
-		2F19641225C58531007889F2 /* NCWBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963DA25C58531007889F2 /* NCWBaseNavigationController.m */; };
-		2F19641325C58531007889F2 /* NCWBaseAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963DF25C58531007889F2 /* NCWBaseAppViewController.m */; };
-		2F19641425C58531007889F2 /* NCWApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E125C58531007889F2 /* NCWApplicationViewController.m */; };
-		2F19641525C58531007889F2 /* NCWSystemtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E225C58531007889F2 /* NCWSystemtViewController.m */; };
-		2F19641625C58531007889F2 /* NCWAppFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E425C58531007889F2 /* NCWAppFunctionViewController.m */; };
-		2F19641725C58531007889F2 /* ESTabBarController+Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E725C58531007889F2 /* ESTabBarController+Autolayout.m */; };
-		2F19641825C58531007889F2 /* UIButton+ESTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1963E825C58531007889F2 /* UIButton+ESTabBar.m */; };
 		2F3B972225C9520400221170 /* liblibVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1962D725C57F23007889F2 /* liblibVideo.a */; };
 		2F3B972325C9520C00221170 /* DCUniVideoPublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672CE2B222DC9118005A0D88 /* DCUniVideoPublic.framework */; };
 		2F3B972525C9522C00221170 /* liblibPayment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3B972425C9522C00221170 /* liblibPayment.a */; };
@@ -193,100 +148,6 @@
 		2F0BA417215B8B5C00F67004 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F1962D725C57F23007889F2 /* liblibVideo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibVideo.a; path = ../SDK/Libs/liblibVideo.a; sourceTree = "<group>"; };
-		2F19637F25C58531007889F2 /* NYAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertAction.h; sourceTree = "<group>"; };
-		2F19638025C58531007889F2 /* NYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewController.h; sourceTree = "<group>"; };
-		2F19638125C58531007889F2 /* NYAlertViewControllerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewControllerConfiguration.m; sourceTree = "<group>"; };
-		2F19638225C58531007889F2 /* NYAlertViewControllerTransitionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewControllerTransitionStyle.h; sourceTree = "<group>"; };
-		2F19638325C58531007889F2 /* NYAlertActionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertActionConfiguration.m; sourceTree = "<group>"; };
-		2F19638525C58531007889F2 /* NYAlertTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertTextView.m; sourceTree = "<group>"; };
-		2F19638625C58531007889F2 /* NYAlertViewPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewPresentationController.h; sourceTree = "<group>"; };
-		2F19638725C58531007889F2 /* NYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertView.m; sourceTree = "<group>"; };
-		2F19638825C58531007889F2 /* NYAlertAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NYAlertAction+Private.h"; sourceTree = "<group>"; };
-		2F19638925C58531007889F2 /* NYAlertViewDismissalAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewDismissalAnimationController.h; sourceTree = "<group>"; };
-		2F19638A25C58531007889F2 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
-		2F19638B25C58531007889F2 /* NYAlertViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewButton.h; sourceTree = "<group>"; };
-		2F19638C25C58531007889F2 /* NYAlertViewPresentationAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewPresentationAnimationController.h; sourceTree = "<group>"; };
-		2F19638D25C58531007889F2 /* NYAlertViewPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewPresentationController.m; sourceTree = "<group>"; };
-		2F19638E25C58531007889F2 /* NYAlertTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertTextView.h; sourceTree = "<group>"; };
-		2F19638F25C58531007889F2 /* NYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertView.h; sourceTree = "<group>"; };
-		2F19639025C58531007889F2 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		2F19639125C58531007889F2 /* NYAlertViewDismissalAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewDismissalAnimationController.m; sourceTree = "<group>"; };
-		2F19639225C58531007889F2 /* NYAlertViewPresentationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewPresentationAnimationController.m; sourceTree = "<group>"; };
-		2F19639325C58531007889F2 /* NYAlertViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewButton.m; sourceTree = "<group>"; };
-		2F19639425C58531007889F2 /* NYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewController.m; sourceTree = "<group>"; };
-		2F19639525C58531007889F2 /* NYAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertAction.m; sourceTree = "<group>"; };
-		2F19639625C58531007889F2 /* NYAlertViewControllerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewControllerConfiguration.h; sourceTree = "<group>"; };
-		2F19639725C58531007889F2 /* NYAlertActionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertActionConfiguration.h; sourceTree = "<group>"; };
-		2F19639925C58531007889F2 /* NCWSpringboardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWSpringboardLayout.m; sourceTree = "<group>"; };
-		2F19639A25C58531007889F2 /* NCWWidgetInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWWidgetInfoManager.h; sourceTree = "<group>"; };
-		2F19639B25C58531007889F2 /* NCWReallyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWReallyManager.h; sourceTree = "<group>"; };
-		2F19639C25C58531007889F2 /* NCWSpringboardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWSpringboardLayout.h; sourceTree = "<group>"; };
-		2F19639D25C58531007889F2 /* NCWWidgetInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWWidgetInfoManager.m; sourceTree = "<group>"; };
-		2F19639E25C58531007889F2 /* NCWReallyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWReallyManager.m; sourceTree = "<group>"; };
-		2F1963A125C58531007889F2 /* NCWWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWWorkspace.h; sourceTree = "<group>"; };
-		2F1963A225C58531007889F2 /* UIColor+NCWTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NCWTool.m"; sourceTree = "<group>"; };
-		2F1963A325C58531007889F2 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
-		2F1963A425C58531007889F2 /* UIImage+NCWUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NCWUtil.h"; sourceTree = "<group>"; };
-		2F1963A525C58531007889F2 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
-		2F1963A625C58531007889F2 /* UIColor+NCWTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NCWTool.h"; sourceTree = "<group>"; };
-		2F1963A725C58531007889F2 /* UIImage+NCWUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NCWUtil.m"; sourceTree = "<group>"; };
-		2F1963A925C58531007889F2 /* NCWMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWMBProgressHUD.h; sourceTree = "<group>"; };
-		2F1963AA25C58531007889F2 /* NCWDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWDialog.m; sourceTree = "<group>"; };
-		2F1963AB25C58531007889F2 /* NCWMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWMBProgressHUD.m; sourceTree = "<group>"; };
-		2F1963AC25C58531007889F2 /* NCWDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWDialog.h; sourceTree = "<group>"; };
-		2F1963AE25C58531007889F2 /* NCWWidgetPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWWidgetPerson.m; sourceTree = "<group>"; };
-		2F1963AF25C58531007889F2 /* NCWApplicationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWApplicationItem.m; sourceTree = "<group>"; };
-		2F1963B025C58531007889F2 /* NCWApplicationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWApplicationItem.h; sourceTree = "<group>"; };
-		2F1963B125C58531007889F2 /* NCWWidgetPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWWidgetPerson.h; sourceTree = "<group>"; };
-		2F1963B325C58531007889F2 /* NCWDrawTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWDrawTextView.m; sourceTree = "<group>"; };
-		2F1963B425C58531007889F2 /* NCWSpringboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWSpringboardCell.m; sourceTree = "<group>"; };
-		2F1963B525C58531007889F2 /* NCWCollectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWCollectionHeadView.h; sourceTree = "<group>"; };
-		2F1963B625C58531007889F2 /* AMTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTagListView.m; sourceTree = "<group>"; };
-		2F1963B725C58531007889F2 /* AMTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTagView.m; sourceTree = "<group>"; };
-		2F1963B825C58531007889F2 /* NCWAdImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWAdImageView.m; sourceTree = "<group>"; };
-		2F1963B925C58531007889F2 /* AMTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTag.h; sourceTree = "<group>"; };
-		2F1963BA25C58531007889F2 /* NCWSpringboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWSpringboardCell.h; sourceTree = "<group>"; };
-		2F1963BB25C58531007889F2 /* NCWDrawTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWDrawTextView.h; sourceTree = "<group>"; };
-		2F1963BC25C58531007889F2 /* NCWCollectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWCollectionHeadView.m; sourceTree = "<group>"; };
-		2F1963BD25C58531007889F2 /* AMTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTagView.h; sourceTree = "<group>"; };
-		2F1963C025C58531007889F2 /* NCWSoftwareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWSoftwareTableViewCell.m; sourceTree = "<group>"; };
-		2F1963C125C58531007889F2 /* NCWSoftwareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWSoftwareTableViewCell.h; sourceTree = "<group>"; };
-		2F1963C325C58531007889F2 /* NCWIconImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWIconImageView.m; sourceTree = "<group>"; };
-		2F1963C425C58531007889F2 /* NCWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWScrollView.m; sourceTree = "<group>"; };
-		2F1963C525C58531007889F2 /* NCWListHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWListHeadView.h; sourceTree = "<group>"; };
-		2F1963C625C58531007889F2 /* NCWListBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWListBodyView.m; sourceTree = "<group>"; };
-		2F1963C725C58531007889F2 /* NCWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWScrollView.h; sourceTree = "<group>"; };
-		2F1963C825C58531007889F2 /* NCWIconImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWIconImageView.h; sourceTree = "<group>"; };
-		2F1963C925C58531007889F2 /* NCWListBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWListBodyView.h; sourceTree = "<group>"; };
-		2F1963CA25C58531007889F2 /* NCWListHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWListHeadView.m; sourceTree = "<group>"; };
-		2F1963CC25C58531007889F2 /* NCWSoftwareIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWSoftwareIconButton.h; sourceTree = "<group>"; };
-		2F1963CD25C58531007889F2 /* NCWSegmentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWSegmentButton.h; sourceTree = "<group>"; };
-		2F1963CE25C58531007889F2 /* NCWSoftwareIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWSoftwareIconButton.m; sourceTree = "<group>"; };
-		2F1963CF25C58531007889F2 /* NCWSegmentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWSegmentButton.m; sourceTree = "<group>"; };
-		2F1963D025C58531007889F2 /* AMTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTagListView.h; sourceTree = "<group>"; };
-		2F1963D125C58531007889F2 /* NCWAdImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWAdImageView.h; sourceTree = "<group>"; };
-		2F1963D325C58531007889F2 /* ESTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTabBarController.h; sourceTree = "<group>"; };
-		2F1963D425C58531007889F2 /* ESTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESTabBarController.xib; sourceTree = "<group>"; };
-		2F1963D525C58531007889F2 /* ESTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTabBarController.m; sourceTree = "<group>"; };
-		2F1963D725C58531007889F2 /* NCWBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWBaseNavigationController.h; sourceTree = "<group>"; };
-		2F1963D825C58531007889F2 /* NCWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWBaseViewController.m; sourceTree = "<group>"; };
-		2F1963D925C58531007889F2 /* NCWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWHomeViewController.m; sourceTree = "<group>"; };
-		2F1963DA25C58531007889F2 /* NCWBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWBaseNavigationController.m; sourceTree = "<group>"; };
-		2F1963DB25C58531007889F2 /* NCWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWBaseViewController.h; sourceTree = "<group>"; };
-		2F1963DD25C58531007889F2 /* NCWApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWApplicationViewController.h; sourceTree = "<group>"; };
-		2F1963DE25C58531007889F2 /* NCWSystemtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWSystemtViewController.h; sourceTree = "<group>"; };
-		2F1963DF25C58531007889F2 /* NCWBaseAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWBaseAppViewController.m; sourceTree = "<group>"; };
-		2F1963E025C58531007889F2 /* NCWAppFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWAppFunctionViewController.h; sourceTree = "<group>"; };
-		2F1963E125C58531007889F2 /* NCWApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWApplicationViewController.m; sourceTree = "<group>"; };
-		2F1963E225C58531007889F2 /* NCWSystemtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWSystemtViewController.m; sourceTree = "<group>"; };
-		2F1963E325C58531007889F2 /* NCWBaseAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWBaseAppViewController.h; sourceTree = "<group>"; };
-		2F1963E425C58531007889F2 /* NCWAppFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCWAppFunctionViewController.m; sourceTree = "<group>"; };
-		2F1963E525C58531007889F2 /* NCWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCWHomeViewController.h; sourceTree = "<group>"; };
-		2F1963E725C58531007889F2 /* ESTabBarController+Autolayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ESTabBarController+Autolayout.m"; sourceTree = "<group>"; };
-		2F1963E825C58531007889F2 /* UIButton+ESTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ESTabBar.m"; sourceTree = "<group>"; };
-		2F1963E925C58531007889F2 /* ESTabBarController+Autolayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESTabBarController+Autolayout.h"; sourceTree = "<group>"; };
-		2F1963EA25C58531007889F2 /* UIButton+ESTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ESTabBar.h"; sourceTree = "<group>"; };
-		2F1963EB25C58531007889F2 /* NotificationCenterWidgetSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenterWidgetSdk.h; sourceTree = "<group>"; };
 		2F3B972425C9522C00221170 /* liblibPayment.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPayment.a; path = ../SDK/Libs/liblibPayment.a; sourceTree = "<group>"; };
 		2F3B972625C9523700221170 /* libWeChatSDK_pay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK_pay.a; path = ../SDK/Libs/libWeChatSDK_pay.a; sourceTree = "<group>"; };
 		2F3B972825C9524200221170 /* libwxpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwxpay.a; path = ../SDK/Libs/libwxpay.a; sourceTree = "<group>"; };
@@ -607,236 +468,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F19637D25C58531007889F2 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2F19637E25C58531007889F2 /* NYAlertViewController */,
-				2F19639825C58531007889F2 /* Manager */,
-				2F19639F25C58531007889F2 /* Public */,
-				2F1963AD25C58531007889F2 /* Model */,
-				2F1963B225C58531007889F2 /* View */,
-				2F1963D225C58531007889F2 /* Controllers */,
-				2F1963D625C58531007889F2 /* ViewController */,
-				2F1963E625C58531007889F2 /* Categories */,
-				2F1963EB25C58531007889F2 /* NotificationCenterWidgetSdk.h */,
-			);
-			name = Classes;
-			path = "../../../taohuo/HBuilder-Hello/HBuilder-Hello/Classes";
-			sourceTree = "<group>";
-		};
-		2F19637E25C58531007889F2 /* NYAlertViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2F19637F25C58531007889F2 /* NYAlertAction.h */,
-				2F19638025C58531007889F2 /* NYAlertViewController.h */,
-				2F19638125C58531007889F2 /* NYAlertViewControllerConfiguration.m */,
-				2F19638225C58531007889F2 /* NYAlertViewControllerTransitionStyle.h */,
-				2F19638325C58531007889F2 /* NYAlertActionConfiguration.m */,
-				2F19638425C58531007889F2 /* Private */,
-				2F19639425C58531007889F2 /* NYAlertViewController.m */,
-				2F19639525C58531007889F2 /* NYAlertAction.m */,
-				2F19639625C58531007889F2 /* NYAlertViewControllerConfiguration.h */,
-				2F19639725C58531007889F2 /* NYAlertActionConfiguration.h */,
-			);
-			path = NYAlertViewController;
-			sourceTree = "<group>";
-		};
-		2F19638425C58531007889F2 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				2F19638525C58531007889F2 /* NYAlertTextView.m */,
-				2F19638625C58531007889F2 /* NYAlertViewPresentationController.h */,
-				2F19638725C58531007889F2 /* NYAlertView.m */,
-				2F19638825C58531007889F2 /* NYAlertAction+Private.h */,
-				2F19638925C58531007889F2 /* NYAlertViewDismissalAnimationController.h */,
-				2F19638A25C58531007889F2 /* UIView+Additions.m */,
-				2F19638B25C58531007889F2 /* NYAlertViewButton.h */,
-				2F19638C25C58531007889F2 /* NYAlertViewPresentationAnimationController.h */,
-				2F19638D25C58531007889F2 /* NYAlertViewPresentationController.m */,
-				2F19638E25C58531007889F2 /* NYAlertTextView.h */,
-				2F19638F25C58531007889F2 /* NYAlertView.h */,
-				2F19639025C58531007889F2 /* UIView+Additions.h */,
-				2F19639125C58531007889F2 /* NYAlertViewDismissalAnimationController.m */,
-				2F19639225C58531007889F2 /* NYAlertViewPresentationAnimationController.m */,
-				2F19639325C58531007889F2 /* NYAlertViewButton.m */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		2F19639825C58531007889F2 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				2F19639925C58531007889F2 /* NCWSpringboardLayout.m */,
-				2F19639A25C58531007889F2 /* NCWWidgetInfoManager.h */,
-				2F19639B25C58531007889F2 /* NCWReallyManager.h */,
-				2F19639C25C58531007889F2 /* NCWSpringboardLayout.h */,
-				2F19639D25C58531007889F2 /* NCWWidgetInfoManager.m */,
-				2F19639E25C58531007889F2 /* NCWReallyManager.m */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		2F19639F25C58531007889F2 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963A025C58531007889F2 /* Util */,
-				2F1963A825C58531007889F2 /* HUD */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		2F1963A025C58531007889F2 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963A125C58531007889F2 /* NCWWorkspace.h */,
-				2F1963A225C58531007889F2 /* UIColor+NCWTool.m */,
-				2F1963A325C58531007889F2 /* pinyin.h */,
-				2F1963A425C58531007889F2 /* UIImage+NCWUtil.h */,
-				2F1963A525C58531007889F2 /* pinyin.c */,
-				2F1963A625C58531007889F2 /* UIColor+NCWTool.h */,
-				2F1963A725C58531007889F2 /* UIImage+NCWUtil.m */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		2F1963A825C58531007889F2 /* HUD */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963A925C58531007889F2 /* NCWMBProgressHUD.h */,
-				2F1963AA25C58531007889F2 /* NCWDialog.m */,
-				2F1963AB25C58531007889F2 /* NCWMBProgressHUD.m */,
-				2F1963AC25C58531007889F2 /* NCWDialog.h */,
-			);
-			path = HUD;
-			sourceTree = "<group>";
-		};
-		2F1963AD25C58531007889F2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963AE25C58531007889F2 /* NCWWidgetPerson.m */,
-				2F1963AF25C58531007889F2 /* NCWApplicationItem.m */,
-				2F1963B025C58531007889F2 /* NCWApplicationItem.h */,
-				2F1963B125C58531007889F2 /* NCWWidgetPerson.h */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2F1963B225C58531007889F2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963B325C58531007889F2 /* NCWDrawTextView.m */,
-				2F1963B425C58531007889F2 /* NCWSpringboardCell.m */,
-				2F1963B525C58531007889F2 /* NCWCollectionHeadView.h */,
-				2F1963B625C58531007889F2 /* AMTagListView.m */,
-				2F1963B725C58531007889F2 /* AMTagView.m */,
-				2F1963B825C58531007889F2 /* NCWAdImageView.m */,
-				2F1963B925C58531007889F2 /* AMTag.h */,
-				2F1963BA25C58531007889F2 /* NCWSpringboardCell.h */,
-				2F1963BB25C58531007889F2 /* NCWDrawTextView.h */,
-				2F1963BC25C58531007889F2 /* NCWCollectionHeadView.m */,
-				2F1963BD25C58531007889F2 /* AMTagView.h */,
-				2F1963BE25C58531007889F2 /* AppFunction */,
-				2F1963D025C58531007889F2 /* AMTagListView.h */,
-				2F1963D125C58531007889F2 /* NCWAdImageView.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2F1963BE25C58531007889F2 /* AppFunction */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963BF25C58531007889F2 /* Cell */,
-				2F1963C225C58531007889F2 /* Common */,
-				2F1963CB25C58531007889F2 /* Button */,
-			);
-			path = AppFunction;
-			sourceTree = "<group>";
-		};
-		2F1963BF25C58531007889F2 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963C025C58531007889F2 /* NCWSoftwareTableViewCell.m */,
-				2F1963C125C58531007889F2 /* NCWSoftwareTableViewCell.h */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		2F1963C225C58531007889F2 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963C325C58531007889F2 /* NCWIconImageView.m */,
-				2F1963C425C58531007889F2 /* NCWScrollView.m */,
-				2F1963C525C58531007889F2 /* NCWListHeadView.h */,
-				2F1963C625C58531007889F2 /* NCWListBodyView.m */,
-				2F1963C725C58531007889F2 /* NCWScrollView.h */,
-				2F1963C825C58531007889F2 /* NCWIconImageView.h */,
-				2F1963C925C58531007889F2 /* NCWListBodyView.h */,
-				2F1963CA25C58531007889F2 /* NCWListHeadView.m */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		2F1963CB25C58531007889F2 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963CC25C58531007889F2 /* NCWSoftwareIconButton.h */,
-				2F1963CD25C58531007889F2 /* NCWSegmentButton.h */,
-				2F1963CE25C58531007889F2 /* NCWSoftwareIconButton.m */,
-				2F1963CF25C58531007889F2 /* NCWSegmentButton.m */,
-			);
-			path = Button;
-			sourceTree = "<group>";
-		};
-		2F1963D225C58531007889F2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963D325C58531007889F2 /* ESTabBarController.h */,
-				2F1963D425C58531007889F2 /* ESTabBarController.xib */,
-				2F1963D525C58531007889F2 /* ESTabBarController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		2F1963D625C58531007889F2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963D725C58531007889F2 /* NCWBaseNavigationController.h */,
-				2F1963D825C58531007889F2 /* NCWBaseViewController.m */,
-				2F1963D925C58531007889F2 /* NCWHomeViewController.m */,
-				2F1963DA25C58531007889F2 /* NCWBaseNavigationController.m */,
-				2F1963DB25C58531007889F2 /* NCWBaseViewController.h */,
-				2F1963DC25C58531007889F2 /* AppFunction */,
-				2F1963E525C58531007889F2 /* NCWHomeViewController.h */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		2F1963DC25C58531007889F2 /* AppFunction */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963DD25C58531007889F2 /* NCWApplicationViewController.h */,
-				2F1963DE25C58531007889F2 /* NCWSystemtViewController.h */,
-				2F1963DF25C58531007889F2 /* NCWBaseAppViewController.m */,
-				2F1963E025C58531007889F2 /* NCWAppFunctionViewController.h */,
-				2F1963E125C58531007889F2 /* NCWApplicationViewController.m */,
-				2F1963E225C58531007889F2 /* NCWSystemtViewController.m */,
-				2F1963E325C58531007889F2 /* NCWBaseAppViewController.h */,
-				2F1963E425C58531007889F2 /* NCWAppFunctionViewController.m */,
-			);
-			path = AppFunction;
-			sourceTree = "<group>";
-		};
-		2F1963E625C58531007889F2 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				2F1963E725C58531007889F2 /* ESTabBarController+Autolayout.m */,
-				2F1963E825C58531007889F2 /* UIButton+ESTabBar.m */,
-				2F1963E925C58531007889F2 /* ESTabBarController+Autolayout.h */,
-				2F1963EA25C58531007889F2 /* UIButton+ESTabBar.h */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
 		4F4C64522465600B006A13AA /* inc */ = {
 			isa = PBXGroup;
 			children = (
@@ -1215,7 +846,6 @@
 		8EED62A1198A1D13000A4449 /* HBuilder-Hello */ = {
 			isa = PBXGroup;
 			children = (
-				2F19637D25C58531007889F2 /* Classes */,
 				8EED62AA198A1D13000A4449 /* AppDelegate.h */,
 				8EED62AB198A1D13000A4449 /* AppDelegate.m */,
 				4F4C64522465600B006A13AA /* inc */,
@@ -1285,7 +915,7 @@
 				ORGANIZATIONNAME = DCloud;
 				TargetAttributes = {
 					8EED6297198A1D13000A4449 = {
-						DevelopmentTeam = 22CP63H8NK;
+						DevelopmentTeam = NU463TRWKK;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1329,7 +959,6 @@
 				2F0BA4DC215BA12300F67004 /* LaunchScreen.storyboard in Resources */,
 				67E9CDCF22968D2E0076E0FB /* Localizable.strings in Resources */,
 				4F4DDAFF25AC46610008AE37 /* DCSVProgressHUD.bundle in Resources */,
-				2F19640E25C58531007889F2 /* ESTabBarController.xib in Resources */,
 				67B7CAA221DCE8180083E96A /* control.xml in Resources */,
 				4F4C65522465606C006A13AA /* weexUniJs.js in Resources */,
 				4F4C65472465606C006A13AA /* unincomponents.ttf in Resources */,
@@ -1397,53 +1026,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F1963F025C58531007889F2 /* UIView+Additions.m in Sources */,
-				2F1963FB25C58531007889F2 /* pinyin.c in Sources */,
-				2F19640125C58531007889F2 /* NCWDrawTextView.m in Sources */,
-				2F19640025C58531007889F2 /* NCWApplicationItem.m in Sources */,
-				2F19640B25C58531007889F2 /* NCWListHeadView.m in Sources */,
-				2F1963FC25C58531007889F2 /* UIImage+NCWUtil.m in Sources */,
-				2F19641325C58531007889F2 /* NCWBaseAppViewController.m in Sources */,
-				2F1963F225C58531007889F2 /* NYAlertViewDismissalAnimationController.m in Sources */,
-				2F19641225C58531007889F2 /* NCWBaseNavigationController.m in Sources */,
 				8EED62B5198A1D14000A4449 /* ViewController.m in Sources */,
-				2F19641725C58531007889F2 /* ESTabBarController+Autolayout.m in Sources */,
-				2F1963FD25C58531007889F2 /* NCWDialog.m in Sources */,
-				2F1963FF25C58531007889F2 /* NCWWidgetPerson.m in Sources */,
-				2F19640C25C58531007889F2 /* NCWSoftwareIconButton.m in Sources */,
-				2F1963F125C58531007889F2 /* NYAlertViewPresentationController.m in Sources */,
-				2F19640925C58531007889F2 /* NCWScrollView.m in Sources */,
-				2F1963F825C58531007889F2 /* NCWWidgetInfoManager.m in Sources */,
-				2F19640425C58531007889F2 /* AMTagView.m in Sources */,
-				2F1963EC25C58531007889F2 /* NYAlertViewControllerConfiguration.m in Sources */,
-				2F19640525C58531007889F2 /* NCWAdImageView.m in Sources */,
-				2F1963FA25C58531007889F2 /* UIColor+NCWTool.m in Sources */,
-				2F19641125C58531007889F2 /* NCWHomeViewController.m in Sources */,
-				2F1963FE25C58531007889F2 /* NCWMBProgressHUD.m in Sources */,
 				8EED62AC198A1D13000A4449 /* AppDelegate.m in Sources */,
-				2F19640625C58531007889F2 /* NCWCollectionHeadView.m in Sources */,
-				2F1963ED25C58531007889F2 /* NYAlertActionConfiguration.m in Sources */,
-				2F1963F725C58531007889F2 /* NCWSpringboardLayout.m in Sources */,
-				2F19640A25C58531007889F2 /* NCWListBodyView.m in Sources */,
-				2F19641025C58531007889F2 /* NCWBaseViewController.m in Sources */,
-				2F1963F925C58531007889F2 /* NCWReallyManager.m in Sources */,
-				2F19640325C58531007889F2 /* AMTagListView.m in Sources */,
-				2F1963F625C58531007889F2 /* NYAlertAction.m in Sources */,
 				8EED62A8198A1D13000A4449 /* main.m in Sources */,
-				2F1963F425C58531007889F2 /* NYAlertViewButton.m in Sources */,
-				2F19640F25C58531007889F2 /* ESTabBarController.m in Sources */,
-				2F1963F525C58531007889F2 /* NYAlertViewController.m in Sources */,
-				2F19641825C58531007889F2 /* UIButton+ESTabBar.m in Sources */,
-				2F1963EE25C58531007889F2 /* NYAlertTextView.m in Sources */,
-				2F1963EF25C58531007889F2 /* NYAlertView.m in Sources */,
-				2F19640825C58531007889F2 /* NCWIconImageView.m in Sources */,
-				2F19640225C58531007889F2 /* NCWSpringboardCell.m in Sources */,
-				2F19640725C58531007889F2 /* NCWSoftwareTableViewCell.m in Sources */,
-				2F1963F325C58531007889F2 /* NYAlertViewPresentationAnimationController.m in Sources */,
-				2F19641525C58531007889F2 /* NCWSystemtViewController.m in Sources */,
-				2F19641625C58531007889F2 /* NCWAppFunctionViewController.m in Sources */,
-				2F19641425C58531007889F2 /* NCWApplicationViewController.m in Sources */,
-				2F19640D25C58531007889F2 /* NCWSegmentButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1559,7 +1144,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.1.0;
-				DEVELOPMENT_TEAM = 22CP63H8NK;
+				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1587,9 +1172,9 @@
 				);
 				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chyuthink.dsy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydaxiangt.jishi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dsy_dev;
+				PROVISIONING_PROFILE_SPECIFIER = jishi_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 i386 x86_64";
 				WRAPPER_EXTENSION = app;
@@ -1636,7 +1221,7 @@
 				);
 				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chyuthink.dsy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydaxiangt.jishi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = dsy_dis;
