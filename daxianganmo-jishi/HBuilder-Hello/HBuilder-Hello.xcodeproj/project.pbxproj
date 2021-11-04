@@ -1218,7 +1218,7 @@
 				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 20501;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1246,7 +1246,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 2.5.1;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lAMapLocationPlugin",
@@ -1276,7 +1276,7 @@
 				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 20501;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1304,7 +1304,7 @@
 					"$(SRCROOT)/../SDK/libs",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 2.5.1;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lAMapLocationPlugin",
