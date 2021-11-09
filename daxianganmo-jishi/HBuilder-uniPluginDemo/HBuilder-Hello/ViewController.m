@@ -10,6 +10,9 @@
 #import "PDRToolSystemEx.h"
 #import "AppDelegate.h"
 
+//#import "JPUSHService.h"
+
+
 #define kStatusBarHeight 20.f
 
 @implementation ViewController
@@ -38,6 +41,13 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+}
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+//    NSString *registrationID =   [JPUSHService registrationID];
+     
+//     NSLog(@"-------->%@", registrationID);
 }
 
 #pragma mark -

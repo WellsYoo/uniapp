@@ -77,6 +77,22 @@
 	<string>13453452345</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>JCore</key>
+	<dict>
+		<key>APP_KEY</key>
+		<string>dad72b3a6a7fe76759276e65</string>
+		<key>CHANNEL</key>
+		<string>test</string>
+	</dict>
+	<key>JPush</key>
+	<dict>
+		<key>ADVERTISINGID</key>
+		<string></string>
+		<key>DEFAULTINITJPUSH</key>
+		<string>true</string>
+		<key>ISPRODUCTION</key>
+		<string></string>
+	</dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>tencentweiboSdkv2</string>
@@ -102,37 +118,29 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>MiSDKAppID</key>
-	<string>去官方申请对应的appid</string>
 	<key>MiSDKAppKey</key>
-	<string>去官方申请对应的key</string>
-	<key>MiSDKRun</key>
-	<string>debug</string>
+	<string>5211752656143</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>照相机</string>
-	<key>NSContactsUsageDescription</key>
-	<string>通讯录</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的相机吗？如果拒绝，您将无法拍照上传图片。</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>始终允许获取你的位置信息</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的位置吗？如果拒绝，您将无法接到具体位置的订单。</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>总是获取</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的位置吗？如果拒绝，您将无法接到具体位置的订单。</string>
 	<key>NSLocationWhenInUseDescription</key>
-	<string></string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的位置吗？如果拒绝，您将无法接到具体位置的订单。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
-	<key>NSLocationWhenInUseUsageDescription - 2</key>
-	<string>用户使用时期定位</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的位置吗？如果拒绝，您将无法接到具体位置的订单。</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>访问麦克风</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的麦克风吗？如果拒绝，您将无法无法录制视频。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>相册</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的相册吗？如果拒绝，您将无法无法从相册选择图片进行上传。</string>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>请放心，开启权限不会获取您在其他站点的隐私信息，该权限仅用于标识设备并保障服务安全与提示浏览体验</string>
+	<string>允许 大象按摩技师端 在您使用该应用程序时访问您的位置吗？如果拒绝，您将无法接到具体位置的订单。</string>
 	<key>StatusBarBackground</key>
 	<string>#FFFFFF</string>
 	<key>UIApplicationShortcutItems</key>
@@ -162,10 +170,6 @@
 				<string>value3</string>
 			</dict>
 		</dict>
-	</array>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
 	</array>
 	<key>UILaunchImages</key>
 	<array>
@@ -402,9 +406,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -416,59 +417,55 @@
 	<key>amap</key>
 	<dict>
 		<key>appkey</key>
-		<string>去官方申请对应的key</string>
+		<string>41c8f3ec724fc03639b804dd6d4d8917</string>
 	</dict>
+	<key>appkey</key>
+	<string>0f6f31547e7b7b5143ee74362bafcc14</string>
 	<key>baidu</key>
 	<dict>
 		<key>appkey</key>
-		<string>去官方申请对应的key</string>
+		<string>mRFUA0lOYyCGXOcFkZ4cP44K</string>
 	</dict>
 	<key>baiduspeech</key>
 	<dict>
 		<key>API_KEY</key>
-		<string>去官方申请对应的key</string>
+		<string>0IBn3m2b2XzyVACYYQlC8itE</string>
 		<key>APP_ID</key>
-		<string>去官方申请对应的id</string>
+		<string>10466026</string>
 		<key>SECRET_KEY</key>
-		<string>去官方申请获取对应的值</string>
+		<string>x6tLv1aRUnmzQ6i7sun1fHDOxyeMNiPD</string>
 	</dict>
+	<key>dcloud_appkey</key>
+	<string>75d6ae1776f5197cfe1543ffcc653f2b</string>
 	<key>dcloud_uninview_background</key>
 	<true/>
 	<key>dcloud_uniplugins</key>
 	<array>
 		<dict>
 			<key>hooksClass</key>
-			<string>TestPluginProxy</string>
+			<string>JPushProxy</string>
 			<key>plugins</key>
 			<array>
 				<dict>
 					<key>class</key>
-					<string>TestModule</string>
+					<string>JPushModule</string>
 					<key>name</key>
-					<string>DCTestUniPlugin-TestModule</string>
+					<string>JG-JPush</string>
 					<key>type</key>
 					<string>module</string>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>TestComponent</string>
-					<key>name</key>
-					<string>dc-testmap</string>
-					<key>type</key>
-					<string>component</string>
 				</dict>
 			</array>
 		</dict>
 		<dict>
 			<key>hooksClass</key>
-			<string>DCRichAlertProxy</string>
+			<string></string>
 			<key>plugins</key>
 			<array>
 				<dict>
 					<key>class</key>
-					<string>DCRichAlertModule</string>
+					<string>JCoreModule</string>
 					<key>name</key>
-					<string>DCloud-RichAlert</string>
+					<string>JG-JCore</string>
 					<key>type</key>
 					<string>module</string>
 				</dict>
@@ -478,11 +475,9 @@
 	<key>weixinoauth</key>
 	<dict>
 		<key>appSecret</key>
-		<string>去官方申请对应的值</string>
+		<string>3e4eaaefe9ab84cd9d2c1a14a5a2cc9d</string>
 		<key>appid</key>
-		<string>去官方申请对应的appid</string>
+		<string>wxbe7f03382358338d</string>
 	</dict>
-	<key>dcloud_appkey</key>
-	<string>45892768e6ef50a644da91aaa80b6981</string>
 </dict>
 </plist>
