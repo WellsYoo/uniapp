@@ -7,7 +7,7 @@
 //
 
 #import "EGAppClient.h"
-#import "HMYAppRequest.h"
+#import "CGJAppRequest.h"
 
 @implementation NSString (MTAppURL)
 
@@ -112,7 +112,7 @@
     NSURL *url = [NSURL URLWithString:urlString];
     if (url && [self isSupportPerformURLString:urlString]) {
         
-        HMYAppRequest *request = [[HMYAppRequest alloc] init];
+        CGJAppRequest *request = [[CGJAppRequest alloc] init];
         NSString *action = [url host];
         self.URLScheme = [url scheme];
         NSMutableDictionary *requestData = [[NSMutableDictionary alloc] init];
@@ -134,7 +134,7 @@
         if (self.manager) {
             [self.manager sendRequest:request];
         } else {
-            [[HMYAppManager sharedManager] sendRequest:request];
+            [[CGJAppManager sharedManager] sendRequest:request];
         }
     } else {
         if (failure) {
@@ -155,7 +155,7 @@
        requestMessage:(EGAppRequestMessage *)requestMessage
             onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
             onFailure:(void(^)(NSError *failure))failure {
-    HMYAppRequest *request = [[HMYAppRequest alloc] init];
+    CGJAppRequest *request = [[CGJAppRequest alloc] init];
     request.client          = self;
     request.requestMessage  = requestMessage;
     request.action          = action;
@@ -165,7 +165,7 @@
     if (self.manager) {
         [self.manager sendRequest:request];
     } else {
-        [[HMYAppManager sharedManager] sendRequest:request];
+        [[CGJAppManager sharedManager] sendRequest:request];
     }
 }
 
@@ -180,7 +180,7 @@
             onSuccess:(void(^)(EGAppResponseMessage *responseMessage))success
             onFailure:(void(^)(NSError *failure))failure {
     
-    HMYAppRequest *request = [[HMYAppRequest alloc] init];
+    CGJAppRequest *request = [[CGJAppRequest alloc] init];
     request.client          = self;
     request.action          = action;
     request.errorCalback    = failure;
@@ -189,7 +189,7 @@
     if (self.manager) {
         [self.manager sendRequest:request];
     } else {
-        [[HMYAppManager sharedManager] sendRequest:request];
+        [[CGJAppManager sharedManager] sendRequest:request];
     }
 }
 

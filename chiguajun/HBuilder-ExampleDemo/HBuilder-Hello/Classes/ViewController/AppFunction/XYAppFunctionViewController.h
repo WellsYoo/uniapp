@@ -7,15 +7,15 @@
 //
 
 #import "FSFViewController.h"
-#import "YOListHeadView.h"
-#import "YOListBodyView.h"
+#import "CGJListHeadView.h"
+#import "CGJListBodyView.h"
 
 #define kHeadViewHeight (45 * (SCREEN_WIDTH / 320))
 
 @interface XYAppFunctionViewController : FSFViewController <NCWListHeadViewDelegate, NCWListBodyViewDelegate>
 {
-    YOListHeadView *_listHeadView;
-    YOListBodyView *_listBodyView;
+    CGJListHeadView *_listHeadView;
+    CGJListBodyView *_listBodyView;
     
     NSArray        *_listHeadTitles;
     NSMutableArray *_listBodyViewControllers;

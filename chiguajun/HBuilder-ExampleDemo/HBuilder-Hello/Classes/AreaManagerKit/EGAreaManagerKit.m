@@ -80,7 +80,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
             NSDictionary *data = dict[@"data"];
             
             if (data) {
-                CCAreaDataModel *model = [[CCAreaDataModel alloc] initWithDictionary:data];
+                CGJAreaDataModel *model = [[CGJAreaDataModel alloc] initWithDictionary:data];
                 
                 if (self.completionHandler) {
                     self.completionHandler(model, MTAreaDataServerSource, YES);
@@ -103,33 +103,33 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
     
 }
 
-+ (CCAreaDataModel *)areaDataModelWithCountryCode:(NSString *)countryCode {
++ (CGJAreaDataModel *)areaDataModelWithCountryCode:(NSString *)countryCode {
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"MTAreaConfiguration" ofType:@"plist"];
     NSDictionary *areaList = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
-    CCAreaDataModel *model = [[CCAreaDataModel alloc] initWithDictionary:areaList[countryCode]];
+    CGJAreaDataModel *model = [[CGJAreaDataModel alloc] initWithDictionary:areaList[countryCode]];
     model.countryCode = countryCode;
     return model;
 }
 
-+ (CCAreaDataModel *)fetchSystemArea {
++ (CGJAreaDataModel *)fetchSystemArea {
     
     NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
     NSString *countryCode = [[locale objectForKey:NSLocaleCountryCode] uppercaseString];
     
-    CCAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
+    CGJAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
     
     return model;
 }
 
-+ (CCAreaDataModel *)fetchSIMCardArea {
++ (CGJAreaDataModel *)fetchSIMCardArea {
     
     CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = networkInfo.subscriberCellularProvider;
     NSString *countryCode = [carrier.isoCountryCode uppercaseString];
     
     if (countryCode.length) {
-        CCAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
+        CGJAreaDataModel *model = [self areaDataModelWithCountryCode:countryCode];
         return model;
     } else {
         return nil;
@@ -186,7 +186,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
 + (void)fetchLocalAreaWithCompletionHandler:(MTAreaCompletionHandler)handler {
     
     //  取SIM卡地区信息
-    CCAreaDataModel *model = [self fetchSIMCardArea];
+    CGJAreaDataModel *model = [self fetchSIMCardArea];
     if (model) {
         if (handler) {
             handler(model, MTAreaDataSIMCardSource, YES);
@@ -206,7 +206,7 @@ static NSString* const AREADATAMODEL_KEY = @"AreaDataModel";
     NSAssert(dataSource==MTAreaDataSystemSource || dataSource==MTAreaDataSIMCardSource,
              @"dataSource只能传入MTAreaDataSystemSource或者MTAreaDataSIMCardSource");
     
-    CCAreaDataModel *model = nil;
+    CGJAreaDataModel *model = nil;
     switch (dataSource) {
         case MTAreaDataSystemSource:
             model = [self fetchSystemArea];

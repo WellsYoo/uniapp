@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HMYAppManager.h"
+#import "CGJAppManager.h"
 #import <Foundation/Foundation.h>
 #import "MTAppMessage.h"
 
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EGAppClient : NSObject
 
 @property(nonatomic, copy) NSString *URLScheme;     /**< 应用程序URL Scheme */
-@property(nonatomic, strong) HMYAppManager *manager; /**< 应用程序管理器 */
+@property(nonatomic, strong) CGJAppManager *manager; /**< 应用程序管理器 */
 
 
 // 初始化方法

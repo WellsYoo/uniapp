@@ -7,9 +7,9 @@
 //
 
 #import "NCWBaseAppViewController.h"
-#import "HMYDialog.h"
+#import "CGJDialog.h"
 
-#import "XYWidgetInfoManager.h"
+#import "CGJWidgetInfoManager.h"
 
 #define kSoftwareCellHeaderHeight   20.0f
 #define kUndefineTitleIndex         @"#"
@@ -29,7 +29,7 @@
     _sectionTitles = [NSMutableArray array];
     _searchResults = [NSMutableArray array];
     
-    [[HMYDialog Instance] showProgress:_superNavigationController];
+    [[CGJDialog Instance] showProgress:_superNavigationController];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         //初始化数据
         [self initAppItems];
@@ -110,7 +110,7 @@
             _tableView.tableFooterView = [[UIView alloc] init];
             [self.view addSubview:_tableView];
             
-            [[HMYDialog Instance] hideProgress];
+            [[CGJDialog Instance] hideProgress];
 //            [self loadAppIcon];
         });
     });
@@ -130,7 +130,7 @@
 
 - (void)dealloc
 {
-    [[XYWidgetInfoManager sharedInstance] clearRequestQueue];
+    [[CGJWidgetInfoManager sharedInstance] clearRequestQueue];
 }
 
 - (void)initAppItems

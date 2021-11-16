@@ -7,7 +7,7 @@
 //
 
 #import "CCWidgetPerson.h"
-#import "XYWidgetInfoManager.h"
+#import "CGJWidgetInfoManager.h"
 
 @implementation CCWidgetPerson
 @synthesize fullName = _fullName;

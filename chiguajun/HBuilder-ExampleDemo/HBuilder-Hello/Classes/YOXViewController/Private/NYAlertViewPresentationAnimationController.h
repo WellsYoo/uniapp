@@ -1,9 +1,9 @@
 #import <UIKit/UIKit.h>
-#import "NYAlertViewControllerTransitionStyle.h"
+#import "CGJAlertViewControllerTransitionStyle.h"
 
 @interface NYAlertViewPresentationAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property NYAlertViewControllerTransitionStyle transitionStyle;
+@property CGJAlertViewControllerTransitionStyle transitionStyle;
 @property CGFloat duration;
 
 @end

@@ -1,9 +1,7 @@
 PODS:
-  - FlatUIKit (1.6.2)
+  - CocoaAsyncSocket (7.6.4)
   - FrameAccessor (2.0)
-  - GKNavigationBar (1.1.8)
   - GKPageScrollView (1.4.1)
-  - IQKeyboardManager (6.5.6)
   - JGProgressHUD (2.0.4)
   - JXPagingView/Pager (2.1.0)
   - KVOController (1.2.0)
@@ -17,14 +15,15 @@ PODS:
     - SDWebImage/Core (= 5.9.5)
   - SDWebImage/Core (5.9.5)
   - TYCyclePagerView (1.2.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
-  - FlatUIKit
+  - CocoaAsyncSocket (~> 7.6.2)
   - FrameAccessor (~> 2.0)
-  - GKNavigationBar
   - GKPageScrollView
-  - IQKeyboardManager
   - JGProgressHUD (~> 2.0.3)
   - JXPagingView/Pager
   - KVOController
@@ -35,15 +34,14 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - TYCyclePagerView
+  - YYKit
   - ZipArchive
 
 SPEC REPOS:
   trunk:
-    - FlatUIKit
+    - CocoaAsyncSocket
     - FrameAccessor
-    - GKNavigationBar
     - GKPageScrollView
-    - IQKeyboardManager
     - JGProgressHUD
     - JXPagingView
     - KVOController
@@ -54,14 +52,13 @@ SPEC REPOS:
     - SDCycleScrollView
     - SDWebImage
     - TYCyclePagerView
+    - YYKit
     - ZipArchive
 
 SPEC CHECKSUMS:
-  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
-  GKNavigationBar: b68d31d24fc14a297b109e71280187dc311e0794
   GKPageScrollView: 99daceceb35bfd1b0a2aa9c7a7e1cddba4e11a7b
-  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
   JXPagingView: ef48a5a2392252c68db7999de38f4761a2707e2a
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
@@ -72,8 +69,9 @@ SPEC CHECKSUMS:
   SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
   TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 5a48cba0fdbc566285dd38978e74e4f9a6fa9cfb
+PODFILE CHECKSUM: 5a2c1ab293393ece1df1bbeaba956c62730aeccc
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

@@ -8,7 +8,7 @@ target 'HBuilder' do
   # Pods for HBuilder
   # Pods for HBuilder
   # Pods for HBuilder
-#     pod 'CocoaAsyncSocket', '~> 7.6.2'
+     pod 'CocoaAsyncSocket', '~> 7.6.2'
      pod 'Masonry', '~> 1.1.0'
 #     pod 'DZNEmptyDataSet', '~> 1.8.1'
      pod 'JGProgressHUD', '~> 2.0.3'
@@ -21,9 +21,9 @@ target 'HBuilder' do
 #     pod 'IGListKit', '~> 3.4.0'
 #     pod 'JTCalendar', '~> 2.0'
 #
-     pod 'GKNavigationBar'
+#     pod 'GKNavigationBar'
      pod 'SDCycleScrollView'
-     pod 'IQKeyboardManager'
+#     pod 'IQKeyboardManager'
      pod 'ZipArchive'
 #     pod 'Realm'
     pod 'GKPageScrollView'
@@ -34,8 +34,8 @@ target 'HBuilder' do
 #     pod 'Reachability'
      pod 'RKDropdownAlert'
 #     pod 'lottie-ios'
-#     pod 'YYKit'
-     pod 'FlatUIKit'
+     pod 'YYKit'
+#     pod 'FlatUIKit'
 #     pod 'WZLBadge'
      pod 'KVOController'
 #     pod 'FontAwesomeKit'

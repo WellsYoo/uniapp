@@ -7,7 +7,7 @@
 //
 
 #import "YOTableViewCell.h"
-#import "HMYtwareIconButton.h"
+#import "CGJtwareIconButton.h"
 
 #import "UIImage+NCWUtil.h"
 
@@ -21,7 +21,7 @@
     UIControl    *_moreControl;
     UIImageView  *_moreBackgroundView;
     UIImageView  *_arrowView;
-    HMYtwareIconButton  *_iconView;
+    CGJtwareIconButton  *_iconView;
     
     YXpplicationItem *_appItem;
 }
@@ -62,7 +62,7 @@
         [self.contentView addSubview:_title];
         
         //应用图标
-        _iconView = [[HMYtwareIconButton alloc] initWithFrame:CGRectMake(4.5, 0, 45, kSoftwareTableViewCellHeight)];
+        _iconView = [[CGJtwareIconButton alloc] initWithFrame:CGRectMake(4.5, 0, 45, kSoftwareTableViewCellHeight)];
 //        _iconView.backgroundColor = [UIColor redColor];
         _iconView.userInteractionEnabled = NO;
         _iconView.clipsToBounds = YES;
@@ -138,7 +138,7 @@
                 column = i - kSoftwareTableViewCellMaxCount * row;
             }
             YXpplicationItem *item = [_appItem.subItems objectAtIndex:i];
-            HMYtwareIconButton *iconButton = [[HMYtwareIconButton alloc] initWithFrame:CGRectMake(column * (space + kSoftwareCellSubItemWidth),
+            CGJtwareIconButton *iconButton = [[CGJtwareIconButton alloc] initWithFrame:CGRectMake(column * (space + kSoftwareCellSubItemWidth),
                                                                                                         kSoftwareTableViewCellMoreHeight * row,
                                                                                                         kSoftwareCellSubItemWidth, kSoftwareTableViewCellMoreHeight)];
 //            [iconButton setBackgroundColor:[UIColor redColor]];
@@ -155,7 +155,7 @@
 
 #pragma mark - NCWSoftwareIconButton Delegate
 
-- (void)softwareIconButton:(HMYtwareIconButton *)iconButton pressedAtItem:(YXpplicationItem *)appItem
+- (void)softwareIconButton:(CGJtwareIconButton *)iconButton pressedAtItem:(YXpplicationItem *)appItem
 {
     if (_delegate && [_delegate respondsToSelector:@selector(softwareTableViewCell:didPressedAtItem:)]) {
         [_delegate softwareTableViewCell:self didPressedAtItem:appItem];

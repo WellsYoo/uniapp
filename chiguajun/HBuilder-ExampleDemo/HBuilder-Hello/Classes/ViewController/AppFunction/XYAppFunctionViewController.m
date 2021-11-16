@@ -11,10 +11,10 @@
 #import "SFSstemtViewController.h"
 
 #import "CCaseNavigationController.h"
-#import "XYWidgetInfoManager.h"
-#import "CCReallyManager.h"
+#import "CGJWidgetInfoManager.h"
+#import "CGJReallyManager.h"
 
-#import "HMYDialog.h"
+#import "CGJDialog.h"
 
 @interface XYAppFunctionViewController () <NCWBaseAppViewControllerDelegate,
 //                                            UISearchBarDelegate,
@@ -42,7 +42,7 @@
 {
     self = [super init];
     if (self) {
-        BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
+        BOOL shouldBeReally = [[CGJReallyManager sharedInstance] shouleBeReally];
         if (shouldBeReally) {
             _listHeadTitles = @[@"已安装应用", @"系统应用"];
         }else {
@@ -62,7 +62,7 @@
     //已选中application
     _selectedApps = [NSMutableArray array];
     _removeApps = [NSMutableArray array];
-    for (id item in [[XYWidgetInfoManager sharedInstance] personListAtWidget]) {
+    for (id item in [[CGJWidgetInfoManager sharedInstance] personListAtWidget]) {
         if ([item isKindOfClass:[YXpplicationItem class]]) {
             [_selectedApps addObject:item];
         }
@@ -73,11 +73,11 @@
     [navigationController addPartingLine];
     
     //是否变身
-    BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[CGJReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         self.title = @"选择APP和功能";
         
-        _listHeadView = [[YOListHeadView alloc] initWithFrame:CGRectMake(12, 0, CGRectGetWidth(self.view.frame) - 2 * 12, kListHeadHeight)];
+        _listHeadView = [[CGJListHeadView alloc] initWithFrame:CGRectMake(12, 0, CGRectGetWidth(self.view.frame) - 2 * 12, kListHeadHeight)];
         _listHeadView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
         _listHeadView.clipsToBounds = YES;
         _listHeadView.listDelegate = self;
@@ -85,11 +85,11 @@
         _listHeadView.defaultIndex = 0;
         [self.view addSubview:_listHeadView];
         
-        _listBodyView = [[YOListBodyView alloc] initWithFrame:CGRectMake(0, kListHeadHeight, CGRectGetWidth(self.view.frame),
+        _listBodyView = [[CGJListBodyView alloc] initWithFrame:CGRectMake(0, kListHeadHeight, CGRectGetWidth(self.view.frame),
                                                                           CGRectGetHeight(self.view.frame) - kListHeadHeight)];
     }else {
         self.title = @"选择功能";
-        _listBodyView = [[YOListBodyView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame),
+        _listBodyView = [[CGJListBodyView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame),
                                                                           CGRectGetHeight(self.view.frame))];
     }
     
@@ -201,12 +201,12 @@
     return [_listHeadTitles count];
 }
 
-- (NSInteger)listHeadView:(YOListHeadView *)listHeadView forWidth:(NSInteger)index
+- (NSInteger)listHeadView:(CGJListHeadView *)listHeadView forWidth:(NSInteger)index
 {
     return 100;
 }
 
-- (void)listHeadView:(YOListHeadView *)listHeadView press:(UIButton *)sender
+- (void)listHeadView:(CGJListHeadView *)listHeadView press:(UIButton *)sender
 {
     [_listBodyView scrollToIndex:sender.tag];
 }
@@ -223,10 +223,10 @@
     }
 }
 
-- (id)forListBodyView:(YOListBodyView *)view index:(NSInteger)index
+- (id)forListBodyView:(CGJListBodyView *)view index:(NSInteger)index
 {
     //是否变身
-    BOOL shouldBeReally = [[CCReallyManager sharedInstance] shouleBeReally];
+    BOOL shouldBeReally = [[CGJReallyManager sharedInstance] shouleBeReally];
     if (shouldBeReally) {
         NCWBaseAppViewController *viewController = nil;
         switch (index) {
@@ -298,14 +298,14 @@
 - (BOOL)applicationControllerShouldCheck
 {
     NSInteger numOfItem = 0;
-    for (id item in [[XYWidgetInfoManager sharedInstance] personListAtWidget]) {
+    for (id item in [[CGJWidgetInfoManager sharedInstance] personListAtWidget]) {
         if (![item isKindOfClass:[YXpplicationItem class]]) {
             numOfItem++;
         }
     }
     numOfItem += _selectedApps.count;
     if (numOfItem >= kNotificationItemMaxNum) {
-        [HMYDialog toast:@"当前数量已达到上限"];
+        [CGJDialog toast:@"当前数量已达到上限"];
         return NO;
     }else {
         return YES;
@@ -332,12 +332,12 @@
 - (void)doneButtonPressHandler:(id)sender
 {
     for (YXpplicationItem *appItem in _selectedApps) {
-        [[XYWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
+        [[CGJWidgetInfoManager sharedInstance] addNCWItemToWidget:appItem saveToWidget:NO];
     }
     for (YXpplicationItem *appItem in _removeApps) {
-        [[XYWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
+        [[CGJWidgetInfoManager sharedInstance] deleteFromWidget:appItem saveWidget:NO];
     }
-    [[XYWidgetInfoManager sharedInstance] saveToWidget];
+    [[CGJWidgetInfoManager sharedInstance] saveToWidget];
     if (self.navigationController.viewControllers.count > 1) {
         [self.navigationController popViewControllerAnimated:YES];
     }else {

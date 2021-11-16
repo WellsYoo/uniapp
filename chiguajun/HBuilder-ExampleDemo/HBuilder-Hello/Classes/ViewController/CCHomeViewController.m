@@ -7,18 +7,18 @@
 //
 
 #import "CCHomeViewController.h"
-#import "XYSpringboardCell.h"
-#import "CCSpringboardLayout.h"
-#import "XYWidgetInfoManager.h"
+#import "CGJSpringboardCell.h"
+#import "CGJSpringboardLayout.h"
+#import "CGJWidgetInfoManager.h"
 #import "CCCollectionHeadView.h"
 #import "CCaseNavigationController.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "XYAppFunctionViewController.h"
-#import "HMYDialog.h"
-#import "CCReallyManager.h"
+#import "CGJDialog.h"
+#import "CGJReallyManager.h"
 
-#import "HMYAlertViewController.h"
+#import "CGJAlertViewController.h"
 
 
 #define NCWCollectionViewCellIdentifier     @"NCWCollectionViewCellIdentifier"
@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     
     CGRect f1 = bounds;
     f1.size.height =f1.size.height  - kHomeBottomViewHeight;
-    if (![CCReallyManager sharedInstance].shouleBeReally) {
+    if (![CGJReallyManager sharedInstance].shouleBeReally) {
         f1.size.height = f1.size.height - 50*kScreenWidth/320;
     }
     _collectionView.frame = f1;
@@ -138,12 +138,12 @@ typedef NS_ENUM(NSInteger, ContactState)
     [((CCaseNavigationController *)self.navigationController) addPartingLine];
     
     
-    CCSpringboardLayout * layout = [[CCSpringboardLayout alloc] initWithType:GS_SBLayoutTypeScroll];
+    CGJSpringboardLayout * layout = [[CGJSpringboardLayout alloc] initWithType:GS_SBLayoutTypeScroll];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.backgroundColor = colorWithRGB(efeff4);
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    [self.collectionView registerClass:[XYSpringboardCell class] forCellWithReuseIdentifier:NCWCollectionViewCellIdentifier];
+    [self.collectionView registerClass:[CGJSpringboardCell class] forCellWithReuseIdentifier:NCWCollectionViewCellIdentifier];
     [self.collectionView registerClass:[CCCollectionHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NCWCollectionViewHeadIdentifier];
     [self.view addSubview:self.collectionView];
     
@@ -176,7 +176,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     [_bottomButton addTarget:self action:@selector(editStateChange:) forControlEvents:UIControlEventTouchUpInside];
     [_bottomView addSubview:_bottomButton];
 
-    if (![CCReallyManager sharedInstance].shouleBeReally){
+    if (![CGJReallyManager sharedInstance].shouleBeReally){
         _adView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kHomeBottomViewHeight, kScreenWidth, 50*kScreenWidth/320)];
         [self.view insertSubview:_adView aboveSubview:_collectionView];
     }
@@ -204,9 +204,9 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 - (void)__reloadPersonList
 {
-    [[XYWidgetInfoManager sharedInstance] clearRequestQueue];
+    [[CGJWidgetInfoManager sharedInstance] clearRequestQueue];
     [self.starPersonList removeAllObjects];
-    [self.starPersonList addObjectsFromArray:[[XYWidgetInfoManager sharedInstance] personListAtWidget]];
+    [self.starPersonList addObjectsFromArray:[[CGJWidgetInfoManager sharedInstance] personListAtWidget]];
     [self.collectionView reloadData];
     _contactState = ContactStateEditing;
     [self editStateChange:nil];
@@ -294,7 +294,7 @@ typedef NS_ENUM(NSInteger, ContactState)
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    XYSpringboardCell * cell = (XYSpringboardCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NCWCollectionViewCellIdentifier forIndexPath:indexPath];
+    CGJSpringboardCell * cell = (CGJSpringboardCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NCWCollectionViewCellIdentifier forIndexPath:indexPath];
     
     id item = [self.starPersonList objectAtIndex:indexPath.row];
     
@@ -331,7 +331,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     id person = [self.starPersonList objectAtIndex:fromIndexPath.row];
     [self.starPersonList removeObjectAtIndex:fromIndexPath.row];
     [self.starPersonList insertObject:person atIndex:toIndexPath.row];
-    [[XYWidgetInfoManager sharedInstance] sortNCWListWithNewList:self.starPersonList];
+    [[CGJWidgetInfoManager sharedInstance] sortNCWListWithNewList:self.starPersonList];
 }
 
 
@@ -373,12 +373,12 @@ typedef NS_ENUM(NSInteger, ContactState)
 
 #pragma mark - GSSpringboardCellDelegate
 
-- (void)gs_sbCellDidDeleted:(XYSpringboardCell *)cell
+- (void)gs_sbCellDidDeleted:(CGJSpringboardCell *)cell
 {
     NSIndexPath * indexPath = [self.collectionView indexPathForCell:cell];
     id deleteItem = [self.starPersonList objectAtIndex:indexPath.row];
     [self.starPersonList removeObject:deleteItem];
-    [[XYWidgetInfoManager sharedInstance] deleteFromWidget:deleteItem saveWidget:YES];
+    [[CGJWidgetInfoManager sharedInstance] deleteFromWidget:deleteItem saveWidget:YES];
     [self.collectionView gs_deleteItemAtIndexPath:indexPath];
     [self refreshAddButtonFrame];
 }
@@ -401,7 +401,7 @@ typedef NS_ENUM(NSInteger, ContactState)
     ABMultiValueRef phones = ABRecordCopyValue(person, kABPersonPhoneProperty);
     NSInteger phoneCount = ABMultiValueGetCount(phones);
     if (phoneCount == 0) {
-        [HMYDialog toast:@"此联系人号码为空"];
+        [CGJDialog toast:@"此联系人号码为空"];
     }
     if (phoneCount == 1) {
         NSString * phoneNumber = CFBridgingRelease(ABMultiValueCopyValueAtIndex(phones, 0));
@@ -409,7 +409,7 @@ typedef NS_ENUM(NSInteger, ContactState)
         _meWidgetPerson.phoneNumber = phoneNumber;
         _meWidgetPerson.phoneNumberType = label;
         _meWidgetPerson.contactType = _contactType;
-        [[XYWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
+        [[CGJWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
         
     }
     else if(phoneCount > 1)
@@ -472,7 +472,7 @@ typedef NS_ENUM(NSInteger, ContactState)
             _meWidgetPerson.phoneNumber = _phoneNumberArray[index];
             _meWidgetPerson.contactType = _contactType;
             _meWidgetPerson.phoneNumberType = _phoneNumberTypeArray[index];
-            [[XYWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
+            [[CGJWidgetInfoManager sharedInstance] addNCWItemToWidget:_meWidgetPerson saveToWidget:YES];
             [self __reloadPersonList];
         }
     }
