@@ -1,0 +1,117 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - FlatUIKit (1.6.2)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
+  - FrameAccessor (2.0)
+  - GKPageScrollView (1.4.1)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - JGProgressHUD (2.0.4)
+  - KVOController (1.2.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.17)
+  - Reachability (3.2)
+  - RKDropdownAlert (0.3.0)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
+  - Shimmer (1.0.2)
+  - TYCyclePagerView (1.2.0)
+  - XMLDictionary (1.4.1)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet (~> 1.8.1)
+  - FlatUIKit
+  - FontAwesomeKit
+  - FrameAccessor (~> 2.0)
+  - GKPageScrollView
+  - IGListKit (~> 3.4.0)
+  - JGProgressHUD (~> 2.0.3)
+  - KVOController
+  - MagicalRecord
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.12)
+  - Reachability
+  - RKDropdownAlert
+  - SDCycleScrollView
+  - SDWebImage
+  - Shimmer (~> 1.0.2)
+  - TYCyclePagerView
+  - XMLDictionary (~> 1.4)
+  - ZipArchive
+
+SPEC REPOS:
+  trunk:
+    - DZNEmptyDataSet
+    - FlatUIKit
+    - FontAwesomeKit
+    - FrameAccessor
+    - GKPageScrollView
+    - IGListKit
+    - JGProgressHUD
+    - KVOController
+    - MagicalRecord
+    - Masonry
+    - MJRefresh
+    - Reachability
+    - RKDropdownAlert
+    - SDCycleScrollView
+    - SDWebImage
+    - Shimmer
+    - TYCyclePagerView
+    - XMLDictionary
+    - ZipArchive
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+  GKPageScrollView: 99daceceb35bfd1b0a2aa9c7a7e1cddba4e11a7b
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: ba41262447b9f3a15e45c49da9774706420de8a3
+
+COCOAPODS: 1.11.2

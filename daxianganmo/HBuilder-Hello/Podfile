@@ -1,0 +1,43 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HBuilder' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+#     pod 'CocoaAsyncSocket', '~> 7.6.2'
+     pod 'Masonry', '~> 1.1.0'
+     pod 'DZNEmptyDataSet', '~> 1.8.1'
+     pod 'JGProgressHUD', '~> 2.0.3'
+     #< UIView frame 便捷访问扩展
+     pod 'FrameAccessor', '~> 2.0'
+     pod 'Shimmer', '~> 1.0.2'
+     pod 'MJRefresh', '~> 3.1.12'
+     pod 'SDWebImage'
+     
+     pod 'IGListKit', '~> 3.4.0'
+#     pod 'JTCalendar', '~> 2.0'
+
+     pod 'SDCycleScrollView'
+     pod 'XMLDictionary', '~> 1.4'
+#     pod 'IQKeyboardManager'
+     pod 'ZipArchive'
+#     pod 'Realm'
+    pod 'GKPageScrollView'
+#    pod 'JXPagingView/Pager'
+    pod 'TYCyclePagerView'
+
+
+     pod 'Reachability'
+     pod 'RKDropdownAlert'
+     pod 'MagicalRecord'
+#     pod 'lottie-ios'
+#     pod 'YYKit'
+     pod 'FlatUIKit'
+     pod 'FontAwesomeKit'
+#     pod 'WZLBadge'
+     pod 'KVOController'
+#     pod 'pop'
+
+
+end
