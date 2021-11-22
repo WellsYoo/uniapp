@@ -1,0 +1,86 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - DZNEmptyDataSet (1.8.1)
+  - FlatUIKit (1.6.2)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
+  - FrameAccessor (2.0)
+  - GKPageScrollView (1.6.7):
+    - GKPageScrollView/Objc (= 1.6.7)
+  - GKPageScrollView/Objc (1.6.7)
+  - JGProgressHUD (2.0.4)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.17)
+  - Reachability (3.2)
+  - TYCyclePagerView (1.2.0)
+  - XMLDictionary (1.4.1)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.6.2)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - FlatUIKit
+  - FontAwesomeKit
+  - FrameAccessor (~> 2.0)
+  - GKPageScrollView
+  - JGProgressHUD (~> 2.0.3)
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.12)
+  - Reachability
+  - TYCyclePagerView
+  - XMLDictionary (~> 1.4)
+  - ZipArchive
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - DZNEmptyDataSet
+    - FlatUIKit
+    - FontAwesomeKit
+    - FrameAccessor
+    - GKPageScrollView
+    - JGProgressHUD
+    - Masonry
+    - MJRefresh
+    - Reachability
+    - TYCyclePagerView
+    - XMLDictionary
+    - ZipArchive
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+  GKPageScrollView: 376b348edc1b6865955891ebdaa936278286c141
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: 4a9891dc679b273cd3a71a14bef3ace5fc323fe4
+
+COCOAPODS: 1.11.2
