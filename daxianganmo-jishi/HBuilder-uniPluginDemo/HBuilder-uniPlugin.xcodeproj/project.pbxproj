@@ -60,7 +60,6 @@
 		2A21734025ADE4C30084EBAE /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A21733F25ADE4C30084EBAE /* UserNotifications.framework */; };
 		2A21734125ADE4CF0084EBAE /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6731F3A3232F5B7A007838BC /* libresolv.tbd */; };
 		2A21734225ADE4E10084EBAE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2447371A1D0830BB00D0F08F /* WebKit.framework */; };
-		2A21734425ADE4ED0084EBAE /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A21734325ADE4ED0084EBAE /* AppTrackingTransparency.framework */; };
 		2AC5D66525B822E800EA873C /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC5D66425B822E800EA873C /* PushKit.framework */; };
 		2AC5D68825B90F5900EA873C /* UniPluginJCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC5D68425B90EE300EA873C /* UniPluginJCore.framework */; };
 		2F0483D427362DF200241926 /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 2F0483B527362DF200241926 /* __uniappes6.js */; };
@@ -133,7 +132,6 @@
 		7A49810B2126B01200D20880 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49810A2126B01200D20880 /* libiconv.tbd */; };
 		7A49810D2126B01900D20880 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A49810C2126B01900D20880 /* Accelerate.framework */; };
 		7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AA19FF899A007C64F1 /* CFNetwork.framework */; };
-		7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AC19FF89B1007C64F1 /* Security.framework */; };
 		8E163D021A8D208500308A8B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E163D011A8D208500308A8B /* AssetsLibrary.framework */; };
 		8E6E37AC1B0E1B580036EB48 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6E37AB1B0E1B580036EB48 /* ImageIO.framework */; };
 		8EED629C198A1D13000A4449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED629B198A1D13000A4449 /* Foundation.framework */; };
@@ -949,7 +947,6 @@
 				2A21734225ADE4E10084EBAE /* WebKit.framework in Frameworks */,
 				67229AD2230171AE0093F29A /* libDCUniVideo.a in Frameworks */,
 				67229AD3230171AE0093F29A /* libDCUniBarcode.a in Frameworks */,
-				2A21734425ADE4ED0084EBAE /* AppTrackingTransparency.framework in Frameworks */,
 				67229AD4230171AE0093F29A /* IJKMediaFramework.framework in Frameworks */,
 				67229AD6230171AE0093F29A /* libDCUniGPUImage.a in Frameworks */,
 				67229AD8230171AE0093F29A /* libDCUniMap.a in Frameworks */,
@@ -973,7 +970,6 @@
 				24A7515F1D9CCCC600C8B0F9 /* QuickLook.framework in Frameworks */,
 				242725CD1D26686700EBD79E /* CoreMotion.framework in Frameworks */,
 				7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */,
-				7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */,
 				8EED641C198A2654000A4449 /* SystemConfiguration.framework in Frameworks */,
 				242725CB1D2666ED00EBD79E /* JavaScriptCore.framework in Frameworks */,
 				2447371B1D0830BB00D0F08F /* WebKit.framework in Frameworks */,
@@ -2651,7 +2647,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.0.2;
 				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2700,7 +2696,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.1;
+				CURRENT_PROJECT_VERSION = 1.0.0.2;
 				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

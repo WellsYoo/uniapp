@@ -106,21 +106,17 @@
 	<key>NSCameraUsageDescription</key>
 	<string>大象按摩需要您的允许才能正常使用相机，用于拍摄图片进行头像上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像。</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供技师上门服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供技师上门服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSLocationWhenInUseDescription</key>
-	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供技师上门服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
-	<key>NSLocationWhenInUseUsageDescription - 2</key>
-	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
+	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供技师上门服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>访问麦克风</string>
+	<string>大象按摩需要您的麦克风，用于录制视频，用于记录、反馈服务情况。若不允许，将无法录制视频反馈。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>大象按摩需要您的允许才能正常使用相册，用于拍摄图片进行头像上传。若不允许，相机将无法正常使用，无法拍摄照片上传头像。</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>大象按摩需要您的允许才能正常定位，用于判断您的距离，以便提供服务。若不允许，将无法定位到您附近的网点为您服务。</string>
 	<key>StatusBarBackground</key>
 	<string>#FFFFFF</string>
 	<key>UIApplicationShortcutItems</key>

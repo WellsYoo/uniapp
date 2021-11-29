@@ -71,7 +71,6 @@
 		2F89130C2743D83E00945D75 /* MTAreaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8913032743D83E00945D75 /* MTAreaDataModel.m */; };
 		2F89130D2743D83E00945D75 /* MTAreaManagerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8913042743D83E00945D75 /* MTAreaManagerSetting.m */; };
 		2FC88245272D62A900D7F38E /* launch_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC88244272D62A900D7F38E /* launch_icon@3x.png */; };
-		2FD11BBB215C79C5000A23AD /* liblibAdSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD11BBA215C79C5000A23AD /* liblibAdSupport.a */; };
 		2FDE156A215F468000588710 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDE1569215F468000588710 /* liblibWeex.a */; };
 		4F4C65372465606B006A13AA /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C65192465606B006A13AA /* __uniappes6.js */; };
 		4F4C653A2465606B006A13AA /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C651C2465606B006A13AA /* uni-jsframework.js */; };
@@ -428,7 +427,6 @@
 		6756AB6921F58CA300765F52 /* liblibBlueTooth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibBlueTooth.a; path = ../SDK/Libs/liblibBlueTooth.a; sourceTree = "<group>"; };
 		67B7CAA121DCE8180083E96A /* control.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = control.xml; sourceTree = "<group>"; };
 		67E9CDCE22968D2E0076E0FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		67E9CDD022968D350076E0FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7A1967C0212536C300B330A9 /* GTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTSDK.framework; path = ../SDK/Libs/GTSDK.framework; sourceTree = "<group>"; };
 		7A1967C2212536EC00B330A9 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp3lame.a; path = ../SDK/Libs/libmp3lame.a; sourceTree = "<group>"; };
 		7A1967C42125371000B330A9 /* storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = storage.framework; path = ../SDK/Libs/storage.framework; sourceTree = "<group>"; };
@@ -443,7 +441,6 @@
 		8EED629D198A1D13000A4449 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8EED629F198A1D13000A4449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8EED62A3198A1D13000A4449 /* HBuilder-Hello-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HBuilder-Hello-Info.plist"; sourceTree = "<group>"; };
-		8EED62A5198A1D13000A4449 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EED62A7198A1D13000A4449 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EED62A9198A1D13000A4449 /* HBuilder-Hello-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HBuilder-Hello-Prefix.pch"; sourceTree = "<group>"; };
 		8EED62AA198A1D13000A4449 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -509,7 +506,6 @@
 				24AFD85E1CB50C4000C0F062 /* liblibPGInvocation.a in Frameworks */,
 				2F7B2F13272F84B1001F57BE /* libalixpayment.a in Frameworks */,
 				24AFD85F1CB50C4000C0F062 /* liblibPGProximity.a in Frameworks */,
-				2FD11BBB215C79C5000A23AD /* liblibAdSupport.a in Frameworks */,
 				24AFD8461CB50C4000C0F062 /* libcoreSupport.a in Frameworks */,
 				247F85DB1FA32B2C006ECAC6 /* liblibPDRCore.a in Frameworks */,
 				2F7B2F0F272F8469001F57BE /* libwxpay.a in Frameworks */,
@@ -1117,7 +1113,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				English,
-				en,
 				Base,
 				"zh-Hans",
 			);
@@ -1264,7 +1259,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				67E9CDCE22968D2E0076E0FB /* zh-Hans */,
-				67E9CDD022968D350076E0FB /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1272,7 +1266,6 @@
 		8EED62A4198A1D13000A4449 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8EED62A5198A1D13000A4449 /* en */,
 				2F0BA40D215B6E6800F67004 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
@@ -1367,7 +1360,7 @@
 				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.2;
 				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1425,7 +1418,7 @@
 				CODE_SIGN_ENTITLEMENTS = HBuilder/HBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.2;
 				DEVELOPMENT_TEAM = NU463TRWKK;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
