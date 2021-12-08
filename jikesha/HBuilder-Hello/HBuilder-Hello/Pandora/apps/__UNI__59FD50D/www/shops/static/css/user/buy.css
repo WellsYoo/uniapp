@@ -1,0 +1,151 @@
+.contain {
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/login-bg.png) center top 0px no-repeat;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/login-bg.png) center top 0px no-repeat;
+	 /* #endif */
+	background-size: 100% auto;
+	background-color: #F3F1F2;
+	padding-top: 130px!important;
+	padding-bottom: 20px;
+}
+page {
+	background-color: #F3F1F2;
+}
+.wrap-buy {
+	margin: 0 15px 15px;
+	background: #fff;
+	border-radius: 4px;
+	padding: 15px;
+}
+.user-img {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	margin: 0 7px;
+	background: url() center no-repeat;
+	background-size: cover;
+	background-color: red;
+}
+.user-name {
+	font-size:14px;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+}
+.chongzhi-text {
+	font-size:16px;
+font-family:PingFang SC;
+font-weight:500;
+color: #333;
+letter-spacing: 1px;
+}
+.log-btn {
+	letter-spacing: 1px;
+	font-weight:bold;
+color:rgba(255,83,59,1);
+}
+.item-price{
+	position: relative;
+	width: 32%;
+	height: 78px;
+	margin-right: 2%;
+	border: 1px solid #D8D8D8;
+	border-radius: 4px;
+	padding: 16px 0 14px;
+	margin-top: 8px;
+}
+.item-price:nth-child(3n+3){
+	margin-right: 0;
+}
+.jinbi {
+	font-weight:bold;
+color:rgba(51,51,51,1);
+font-size: 16px;
+}
+.price {
+	font-weight:500;
+color:rgba(153,153,153,1);
+font-size: 13px;
+margin-top: 10px;
+}
+.wrap-user {
+	margin-bottom: 40px;
+}
+.item-price.on {
+	border-color: #FF533B;
+}
+.item-price.on::after {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	/* background: url(../../../appimages/images/buy-on.png) center no-repeat; */
+	background-size: contain;
+	position: absolute;
+	bottom: 0;
+	right: -1px;
+}
+.pay-title {
+	font-size:18px;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+}
+.pay-title span {
+	font-size: 13px;
+	color: #FF533B;
+	font-size: 13px;
+	padding-left: 20px;
+	/* #ifdef MP-WEIXIN */
+	 background: url(https://qiniu.syh32.com/syh/xcx/pay-tip.png) center left no-repeat;
+	 /* #endif */
+	 /* #ifndef MP-WEIXIN */
+	 background: url(../../../appimages/images/pay-tip.png) center left no-repeat;
+	 /* #endif */
+	background-size: contain;
+	margin-left: 10px;
+}
+.pay-name {
+	font-size:16px;
+font-weight:500;
+color:rgba(51,51,51,1);
+}
+.pay-name image {
+	width: 33px;
+	margin-right: 15px;
+}
+.choose {
+	width: 20px;
+}
+.pay-item {
+	position: relative;
+	padding: 20px 0;
+	height: auto;
+}
+.pay-item.border::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #E3E3E3;
+	transform: scaleY(0.5);
+}
+.buy-btn {
+	margin: 30px 15px 0;
+	height: 50px;
+	background:#FF533B;
+border-radius:4px;
+color: #fff;
+font-weight:bold;
+font-size: 18px;
+}
+.wrap-item {
+	padding-bottom: 6px;
+	border-bottom: 1px solid #ccc;
+}
+input {
+	width: 130px;
+}
