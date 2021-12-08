@@ -8,9 +8,9 @@
 	font-style: normal;
 	font-weight: 400;
   font-family: 'vant-icon';  /* Project id 2905628 */
- src: url('//at.alicdn.com/t/font_2905628_ynulgxuymok.woff2?t=1635735167927') format('woff2'),
-       url('//at.alicdn.com/t/font_2905628_ynulgxuymok.woff?t=1635735167927') format('woff'),
-       url('//at.alicdn.com/t/font_2905628_ynulgxuymok.ttf?t=1635735167927') format('truetype');
+ src: url('https://at.alicdn.com/t/font_2905628_ynulgxuymok.woff2?t=1635735167927') format('woff2'),
+       url('https://at.alicdn.com/t/font_2905628_ynulgxuymok.woff?t=1635735167927') format('woff'),
+       url('https://at.alicdn.com/t/font_2905628_ynulgxuymok.ttf?t=1635735167927') format('truetype');
 }
 
 .van-icon {

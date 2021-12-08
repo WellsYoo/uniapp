@@ -11,7 +11,7 @@
 } 
 .item {
 	position: relative;
-	padding: 24%;
+	width: 48%;
 	margin-right: 4%;
 	overflow: hidden;
 }
@@ -58,4 +58,17 @@
 	height: 4px;
 	background: #EDEBEB;
 	border-radius: 2px;
+}
+.dot {
+	position: relative;
+}
+.dot::after {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #FB5129;
 }
